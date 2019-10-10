@@ -1,0 +1,95 @@
+<Layout xmlns="urn:speedata.de:2009/publisher/en">
+
+  <LoadFontfile name="CrimsonText-Bold" filename="CrimsonText-Bold.ttf" />
+  <LoadFontfile name="CrimsonText-Regular" filename="CrimsonText-Regular.ttf" marginprotrusion="100" />
+  <DefineFontalias existing="CrimsonText-Regular" alias="regular"/>
+  <DefineFontalias existing="CrimsonText-Bold" alias="bold"/>
+
+  <DefineFontfamily name="Title" fontsize="12" leading="16">
+    <Regular fontface="regular"/>
+    <Bold fontface="bold" />
+  </DefineFontfamily>
+
+  <DefineFontfamily name="text" fontsize="12" leading="13">
+    <Regular fontface="regular" />
+    <Bold fontface="bold" />
+  </DefineFontfamily>
+
+  <Record element="root">
+    <SetVariable variable="sectionNumber" select="0" />
+
+    <!-- gather all reference names -->
+    <SetVariable variable="referenceTable"/>
+    <ForAll select="section">
+      <SetVariable variable="sectionNumber" select="$sectionNumber+1" />
+      <SetVariable variable="paragraphNumber" select="0" />
+      <ForAll select="paragraph">
+        <SetVariable variable="paragraphNumber" select="$paragraphNumber+1" />
+        <SetVariable variable="referenceTable">
+          <Copy-of select="$referenceTable" />
+          <Element name="reference">
+            <Attribute name="name" select="@refId" />
+            <Attribute name="refText" select="concat($sectionNumber,'.',$paragraphNumber,'.')" />
+          </Element>
+        </SetVariable>
+      </ForAll>
+    </ForAll>
+
+    <!-- save all paragraph references in publisher-refTable.dataxml -->
+    <SaveDataset filename="refTable" elementname="referenceTable" select="$referenceTable" />
+
+    <SetVariable variable="sectionNumber" select="0" />
+    <ProcessNode select="section" />
+  </Record>
+
+  <Record element="section">
+    <SetVariable variable="sectionNumber" select="$sectionNumber+1" />
+    <SetVariable variable="paragraphNumber" select="0" />
+
+    <PlaceObject>
+      <Textblock fontface="Title">
+        <Paragraph>
+          <B>
+            <Value select="$sectionNumber" />
+            <Value>.  </Value>
+            <Value select="@name" />
+          </B>
+        </Paragraph>
+      </Textblock>
+    </PlaceObject>
+
+    <ProcessNode select="paragraph" />
+  </Record>
+
+  <Record element="paragraph">
+    <SetVariable variable="paragraphNumber" select="$paragraphNumber+1" />
+    <SetVariable variable="parText" select="@text" />
+
+    <!-- pastes referenceTable here -->
+    <LoadDataset name="refTable" />
+
+    <PlaceObject>
+      <Textblock>
+        <Paragraph>
+          <Value select="$sectionNumber" />
+          <Value>.</Value>
+          <Value select="$paragraphNumber" />
+          <Value>.  </Value>
+          <Value select="$parText" />
+        </Paragraph>
+      </Textblock>
+    </PlaceObject>
+  </Record>
+
+  <!-- overwrites all refIds in $parText with proper text -->
+  <Record element="referenceTable">
+    <ForAll select="reference">
+      <Switch>
+        <Case test="@name != '' and contains($parText,@name)">
+          <SetVariable variable="parText" select="replace($parText, @name, @refText)" />
+        </Case>
+      </Switch>
+    </ForAll>
+  </Record>
+
+</Layout>

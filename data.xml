@@ -1,0 +1,11 @@
+<root>
+  <section name="Introduction">
+    <paragraph refId="{{single-line}}" text="Single line"/>
+    <paragraph refId="{{lorem-ipsum}}" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+  </section>
+  <section name="Section">
+    <paragraph text="Reference to single line paragraph: {{single-line}}"/>
+    <paragraph text="At {{lorem-ipsum}} is lorem ipsum text."/>
+    <paragraph refId="{{last-paragraph}}" text="Reference to this paragraph: {{last-paragraph}}"/>
+  </section>
+</root>

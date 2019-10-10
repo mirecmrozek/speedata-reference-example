@@ -1,0 +1,49 @@
+Protocol file for speedata Publisher (3.6.1)
+Time: Thu Oct 10 16:01:01 2019
+---------------------------------------------
+Start processing
+Running LuaTeX version 107 on linux
+Loading hyphenation patterns "hyph-en-gb.pat.txt".
+Language id: 0
+Loading layout instructions "/home/mirec/Documents/work/sp-example/layout.xml"
+Load Fontfile "CrimsonText-Bold.ttf"
+Load Fontfile "CrimsonText-Regular.ttf"
+DefineFontfamily, family=2, name="Title"
+DefineFontfamily, family=3, name="text"
+Loading data file "/home/mirec/Documents/work/sp-example/data.xml"
+Selecting node: "section", mode="", pos=1
+Page of type "Default Page" created (1)
+Number of rows: 28, number of columns = 19
+PlaceObject: Textblock in row 1 and column 1, width=19, height=1 (page 1)
+Selecting node: "paragraph", mode="", pos=1
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 2 and column 1, width=19, height=1 (page 1)
+Selecting node: "paragraph", mode="", pos=2
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 3 and column 1, width=19, height=2 (page 1)
+Selecting node: "section", mode="", pos=2
+PlaceObject: Textblock in row 5 and column 1, width=19, height=1 (page 1)
+Selecting node: "paragraph", mode="", pos=1
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 6 and column 1, width=19, height=1 (page 1)
+Selecting node: "paragraph", mode="", pos=2
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 7 and column 1, width=19, height=1 (page 1)
+Selecting node: "paragraph", mode="", pos=3
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 8 and column 1, width=19, height=1 (page 1)
+Stop processing data
+0 errors occurred
+Duration: 0.143820 seconds
+---------------------------------------------
+Duration: 0.143823 seconds

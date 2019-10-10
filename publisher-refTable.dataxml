@@ -1,0 +1,12 @@
+<referenceTable>
+ <reference refText="1.1." name="{{single-line}}">
+ </reference>
+ <reference refText="1.2." name="{{lorem-ipsum}}">
+ </reference>
+ <reference refText="2.1." name="">
+ </reference>
+ <reference refText="2.2." name="">
+ </reference>
+ <reference refText="2.3." name="{{last-paragraph}}">
+ </reference>
+</referenceTable>
