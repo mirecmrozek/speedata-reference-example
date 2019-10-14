@@ -1,5 +1,5 @@
 Protocol file for speedata Publisher (3.6.1)
-Time: Thu Oct 10 16:01:01 2019
+Time: Tue Oct 15 14:25:25 2019
 ---------------------------------------------
 Start processing
 Running LuaTeX version 107 on linux
@@ -9,41 +9,199 @@ Loading layout instructions "/home/mirec/Documents/work/sp-example/layout.xml"
 Load Fontfile "CrimsonText-Bold.ttf"
 Load Fontfile "CrimsonText-Regular.ttf"
 DefineFontfamily, family=2, name="Title"
-DefineFontfamily, family=3, name="text"
+DefineFontfamily, family=3, name="DocumentTitle"
+DefineFontfamily, family=4, name="text"
 Loading data file "/home/mirec/Documents/work/sp-example/data.xml"
-Selecting node: "section", mode="", pos=1
-Page of type "Default Page" created (1)
-Number of rows: 28, number of columns = 19
-PlaceObject: Textblock in row 1 and column 1, width=19, height=1 (page 1)
-Selecting node: "paragraph", mode="", pos=1
+Page of type "right page" created (1)
+Number of rows: 26, number of columns = 18
+PlaceObject: Textblock in row 1 and column 1, width=18, height=1 (page 1)
+Selecting node: "info", mode="", pos=1
+PlaceObject: Textblock in row 2 and column 1, width=18, height=1 (page 1)
+PlaceObject: Textblock in row 3 and column 1, width=18, height=1 (page 1)
+Selecting node: "preface", mode="", pos=1
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 4 and column 1, width=18, height=1 (page 1)
+Selecting node: "simpara", mode="", pos=2
 Loading data file "publisher-refTable.dataxml"
 Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
 Selecting node: "referenceTable", mode=""
-PlaceObject: Textblock in row 2 and column 1, width=19, height=1 (page 1)
-Selecting node: "paragraph", mode="", pos=2
+PlaceObject: Textblock in row 5 and column 1, width=18, height=3 (page 1)
+Selecting node: "chapter", mode="", pos=1
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 8 and column 1, width=18, height=1 (page 1)
+Selecting node: "simpara", mode="", pos=2
 Loading data file "publisher-refTable.dataxml"
 Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
 Selecting node: "referenceTable", mode=""
-PlaceObject: Textblock in row 3 and column 1, width=19, height=2 (page 1)
+PlaceObject: Textblock in row 9 and column 1, width=18, height=2 (page 1)
+Selecting node: "simpara", mode="", pos=3
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 11 and column 1, width=18, height=3 (page 1)
+Selecting node: "section", mode="", pos=4
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 14 and column 1, width=18, height=1 (page 1)
+Selecting node: "informaltable", mode="", pos=2
+PlaceObject: Table in row 15 and column 1, width=18, height=4 (page 1)
+Selecting node: "section", mode="", pos=5
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 19 and column 1, width=18, height=1 (page 1)
+Selecting node: "simpara", mode="", pos=2
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 20 and column 1, width=18, height=2 (page 1)
+Selecting node: "chapter", mode="", pos=2
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 22 and column 1, width=18, height=1 (page 1)
+Selecting node: "simpara", mode="", pos=2
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 23 and column 1, width=18, height=2 (page 1)
+Selecting node: "section", mode="", pos=3
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 25 and column 1, width=18, height=1 (page 1)
+Selecting node: "simpara", mode="", pos=2
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+Warning: No suitable row found for object
+PlaceObject: Textblock in row 28 and column 1, width=18, height=1 (page 1)
+Warning: Object protrudes below the last line of the page
+Warning: Conflict in grid
+Page of type "left page" created (2)
+Number of rows: 26, number of columns = 18
+PlaceObject: Textblock in row 1 and column 1, width=18, height=2 (page 2)
+Selecting node: "simpara", mode="", pos=3
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 3 and column 1, width=18, height=1 (page 2)
+Selecting node: "chapter", mode="", pos=3
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 4 and column 1, width=18, height=1 (page 2)
+Selecting node: "simpara", mode="", pos=2
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 5 and column 1, width=18, height=1 (page 2)
+Selecting node: "table", mode="", pos=3
+PlaceObject: Textblock in row 6 and column 1, width=18, height=1 (page 2)
+PlaceObject: Table in row 7 and column 1, width=18, height=2 (page 2)
+Selecting node: "section", mode="", pos=4
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 9 and column 1, width=18, height=1 (page 2)
+Selecting node: "simpara", mode="", pos=2
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 10 and column 1, width=18, height=1 (page 2)
+Selecting node: "chapter", mode="", pos=4
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 11 and column 1, width=18, height=1 (page 2)
 Selecting node: "section", mode="", pos=2
-PlaceObject: Textblock in row 5 and column 1, width=19, height=1 (page 1)
-Selecting node: "paragraph", mode="", pos=1
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 12 and column 1, width=18, height=1 (page 2)
+Selecting node: "section", mode="", pos=3
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 13 and column 1, width=18, height=1 (page 2)
+Selecting node: "section", mode="", pos=4
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 14 and column 1, width=18, height=1 (page 2)
+Selecting node: "section", mode="", pos=5
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 15 and column 1, width=18, height=1 (page 2)
+Selecting node: "section", mode="", pos=6
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 16 and column 1, width=18, height=1 (page 2)
+Selecting node: "simpara", mode="", pos=2
 Loading data file "publisher-refTable.dataxml"
 Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
 Selecting node: "referenceTable", mode=""
-PlaceObject: Textblock in row 6 and column 1, width=19, height=1 (page 1)
-Selecting node: "paragraph", mode="", pos=2
+PlaceObject: Textblock in row 17 and column 1, width=18, height=1 (page 2)
+Selecting node: "chapter", mode="", pos=5
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 18 and column 1, width=18, height=1 (page 2)
+Selecting node: "section", mode="", pos=2
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 19 and column 1, width=18, height=1 (page 2)
+Selecting node: "section", mode="", pos=3
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 20 and column 1, width=18, height=1 (page 2)
+Selecting node: "simpara", mode="", pos=2
 Loading data file "publisher-refTable.dataxml"
 Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
 Selecting node: "referenceTable", mode=""
-PlaceObject: Textblock in row 7 and column 1, width=19, height=1 (page 1)
-Selecting node: "paragraph", mode="", pos=3
+PlaceObject: Textblock in row 21 and column 1, width=18, height=1 (page 2)
+Selecting node: "simpara", mode="", pos=3
 Loading data file "publisher-refTable.dataxml"
 Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
 Selecting node: "referenceTable", mode=""
-PlaceObject: Textblock in row 8 and column 1, width=19, height=1 (page 1)
+PlaceObject: Textblock in row 22 and column 1, width=18, height=1 (page 2)
+Selecting node: "chapter", mode="", pos=6
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 23 and column 1, width=18, height=1 (page 2)
+Selecting node: "simpara", mode="", pos=2
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 24 and column 1, width=18, height=1 (page 2)
+Selecting node: "table", mode="", pos=3
+PlaceObject: Textblock in row 25 and column 1, width=18, height=1 (page 2)
+Page of type "right page" created (3)
+Number of rows: 26, number of columns = 18
+PlaceObject: Table in row 26 and column 1, width=18, height=1 (page 2)
+PlaceObject: Textblock in row 28 and column 1, width=18, height=1 (page 2)
+Warning: Object protrudes below the last line of the page
+Warning: Conflict in grid
+PlaceObject: Table in row 1 and column 1, width=18, height=3 (page 3)
+Selecting node: "simpara", mode="", pos=4
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 4 and column 1, width=18, height=1 (page 3)
+Selecting node: "table", mode="", pos=5
+PlaceObject: Textblock in row 5 and column 1, width=18, height=1 (page 3)
+PlaceObject: Table in row 6 and column 1, width=18, height=3 (page 3)
+Selecting node: "simpara", mode="", pos=6
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 9 and column 1, width=18, height=1 (page 3)
+Selecting node: "table", mode="", pos=7
+PlaceObject: Textblock in row 10 and column 1, width=18, height=1 (page 3)
+PlaceObject: Table in row 11 and column 1, width=18, height=2 (page 3)
+Selecting node: "section", mode="", pos=8
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 13 and column 1, width=18, height=1 (page 3)
+Selecting node: "table", mode="", pos=2
+PlaceObject: Textblock in row 14 and column 1, width=18, height=1 (page 3)
+PlaceObject: Table in row 15 and column 1, width=18, height=4 (page 3)
+Selecting node: "chapter", mode="", pos=7
+Selecting node: "title", mode="", pos=1
+PlaceObject: Textblock in row 19 and column 1, width=18, height=1 (page 3)
+Selecting node: "simpara", mode="", pos=2
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 20 and column 1, width=18, height=1 (page 3)
+Selecting node: "simpara", mode="", pos=3
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 21 and column 1, width=18, height=1 (page 3)
+Selecting node: "simpara", mode="", pos=4
+Loading data file "publisher-refTable.dataxml"
+Loading file "/home/mirec/Documents/work/sp-example/publisher-refTable.dataxml"
+Selecting node: "referenceTable", mode=""
+PlaceObject: Textblock in row 22 and column 1, width=18, height=1 (page 3)
+PlaceObject: Textblock in row 28 and column 1, width=18, height=1 (page 3)
+Warning: Object protrudes below the last line of the page
+Warning: Conflict in grid
 Stop processing data
 0 errors occurred
-Duration: 0.143820 seconds
+Duration: 0.211369 seconds
 ---------------------------------------------
-Duration: 0.143823 seconds
+Duration: 0.211371 seconds

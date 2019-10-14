@@ -1,12 +1,54 @@
 <referenceTable>
- <reference refText="1.1." name="{{single-line}}">
+ <reference refText="." name="_basic_formatting">
  </reference>
- <reference refText="1.2." name="{{lorem-ipsum}}">
+ <reference refText="1.0." name="_punctuation_marks">
  </reference>
- <reference refText="2.1." name="">
+ <reference refText="2.0." name="_links">
  </reference>
- <reference refText="2.2." name="">
+ <reference refText="1.2.1." name="nil}">
  </reference>
- <reference refText="2.3." name="{{last-paragraph}}">
+ <reference refText="1." name="sections">
+ </reference>
+ <reference refText="1.0." name="references">
+ </reference>
+ <reference refText="2.1.1." name="nil}">
+ </reference>
+ <reference refText="2.1.2." name="nil}">
+ </reference>
+ <reference refText="2." name="_lists">
+ </reference>
+ <reference refText="1.0." name="_complex_lists">
+ </reference>
+ <reference refText="3.1.1." name="nil}">
+ </reference>
+ <reference refText="1." name="_breaking_the_natural_flow">
+ </reference>
+ <reference refText="1.0." name="_admonitions">
+ </reference>
+ <reference refText="2.0." name="_quotes">
+ </reference>
+ <reference refText="3.0." name="_sidebars">
+ </reference>
+ <reference refText="4.0." name="_examples">
+ </reference>
+ <reference refText="5.0." name="_typewritter">
+ </reference>
+ <reference refText="4.5.1." name="nil}">
+ </reference>
+ <reference refText="1." name="_media">
+ </reference>
+ <reference refText="1.0." name="_images">
+ </reference>
+ <reference refText="2.0." name="_custom_embedded_content">
+ </reference>
+ <reference refText="5.2.1." name="nil}">
+ </reference>
+ <reference refText="5.2.2." name="nil}">
+ </reference>
+ <reference refText="2." name="_tables">
+ </reference>
+ <reference refText="1.0." name="_complex_tables">
+ </reference>
+ <reference refText="0." name="_variables">
  </reference>
 </referenceTable>

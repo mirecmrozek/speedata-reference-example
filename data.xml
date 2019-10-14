@@ -1,11 +1,534 @@
-<root>
-  <section name="Introduction">
-    <paragraph refId="{{single-line}}" text="Single line"/>
-    <paragraph refId="{{lorem-ipsum}}" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
-  </section>
-  <section name="Section">
-    <paragraph text="Reference to single line paragraph: {{single-line}}"/>
-    <paragraph text="At {{lorem-ipsum}} is lorem ipsum text."/>
-    <paragraph refId="{{last-paragraph}}" text="Reference to this paragraph: {{last-paragraph}}"/>
-  </section>
-</root>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+  <info>
+    <title>Asciidoctor Cheatsheet</title>
+    <date>2019-10-14</date>
+    <author>
+      <personname>
+        <firstname>VacuumLabs</firstname>
+        <surname>Folks</surname>
+      </personname>
+      <email>hello@vacuumlabs.com</email>
+    </author>
+    <authorinitials>VF</authorinitials>
+  </info>
+  <preface>
+    <title></title>
+    <simpara>This cheatsheet was created to help you write or edit your own <literal>.adoc</literal> files.
+      Before you start, download some
+      <link xl:href="https://we.vacuumlabs.com/vacuum-book/#atom">reasonable text editor</link> and clone
+      <link xl:href="https://github.com/vacuumlabs/asciidoctor-cheatsheet">this repository</link>,
+      so you can see how things render.</simpara>
+  </preface>
+  <chapter xml:id="_basic_formatting">
+    <title>Basic Formatting</title>
+    <simpara>Writing a basic text with Asciidoctor is similar to what you&#8217;d do in Slack. You
+      can emphasize <emphasis>important messages with italic</emphasis>, <emphasis role="strong">even more important ones
+        with bold</emphasis>, <emphasis role="strong"><emphasis>combining them is not recommended</emphasis></emphasis> though. <literal>Monospace is the
+        right choice if you want to sound like a machine.</literal></simpara>
+    <simpara>Linebreaks
+      (enters)
+      are
+      ignored in output. So are      too    many   spaces. If you want to start a new
+      paragraph, leave an empty line.</simpara>
+    <section xml:id="_punctuation_marks">
+      <title>Punctuation marks</title>
+      <informaltable tabstyle="horizontal" frame="none" colsep="0" rowsep="0">
+        <tgroup cols="2">
+          <colspec colwidth="15*"/>
+          <colspec colwidth="85*"/>
+          <tbody valign="top">
+            <row>
+              <entry>
+                <simpara>single quotes</simpara>
+              </entry>
+              <entry>
+                <simpara><quote>irrevocably</quote></simpara>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <simpara>double quotes</simpara>
+              </entry>
+              <entry>
+                <simpara><quote>Very nice quote here</quote></simpara>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <simpara>apostrophes</simpara>
+              </entry>
+              <entry>
+                <simpara>Don&#8217;t worry, they&#8217;ll work mostly.</simpara>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <simpara>irregular appostrophes</simpara>
+              </entry>
+              <entry>
+                <simpara>&#8217;60s, Vacuumlabs&#8217; property</simpara>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <simpara>m-dash</simpara>
+              </entry>
+              <entry>
+                <simpara>Used in sentences&#8212;&#8203;such as this one.</simpara>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <simpara>n-dash</simpara>
+              </entry>
+              <entry>
+                <simpara>Not supported, you need to enter it yourself 30–50.</simpara>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </section>
+    <section xml:id="_links">
+      <title>Links</title>
+      <simpara>Links are easy: <link xl:href="https://vacuumlabs.com">https://vacuumlabs.com</link>, emails too: <link xl:href="mailto:hello@vacuumlabs.com">hello@vacuumlabs.com</link>. Let&#8217;s
+        put some custom text around them: <link xl:href="https://vacuumlabs.com">We are the center of excelence</link>,
+        <link xl:href="mailto:hello@vacuumlabs.com">email us now!</link></simpara>
+    </section>
+  </chapter>
+  <chapter xml:id="sections">
+    <title>Sections</title>
+    <simpara>Documents structured into sections are easier to read. Asciidoctor supports
+      sections, subsections, subsubsections, and so on. The number of <literal>=</literal> indicates
+      the depth.</simpara>
+    <section xml:id="references">
+      <title>References</title>
+      <simpara>Sometimes its useful to be able to reference other section, such as
+        __references__, references or __sections__, or <link linkend="references">let&#8217;s make the references great again!</link> Even
+        paragprahs <link linkend="paragraph">can be referenced</link>.</simpara>
+      <simpara xml:id="paragraph">All you need to do so is put the name of the reference at its
+        start.</simpara>
+    </section>
+  </chapter>
+  <chapter xml:id="_lists">
+    <title>Lists</title>
+    <simpara>Asciidoctor supports several types of lists. Let&#8217;s see some examples:</simpara>
+    <orderedlist numeration="arabic">
+      <title>Steps to enter the office</title>
+      <listitem>
+        <simpara>Find your entry card.</simpara>
+        <orderedlist numeration="loweralpha">
+          <listitem>
+            <simpara>Open your wallet.</simpara>
+          </listitem>
+          <listitem>
+            <simpara>Look inside.</simpara>
+          </listitem>
+          <listitem>
+            <simpara>Take the card out.</simpara>
+          </listitem>
+          <listitem>
+            <simpara>Close the wallet.</simpara>
+          </listitem>
+        </orderedlist>
+      </listitem>
+      <listitem>
+        <simpara>Use it to enter the office.</simpara>
+      </listitem>
+    </orderedlist>
+    <itemizedlist>
+      <title>Shopping list</title>
+      <listitem>
+        <simpara>nutella</simpara>
+      </listitem>
+      <listitem>
+        <simpara>banana</simpara>
+      </listitem>
+      <listitem>
+        <simpara>apple</simpara>
+        <itemizedlist>
+          <listitem>
+            <simpara>Red Delicious</simpara>
+          </listitem>
+          <listitem>
+            <simpara>Granny Smith</simpara>
+          </listitem>
+          <listitem>
+            <simpara>Honeycrisp</simpara>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <simpara>Lindt Excellence: A touch of vanilla</simpara>
+      </listitem>
+    </itemizedlist>
+    <table tabstyle="horizontal" frame="none" colsep="0" rowsep="0">
+      <title>Operating systems</title>
+      <tgroup cols="2">
+        <colspec colwidth="15*"/>
+        <colspec colwidth="85*"/>
+        <tbody valign="top">
+          <row>
+            <entry>
+              <simpara>Windows</simpara>
+            </entry>
+            <entry>
+              <simpara>Cheap but broken.</simpara>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <simpara>Mac</simpara>
+            </entry>
+            <entry>
+              <simpara>Expensive, but works.</simpara>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <simpara>Linux</simpara>
+            </entry>
+            <entry>
+              <simpara>It doesn&#8217;t work, but exactly the way you like it.</simpara>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section xml:id="_complex_lists">
+      <title>Complex Lists</title>
+      <simpara>Sometimes, you may want complex structures as content of your list.</simpara>
+      <itemizedlist>
+        <title>Most important things in life</title>
+        <listitem>
+          <simpara>The food.</simpara>
+        </listitem>
+        <listitem>
+          <simpara>The water.</simpara>
+        </listitem>
+        <listitem>
+          <simpara>The feeling of appreciation.</simpara>
+          <simpara>That feeling you can get only when you&#8217;re really appreciated.</simpara>
+          <simpara>That feeling you can get only when you&#8217;re really valued.</simpara>
+        </listitem>
+        <listitem>
+          <simpara>The air.</simpara>
+        </listitem>
+      </itemizedlist>
+      <variablelist>
+        <title>Extremely complex list</title>
+        <varlistentry>
+          <term>Sometimes, plus is not enough</term>
+          <listitem>
+            <simpara>Especially when you want to introduce list items that can contain another list
+              items. It&#8217;s safer to just wrap them arround:</simpara>
+            <simpara>Now, anything written here, will be kept together:</simpara>
+            <variablelist>
+              <title>Some other list</title>
+              <varlistentry>
+                <term>The game</term>
+                <listitem>
+                  <simpara>Like this one.</simpara>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>The outcome</term>
+                <listitem>
+                  <simpara>Like that one.</simpara>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+            <simpara>Even</simpara>
+            <itemizedlist>
+              <title>Some random shopping list</title>
+              <listitem>
+                <simpara>apple</simpara>
+              </listitem>
+              <listitem>
+                <simpara>banana</simpara>
+              </listitem>
+              <listitem>
+                <simpara>apple-banana pie</simpara>
+              </listitem>
+            </itemizedlist>
+            <simpara>You see? It just works.</simpara>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>And then you continue</term>
+          <listitem>
+            <simpara>As you&#8217;d anyway.</simpara>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
+  </chapter>
+  <chapter xml:id="_breaking_the_natural_flow">
+    <title>Breaking the natural flow</title>
+    <section xml:id="_admonitions">
+      <title>Admonitions</title>
+      <note>
+        <simpara>Admonitions are these nice blocks of content prepended by icon telling you
+          to beware.</simpara>
+      </note>
+      <important>
+        <simpara>Using admonitions may help people realize there&#8217;s something of
+          importance going on.</simpara>
+      </important>
+      <tip>
+        <simpara>You can even include complex multiparagraph content in your admonitions.</simpara>
+        <simpara>Things such as:</simpara>
+        <itemizedlist>
+          <listitem>
+            <simpara>lists</simpara>
+          </listitem>
+          <listitem>
+            <simpara>images</simpara>
+          </listitem>
+          <listitem>
+            <simpara>tables</simpara>
+          </listitem>
+          <listitem>
+            <simpara>or even other admonitions</simpara>
+          </listitem>
+        </itemizedlist>
+        <caution>
+          <simpara>It might be confusing for your readers if you overdo it.</simpara>
+        </caution>
+      </tip>
+      <warning>
+        <simpara>Don&#8217;t overuse them.</simpara>
+      </warning>
+    </section>
+    <section xml:id="_quotes">
+      <title>Quotes</title>
+      <blockquote>
+        <attribution>
+          John F. Kennedy
+          <citetitle>a long time ago</citetitle>
+        </attribution>
+        <simpara>Those who dare to fail miserably can achieve greatly.</simpara>
+      </blockquote>
+    </section>
+    <section xml:id="_sidebars">
+      <title>Sidebars</title>
+      <sidebar>
+        <title>The story of great sidebar</title>
+        <simpara>Once upon a time, there was a man wondering how to tell a story.  This man was
+          writing a tech manual and story didn&#8217;t feel like a thing you&#8217;d
+          naturally include.</simpara>
+        <simpara>So he created sidebar, and he put the story in.</simpara>
+      </sidebar>
+    </section>
+    <section xml:id="_examples">
+      <title>Examples</title>
+      <example>
+        <title>The example of the example</title>
+        <simpara>I am the example.</simpara>
+      </example>
+    </section>
+    <section xml:id="_typewritter">
+      <title>Typewritter</title>
+      <simpara>When every character counts, use the monospace block:</simpara>
+      <formalpara>
+        <title>Email Transcript</title>
+        <para>
+          <screen>To: invoices@vacuumlabs.com
+            Subject: URGENT
+            Attachments: print_invoice.pdf
+            ###########################################################################
+            This invoice needs to be paid immediately! 2,500 € belongs to ReactiveConf,
+            1,000 € to Marketing.</screen>
+        </para>
+      </formalpara>
+    </section>
+  </chapter>
+  <chapter xml:id="_media">
+    <title>Media</title>
+    <section xml:id="_images">
+      <title>Images</title>
+      <figure>
+        <title>Cute puppy</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="assets/cute-puppy.jpg" contentwidth="400" align="center"/>
+          </imageobject>
+          <textobject><phrase>cute puppy</phrase></textobject>
+        </mediaobject>
+      </figure>
+      <figure>
+        <title>Cute kitty</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="assets/cute-kitty.jpg" contentwidth="400" align="left"/>
+          </imageobject>
+          <textobject><phrase>cute kitty</phrase></textobject>
+        </mediaobject>
+      </figure>
+      <figure>
+        <title>Cute giraffe</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="assets/cute-giraffe.jpg" contentwidth="400" align="right"/>
+          </imageobject>
+          <textobject><phrase>cute giraffe</phrase></textobject>
+        </mediaobject>
+      </figure>
+    </section>
+    <section xml:id="_custom_embedded_content">
+      <title>Custom Embedded Content</title>
+      <simpara>You can embed various contents such as Google Maps, YouTube videos, and tons of
+        others. All you need is <literal>iframe</literal> code, which is usually provided by those sites.</simpara>
+      <formalpara>
+        <title>Radlinského Office</title>
+        <para><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.911750609278!2d17.113067951389265!3d48.150506558137096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89436623fb9d%3A0xe3ced6f838a58aab!2sVacuumlabs!5e0!3m2!1sen!2ssk!4v1552581493528" width="600" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></para>
+      </formalpara>
+      <simpara>Asciidoctor has a built-in support for YouTube videos, embedding them is even
+        easier:</simpara>
+
+    </section>
+  </chapter>
+  <chapter xml:id="_tables">
+    <title>Tables</title>
+    <simpara>Asciidoctor can easily make simple tables, with variable column size:</simpara>
+    <table frame="all" rowsep="1" colsep="1">
+      <title>Cost centers</title>
+      <tgroup cols="4">
+        <colspec colname="col_1" colwidth="12.5*"/>
+        <colspec colname="col_2" colwidth="25*"/>
+        <colspec colname="col_3" colwidth="50*"/>
+        <colspec colname="col_4" colwidth="12.5*"/>
+        <thead>
+          <row>
+            <entry align="left" valign="top">Code</entry>
+            <entry align="left" valign="top">Name</entry>
+            <entry align="left" valign="top">What belongs here</entry>
+            <entry align="left" valign="top">Owner</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry align="left" valign="top"><simpara>FIN</simpara></entry>
+            <entry align="left" valign="top"><simpara>Finance</simpara></entry>
+            <entry align="left" valign="top"><simpara>accountants and banking fees</simpara></entry>
+            <entry align="left" valign="top"><simpara>Maťa</simpara></entry>
+          </row>
+          <row>
+            <entry align="left" valign="top"><simpara>BEN</simpara></entry>
+            <entry align="left" valign="top"><simpara>Benefits</simpara></entry>
+            <entry align="left" valign="top"><simpara>team buildings</simpara></entry>
+            <entry align="left" valign="top"><simpara>Lívia</simpara></entry>
+          </row>
+          <row>
+            <entry align="left" valign="top"><simpara>HUN</simpara></entry>
+            <entry align="left" valign="top"><simpara>Hungary</simpara></entry>
+            <entry align="left" valign="top"><simpara>everything in Budapest and beyond</simpara></entry>
+            <entry align="left" valign="top"><simpara>Csongor</simpara></entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <simpara>It&#8217;s also easy to control horizontal align and total width of the table:</simpara>
+    <table frame="all" rowsep="1" colsep="1">
+      <title>Inventory</title>
+      <tgroup cols="3">
+        <colspec colname="col_1" colwidth="61*"/>
+        <colspec colname="col_2" colwidth="122*"/>
+        <colspec colname="col_3" colwidth="30*"/>
+        <thead>
+          <row>
+            <entry align="left" valign="top">Name</entry>
+            <entry align="center" valign="top">Description</entry>
+            <entry align="right" valign="top">Value</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry align="left" valign="top"><simpara>baloon</simpara></entry>
+            <entry align="center" valign="top"><simpara>little red ballon</simpara></entry>
+            <entry align="right" valign="top"><simpara>$1,400.32</simpara></entry>
+          </row>
+          <row>
+            <entry align="left" valign="top"><simpara>wine bottle</simpara></entry>
+            <entry align="center" valign="top"><simpara>empty green bottle</simpara></entry>
+            <entry align="right" valign="top"><simpara>$40.50</simpara></entry>
+          </row>
+          <row>
+            <entry align="left" valign="top"><simpara>toast</simpara></entry>
+            <entry align="center" valign="top"><simpara>very old piece of toast</simpara></entry>
+            <entry align="right" valign="top"><simpara>$1.40</simpara></entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <simpara>Or even controll styling on a per-column basis:</simpara>
+    <table frame="all" rowsep="1" colsep="1">
+      <title>Poetry</title>
+      <tgroup cols="3">
+        <colspec colname="col_1" colwidth="20*"/>
+        <colspec colname="col_2" colwidth="40*"/>
+        <colspec colname="col_3" colwidth="40*"/>
+        <thead>
+          <row>
+            <entry align="left" valign="top">Name</entry>
+            <entry align="left" valign="top">Review</entry>
+            <entry align="left" valign="top">Sample</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry align="left" valign="top"><simpara><emphasis role="strong">Flowers</emphasis></simpara></entry>
+            <entry align="left" valign="top"><simpara><emphasis>Remarkable piece of art never seen before</emphasis></simpara></entry>
+            <entry align="left" valign="top"><literallayout>O flowers, dear flowers,
+                you are like lovers,
+                o my dear flowers.</literallayout></entry>
+          </row>
+          <row>
+            <entry align="left" valign="top"><simpara><emphasis role="strong">Grass</emphasis></simpara></entry>
+            <entry align="left" valign="top"><simpara><emphasis>Best piece of poetry since flowers</emphasis></simpara></entry>
+            <entry align="left" valign="top"><literallayout>O grass, dear grass,
+                you are like grass,
+                o my dear grass.</literallayout></entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section xml:id="_complex_tables">
+      <title>Complex Tables</title>
+      <table frame="all" rowsep="1" colsep="1">
+        <title>Cell spanning columns and rows</title>
+        <tgroup cols="4">
+          <colspec colname="col_1" colwidth="25*"/>
+          <colspec colname="col_2" colwidth="25*"/>
+          <colspec colname="col_3" colwidth="25*"/>
+          <colspec colname="col_4" colwidth="25*"/>
+          <tbody>
+            <row>
+              <entry align="left" valign="top" namest="col_1" nameend="col_3"><simpara>Content in a single cell that spans columns 1, 2, and 3</simpara></entry>
+              <entry align="left" valign="top"><simpara>Column 4, row 1</simpara></entry>
+            </row>
+            <row>
+              <entry align="left" valign="top"><simpara>Column 1, row 2</simpara></entry>
+              <entry align="left" valign="top" namest="col_2" nameend="col_3" morerows="2"><simpara>Content in a single cell that spans over rows and columns</simpara></entry>
+              <entry align="left" valign="top"><simpara>Column 4, row 2</simpara></entry>
+            </row>
+            <row>
+              <entry align="left" valign="top" morerows="1"><simpara>Content in a single cell that spans rows 2 and 3</simpara></entry>
+              <entry align="left" valign="top"><simpara>Column 4, row 3</simpara></entry>
+            </row>
+            <row>
+              <entry align="left" valign="top"><simpara>Column 1, row 4</simpara></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </chapter>
+  <chapter xml:id="_variables">
+    <title>Variables</title>
+    <simpara>Asciidoctor makes it easy to define variables for later reuse.</simpara>
+    <simpara>If you want to win 1,000 €, email us on <link xl:href="mailto:hello@vacuumlabs.com">hello@vacuumlabs.com</link> or send us a snail mail
+      to vacuumlabs s.r.o., Radlinského 10, 811 07 Bratislava. <link xl:href="https://vacuumlabs.slack.com/team/tomaskulich">Tomáš</link> will pick the winners.</simpara>
+    <simpara>Bad link <link linkend="idNotFoundInThisDocument">can be referenced</link></simpara>
+  </chapter>
+</book>
