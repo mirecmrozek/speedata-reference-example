@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc maxdepth="3"?>
+<?asciidoc-numbered?>
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Asciidoctor Cheatsheet</title>
@@ -104,7 +107,7 @@ the depth.</simpara>
 <section xml:id="references">
 <title>References</title>
 <simpara>Sometimes its useful to be able to reference other sections, such as
-__references__, or __sections__, or <link linkend="references">let&#8217;s make the references great again!</link> Even
+<xref linkend="references"/>, or <xref linkend="sections"/>, or <link linkend="references">let&#8217;s make the references great again!</link> Even
 paragprahs <link linkend="paragraph">can be referenced</link>.</simpara>
 <simpara xml:id="paragraph">All you need to do so is put the name of the reference at its
 start.</simpara>
@@ -431,6 +434,9 @@ easier:</simpara>
 <simpara>It&#8217;s also easy to control horizontal align and total width of the table:</simpara>
 <table frame="all" rowsep="1" colsep="1">
 <title>Inventory</title>
+<?dbhtml table-width="50%"?>
+<?dbfo table-width="50%"?>
+<?dblatex table-width="50%"?>
 <tgroup cols="3">
 <colspec colname="col_1" colwidth="61*"/>
 <colspec colname="col_2" colwidth="122*"/>
@@ -529,6 +535,6 @@ o my dear grass.</literallayout></entry>
 <simpara>Asciidoctor makes it easy to define variables for later reuse.</simpara>
 <simpara>If you want to win 1,000 €, email us on <link xl:href="mailto:hello@vacuumlabs.com">hello@vacuumlabs.com</link> or send us a snail mail
 to vacuumlabs s.r.o., Radlinského 10, 811 07 Bratislava. <link xl:href="https://vacuumlabs.slack.com/team/tomaskulich">Tomáš</link> will pick the winners.</simpara>
-<simpara>Bad link __idNotFoundInThisDocument__</simpara>
+<simpara>Bad link <xref linkend="idNotFoundInThisDocument"/></simpara>
 </chapter>
 </book>

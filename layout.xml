@@ -1,62 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Layout
 	xmlns="urn:speedata.de:2009/publisher/en"
 	xmlns:sd="urn:speedata:2009/publisher/functions/en"
 	version="2.9.7">
 
-
-	<LoadFontfile name="CrimsonText-Bold" filename="CrimsonText-Bold.ttf" />
-	<LoadFontfile name="CrimsonText-Regular" filename="CrimsonText-Regular.ttf" marginprotrusion="100" />
-	<DefineFontalias existing="CrimsonText-Regular" alias="regular"/>
-	<DefineFontalias existing="CrimsonText-Bold" alias="bold"/>
-
-	<DefineFontfamily name="Title" fontsize="12" leading="16">
-		<Regular fontface="regular"/>
-		<Bold fontface="bold" />
-	</DefineFontfamily>
-
-	<DefineFontfamily name="DocumentTitle" fontsize="18" leading="20">
-		<Regular fontface="regular"/>
-		<Bold fontface="bold" />
-	</DefineFontfamily>
-
-	<DefineFontfamily name="text" fontsize="12" leading="13">
-		<Regular fontface="regular" />
-		<Bold fontface="bold" />
-	</DefineFontfamily>
-
-	<Pagetype name="right page" test="sd:odd( sd:current-page() )">
-		<Margin left="2cm" right="1cm" top="1cm" bottom="3cm" />
-		<AtPageShipout>
-			<PlaceObject column="1" row="{ sd:number-of-rows() + 2}">
-				<Textblock>
-					<Paragraph textformat="right"><Value select="concat('Page ',sd:current-page())"/></Paragraph>
-				</Textblock>
-			</PlaceObject>
-		</AtPageShipout>
-	</Pagetype>
-
-	<Pagetype name="left page" test="sd:even( sd:current-page() )">
-		<Margin left="1cm" right="2cm" top="1cm" bottom="3cm" />
-		<AtPageShipout>
-			<PlaceObject column="1" row="{ sd:number-of-rows() + 2}">
-				<Textblock>
-					<Paragraph textformat="left"><Value select="concat('Page ',sd:current-page())"/></Paragraph>
-				</Textblock>
-			</PlaceObject>
-		</AtPageShipout>
-	</Pagetype>
-
+	<!-- fonts in fonts.xml -->
+	<!-- pagination in pagination.xml -->
 
 	<!-- root element -->
 	<Record element="book">
-		<!-- some testing strings -->
-		<PlaceObject>
-			<Textblock fontface="DocumentTitle">
-				<Paragraph>
-					<Value select="string(first)" />
-				</Paragraph>
-			</Textblock>
-		</PlaceObject>
 
 		<SetVariable variable="chapterNumber" select="0" />
 		<SetVariable variable="useNumbering" select="true()" />
@@ -88,7 +40,7 @@
 					<SetVariable variable="referenceTable">
 						<Copy-of select="$referenceTable" />
 						<Element name="reference">
-							<Attribute name="name" select="concat('{{',@xml:id, '}}')" />
+							<Attribute name="name" select="@xml:id" />
 							<Attribute name="refText" select="concat($chapterNumber,'.',$sectionNumber,'.',$paragraphNumber,'.')" />
 						</Element>
 					</SetVariable>
@@ -189,16 +141,6 @@
 	</Record>
 
 	<Record element="info">
-		<!-- some testing strings -->
-		<PlaceObject>
-			<Textblock fontface="DocumentTitle">
-				<Paragraph>
-					<SetVariable variable="sectionsss" select="'sections'" />
-					<B><Value select="replace('Text referencing {{sections}}', concat('{{', $sectionsss ,'}}'), '1.2.3.  ')"/></B>
-				</Paragraph>
-			</Textblock>
-		</PlaceObject>
-
 		<PlaceObject>
 			<Textblock fontface="DocumentTitle">
 				<Paragraph>
@@ -222,7 +164,32 @@
 		<ProcessNode select="*" />
 	</Record>
 
-	<Record element="image">
+  
+  <SetVariable variable="figureNumber" select="0" />
+  <Record element="figure">
+    <SetVariable variable="figureNumber" select="$figureNumber+1" />
+		<ProcessNode select="mediaobject" />
+
+		<PlaceObject>
+			<Textblock fontface="text">
+				<Paragraph>
+          <B><Value select="'Figure {$figureNumber}. {title}'"/></B>
+				</Paragraph>
+			</Textblock>
+		</PlaceObject>
+	</Record>
+
+  <Record element="mediaobject">
+		<ProcessNode select="*" />
+	</Record>
+
+	<Record element="imageobject">
+    <PlaceObject halign="{imagedata/@align}" frame="solid" framecolor="blue" allocate-right="10">
+      <Image
+        width="{imagedata/@contentwidth}pt"
+        file="{imagedata/@fileref}"
+      />
+    </PlaceObject>
 	</Record>
 
 	<Record element="informaltable">
@@ -281,6 +248,5 @@
 			</Table>
 		</PlaceObject>
 	</Record>
-
 
 </Layout>

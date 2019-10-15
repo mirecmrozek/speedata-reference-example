@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Include xmlns="urn:speedata.de:2009/publisher/en"
+	xmlns:sd="urn:speedata:2009/publisher/functions/en">
+
+	<Pagetype name="right page" test="sd:odd( sd:current-page() )">
+		<Margin left="2cm" right="1cm" top="1cm" bottom="3cm" />
+		<AtPageShipout>
+			<PlaceObject column="1" row="{ sd:number-of-rows() + 2}">
+				<Textblock>
+					<Paragraph textformat="right"><Value select="concat('Page ',sd:current-page())"/></Paragraph>
+				</Textblock>
+			</PlaceObject>
+		</AtPageShipout>
+	</Pagetype>
+
+	<Pagetype name="left page" test="sd:even( sd:current-page() )">
+		<Margin left="1cm" right="2cm" top="1cm" bottom="3cm" />
+		<AtPageShipout>
+			<PlaceObject column="1" row="{ sd:number-of-rows() + 2}">
+				<Textblock>
+					<Paragraph textformat="left"><Value select="concat('Page ',sd:current-page())"/></Paragraph>
+				</Textblock>
+			</PlaceObject>
+		</AtPageShipout>
+	</Pagetype>
+</Include>
