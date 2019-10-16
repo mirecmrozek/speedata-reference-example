@@ -321,5 +321,3 @@ Asciidoctor makes it easy to define variables for later reuse.
 
 If you want to win 1,000 {euro}, email us on {hq-email} or send us a snail mail
 to {hq-address}. {CTO} will pick the winners.
-
-Bad link <<idNotFoundInThisDocument>>

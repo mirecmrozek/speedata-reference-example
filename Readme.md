@@ -1,3 +1,3 @@
 To get the PDF:
 
-Run `sp` on the command line inside this directory.
+Run `./processDocbook.bash` on the command line inside this directory.

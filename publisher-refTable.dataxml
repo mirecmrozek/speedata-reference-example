@@ -1,54 +1,54 @@
 <referenceTable>
- <reference refText="." name="_basic_formatting">
+ <reference refText="1." name="_basic_formatting">
  </reference>
- <reference refText="1.0." name="_punctuation_marks">
+ <reference refText="1.1." name="_punctuation_marks">
  </reference>
- <reference refText="2.0." name="_links">
+ <reference refText="1.2." name="_links">
  </reference>
  <reference refText="1.2.1." name="">
  </reference>
- <reference refText="1." name="sections">
+ <reference refText="2." name="sections">
  </reference>
- <reference refText="1.0." name="references">
+ <reference refText="2.1." name="references">
  </reference>
  <reference refText="2.1.1." name="">
  </reference>
  <reference refText="2.1.2." name="paragraph">
  </reference>
- <reference refText="2." name="_lists">
+ <reference refText="3." name="_lists">
  </reference>
- <reference refText="1.0." name="_complex_lists">
+ <reference refText="3.1." name="_complex_lists">
  </reference>
  <reference refText="3.1.1." name="">
  </reference>
- <reference refText="1." name="_breaking_the_natural_flow">
+ <reference refText="4." name="_breaking_the_natural_flow">
  </reference>
- <reference refText="1.0." name="_admonitions">
+ <reference refText="4.1." name="_admonitions">
  </reference>
- <reference refText="2.0." name="_quotes">
+ <reference refText="4.2." name="_quotes">
  </reference>
- <reference refText="3.0." name="_sidebars">
+ <reference refText="4.3." name="_sidebars">
  </reference>
- <reference refText="4.0." name="_examples">
+ <reference refText="4.4." name="_examples">
  </reference>
- <reference refText="5.0." name="_typewritter">
+ <reference refText="4.5." name="_typewritter">
  </reference>
  <reference refText="4.5.1." name="">
  </reference>
- <reference refText="1." name="_media">
+ <reference refText="5." name="_media">
  </reference>
- <reference refText="1.0." name="_images">
+ <reference refText="5.1." name="_images">
  </reference>
- <reference refText="2.0." name="_custom_embedded_content">
+ <reference refText="5.2." name="_custom_embedded_content">
  </reference>
  <reference refText="5.2.1." name="">
  </reference>
  <reference refText="5.2.2." name="">
  </reference>
- <reference refText="2." name="_tables">
+ <reference refText="6." name="_tables">
  </reference>
- <reference refText="1.0." name="_complex_tables">
+ <reference refText="6.1." name="_complex_tables">
  </reference>
- <reference refText="0." name="_variables">
+ <reference refText="7." name="_variables">
  </reference>
 </referenceTable>

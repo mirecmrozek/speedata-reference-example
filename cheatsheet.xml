@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Asciidoctor Cheatsheet</title>
-<date>2019-10-15</date>
+<date>2019-10-16</date>
 <author>
 <personname>
 <firstname>VacuumLabs</firstname>
@@ -535,6 +535,5 @@ o my dear grass.</literallayout></entry>
 <simpara>Asciidoctor makes it easy to define variables for later reuse.</simpara>
 <simpara>If you want to win 1,000 €, email us on <link xl:href="mailto:hello@vacuumlabs.com">hello@vacuumlabs.com</link> or send us a snail mail
 to vacuumlabs s.r.o., Radlinského 10, 811 07 Bratislava. <link xl:href="https://vacuumlabs.slack.com/team/tomaskulich">Tomáš</link> will pick the winners.</simpara>
-<simpara>Bad link <xref linkend="idNotFoundInThisDocument"/></simpara>
 </chapter>
 </book>

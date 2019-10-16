@@ -1,252 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout
-	xmlns="urn:speedata.de:2009/publisher/en"
-	xmlns:sd="urn:speedata:2009/publisher/functions/en"
-	version="2.9.7">
+  xmlns="urn:speedata.de:2009/publisher/en"
+  xmlns:sd="urn:speedata:2009/publisher/functions/en"
+  version="2.9.7">
 
-	<!-- fonts in fonts.xml -->
-	<!-- pagination in pagination.xml -->
+  <!-- fonts in fonts.xml -->
+  <!-- pagination in pagination.xml -->
 
-	<!-- root element -->
-	<Record element="book">
+  <!-- root element -->
+  <Record element="book">
 
-		<SetVariable variable="chapterNumber" select="0" />
-		<SetVariable variable="useNumbering" select="true()" />
+    <SetVariable variable="chapterNumber" select="0" />
+    <SetVariable variable="useNumbering" select="true()" />
 
-		<!-- gather all reference names -->
-		<SetVariable variable="referenceTable"/>
-		<ForAll select="chapter">
-			<SetVariable variable="chapterNumber" select="$chapterNumber+1" />
-			<SetVariable variable="sectionNumber" select="0" />
-			<SetVariable variable="referenceTable">
-				<Copy-of select="$referenceTable" />
-				<Element name="reference">
-					<Attribute name="name" select="@xml:id" />
-					<Attribute name="refText" select="concat($paragraphNumber,'.')" />
-				</Element>
-			</SetVariable>
-			<ForAll select="section">
-				<SetVariable variable="sectionNumber" select="$sectionNumber+1" />
-				<SetVariable variable="paragraphNumber" select="0" />
-				<SetVariable variable="referenceTable">
-					<Copy-of select="$referenceTable" />
-					<Element name="reference">
-						<Attribute name="name" select="@xml:id" />
-						<Attribute name="refText" select="concat($sectionNumber,'.',$paragraphNumber,'.')" />
-					</Element>
-				</SetVariable>
-				<ForAll select="simpara">
-					<SetVariable variable="paragraphNumber" select="$paragraphNumber+1" />
-					<SetVariable variable="referenceTable">
-						<Copy-of select="$referenceTable" />
-						<Element name="reference">
-							<Attribute name="name" select="@xml:id" />
-							<Attribute name="refText" select="concat($chapterNumber,'.',$sectionNumber,'.',$paragraphNumber,'.')" />
-						</Element>
-					</SetVariable>
-				</ForAll>
-			</ForAll>
-		</ForAll>
+    <!-- gather all reference names for chapters, sections and paragraphs -->
+    <SetVariable variable="referenceTable"/>
+    <ForAll select="chapter">
+      <SetVariable variable="chapterNumber" select="$chapterNumber+1" />
+      <SetVariable variable="sectionNumber" select="0" />
+      <SetVariable variable="referenceTable">
+        <Copy-of select="$referenceTable" />
+        <Element name="reference">
+          <Attribute name="name" select="@xml:id" />
+          <Attribute name="refText" select="concat($chapterNumber, '.')" />
+        </Element>
+      </SetVariable>
+      <ForAll select="section">
+        <SetVariable variable="sectionNumber" select="$sectionNumber+1" />
+        <SetVariable variable="paragraphNumber" select="0" />
+        <SetVariable variable="referenceTable">
+          <Copy-of select="$referenceTable" />
+          <Element name="reference">
+            <Attribute name="name" select="@xml:id" />
+            <Attribute name="refText" select="concat($chapterNumber, '.', $sectionNumber, '.')" />
+          </Element>
+        </SetVariable>
+        <ForAll select="simpara">
+          <SetVariable variable="paragraphNumber" select="$paragraphNumber+1" />
+          <SetVariable variable="referenceTable">
+            <Copy-of select="$referenceTable" />
+            <Element name="reference">
+              <Attribute name="name" select="@xml:id" />
+              <Attribute name="refText" select="concat($chapterNumber, '.', $sectionNumber, '.', $paragraphNumber, '.')" />
+            </Element>
+          </SetVariable>
+        </ForAll>
+      </ForAll>
+    </ForAll>
 
-		<!-- save all paragraph references in publisher-refTable.dataxml -->
-		<SaveDataset filename="refTable" elementname="referenceTable" select="$referenceTable" />
+    <!-- save all paragraph references in publisher-refTable.dataxml -->
+    <SaveDataset filename="refTable" elementname="referenceTable" select="$referenceTable" />
 
 
-		<SetVariable variable="useNumbering" select="not true()" />
-		<ProcessNode select="info" />
-		<ProcessNode select="preface" />
+    <SetVariable variable="useNumbering" select="not true()" />
+    <ProcessNode select="info" />
+    <ProcessNode select="preface" />
 
-		<SetVariable variable="useNumbering" select="true()" />
-		<SetVariable variable="chapterNumber" select="0" />
-		<ProcessNode select="chapter" />
-	</Record>
+    <SetVariable variable="useNumbering" select="true()" />
+    <SetVariable variable="chapterNumber" select="0" />
+    <ProcessNode select="chapter" />
+  </Record>
 
-	<Record element="chapter">
-		<SetVariable variable="chapterNumber" select="$chapterNumber+1" />
-		<SetVariable variable="sectionNumber" select="0" />
-		<SetVariable variable="paragraphNumber" select="0" />
+  <Record element="chapter">
+    <SetVariable variable="chapterNumber" select="$chapterNumber+1" />
+    <SetVariable variable="sectionNumber" select="0" />
+    <SetVariable variable="paragraphNumber" select="0" />
 
-		<ProcessNode select="*" />
-	</Record>
+    <ProcessNode select="*" />
+  </Record>
 
-	<Record element="section">
-		<SetVariable variable="sectionNumber" select="$sectionNumber+1" />
-		<SetVariable variable="paragraphNumber" select="0" />
+  <Record element="section">
+    <SetVariable variable="sectionNumber" select="$sectionNumber+1" />
+    <SetVariable variable="paragraphNumber" select="0" />
 
-		<ProcessNode select="*" />
-	</Record>
+    <ProcessNode select="*" />
+  </Record>
 
-	<Record element="simpara">
-		<SetVariable variable="paragraphNumber" select="$paragraphNumber+1" />
-		<SetVariable variable="parText" select="string(.)" />
+  <Record element="simpara">
+    <SetVariable variable="paragraphNumber" select="$paragraphNumber+1" />
+    <SetVariable variable="parText" select="string(.)" />
 
-		<!-- pastes referenceTable here -->
-		<LoadDataset name="refTable" />
+    <!-- pastes referenceTable here -->
+    <LoadDataset name="refTable" />
 
-		<PlaceObject>
-			<Textblock>
-				<Paragraph>
-					<Switch>
-						<Case test="$useNumbering = true()">
-							<Value select="$chapterNumber" />
-							<Value>.</Value>
-							<Value select="$sectionNumber" />
-							<Value>.</Value>
-							<Value select="$paragraphNumber" />
-							<Value>.  </Value>
-						</Case>
-					</Switch>
-					<Value select="$parText" />
-				</Paragraph>
-			</Textblock>
-		</PlaceObject>
+    <PlaceObject>
+      <Textblock>
+        <Paragraph>
+          <Switch>
+            <Case test="$useNumbering = true()">
+              <Value select="$chapterNumber" />
+              <Value>.</Value>
+              <Value select="$sectionNumber" />
+              <Value>.</Value>
+              <Value select="$paragraphNumber" />
+              <Value>.  </Value>
+            </Case>
+          </Switch>
+          <Value select="$parText" />
+        </Paragraph>
+      </Textblock>
+    </PlaceObject>
 
-	</Record>
+  </Record>
 
-	<!-- overwrites all references in $parText with their number -->
-	<Record element="referenceTable">
-		<ForAll select="reference">
-			<SetVariable variable="searchString" select="'__{@name}__'"/>
+  <!-- overwrites all references in $parText with their number -->
+  <Record element="referenceTable">
+    <ForAll select="reference">
+      <SetVariable variable="searchString" select="'__{@name}__'"/>
 
-			<Switch>
-				<Case test="@name != '' and contains($parText, $searchString)">
-					<SetVariable variable="parText" select="replace($parText, $searchString, @refText)" />
-				</Case>
-			</Switch>
-		</ForAll>
-	</Record>
+      <Switch>
+        <Case test="@name != '' and contains($parText, $searchString)">
+          <SetVariable variable="parText" select="replace($parText, $searchString, @refText)" />
+        </Case>
+      </Switch>
+    </ForAll>
+  </Record>
 
-	<Record element="title">
-		<PlaceObject>
-			<Textblock fontface="Title">
-				<Paragraph>
-					<Switch>
-						<Case test="$useNumbering = true()">
-							<Value select="$chapterNumber" />
-							<Switch>
-								<Case test="$sectionNumber != 0">
-									<Value>.</Value>
-									<Value select="$sectionNumber" />
-								</Case>
-							</Switch>
-							<Value>.  </Value>
-						</Case>
-					</Switch>
-					<B>
-						<Value select="string(.)"/>
-					</B>
-				</Paragraph>
-			</Textblock>
-		</PlaceObject>
-	</Record>
+  <Record element="title">
+    <PlaceObject>
+      <Textblock fontface="Title">
+        <Paragraph>
+          <Switch>
+            <Case test="$useNumbering = true()">
+              <Value select="$chapterNumber" />
+              <Switch>
+                <Case test="$sectionNumber != 0">
+                  <Value>.</Value>
+                  <Value select="$sectionNumber" />
+                </Case>
+              </Switch>
+              <Value>.  </Value>
+            </Case>
+          </Switch>
+          <B>
+            <Value select="string(.)"/>
+          </B>
+        </Paragraph>
+      </Textblock>
+    </PlaceObject>
+  </Record>
 
-	<Record element="info">
-		<PlaceObject>
-			<Textblock fontface="DocumentTitle">
-				<Paragraph>
-					<B><Value select="title"/></B>
-				</Paragraph>
-			</Textblock>
-		</PlaceObject>
-	</Record>
+  <Record element="info">
+    <PlaceObject>
+      <Textblock fontface="DocumentTitle">
+        <Paragraph>
+          <B><Value select="title"/></B>
+        </Paragraph>
+      </Textblock>
+    </PlaceObject>
+  </Record>
 
-	<Record element="emphasis">
-		<PlaceObject>
-			<Textblock fontface="DocumentTitle">
-				<Paragraph>
-					<B><Value select="."/></B>
-				</Paragraph>
-			</Textblock>
-		</PlaceObject>
-	</Record>
+  <Record element="preface">
+    <ProcessNode select="*" />
+  </Record>
 
-	<Record element="preface">
-		<ProcessNode select="*" />
-	</Record>
-
-  
   <SetVariable variable="figureNumber" select="0" />
   <Record element="figure">
     <SetVariable variable="figureNumber" select="$figureNumber+1" />
-		<ProcessNode select="mediaobject" />
+    <ProcessNode select="mediaobject" />
 
-		<PlaceObject>
-			<Textblock fontface="text">
-				<Paragraph>
+    <PlaceObject>
+      <Textblock fontface="text">
+        <Paragraph>
           <B><Value select="'Figure {$figureNumber}. {title}'"/></B>
-				</Paragraph>
-			</Textblock>
-		</PlaceObject>
-	</Record>
+        </Paragraph>
+      </Textblock>
+    </PlaceObject>
+  </Record>
 
   <Record element="mediaobject">
-		<ProcessNode select="*" />
-	</Record>
+    <ProcessNode select="*" />
+  </Record>
 
-	<Record element="imageobject">
-    <PlaceObject halign="{imagedata/@align}" frame="solid" framecolor="blue" allocate-right="10">
+  <Record element="imageobject">
+    <PlaceObject halign="{imagedata/@align}">
       <Image
         width="{imagedata/@contentwidth}pt"
         file="{imagedata/@fileref}"
-      />
+        />
     </PlaceObject>
-	</Record>
+  </Record>
 
-	<Record element="informaltable">
-		<PlaceObject>
-			<Table stretch="max" padding="1pt">
-				<ForAll select="tgroup/tbody/row">
-					<Tablerule/>
-					<Tr>
-						<ForAll select="entry">
-							<Td align="left" border-left="0.2pt" border-right="0.2pt">
-								<Paragraph><Value select="simpara"/></Paragraph>
-							</Td>
-						</ForAll>
-					</Tr>
-				</ForAll>
-				<Tablerule/>
-			</Table>
-		</PlaceObject>
-	</Record>
+  <Record element="informaltable">
+    <PlaceObject>
+      <Table stretch="max" padding="1pt">
+        <ForAll select="tgroup/tbody/row">
+          <Tablerule/>
+          <Tr>
+            <ForAll select="entry">
+              <Td align="left" border-left="0.2pt" border-right="0.2pt">
+                <Paragraph><Value select="simpara"/></Paragraph>
+              </Td>
+            </ForAll>
+          </Tr>
+        </ForAll>
+        <Tablerule/>
+      </Table>
+    </PlaceObject>
+  </Record>
 
-	<Record element="table">
-		<PlaceObject>
-			<Textblock fontface="text">
-				<Paragraph>
-					<B><Value select="title"/></B>
-				</Paragraph>
-			</Textblock>
-		</PlaceObject>
+  <Record element="table">
+    <PlaceObject>
+      <Textblock fontface="text">
+        <Paragraph>
+          <B><Value select="title"/></B>
+        </Paragraph>
+      </Textblock>
+    </PlaceObject>
 
-		<PlaceObject>
-			<Table stretch="max" padding="1pt">
-				<Tablehead>
-					<Tablerule/>
-					<ForAll select="tgroup/thead/row">
-						<Tr>
-							<ForAll select="entry">
-								<Td align="@align" border-left="0.2pt" border-right="0.2pt">
-									<Paragraph><B><Value select="."/></B></Paragraph>
-								</Td>
-							</ForAll>
-						</Tr>
-						<Tablerule/>
-					</ForAll>
-				</Tablehead>
-				<ForAll select="tgroup/tbody/row">
-					<Tablerule/>
-					<Tr>
-						<ForAll select="entry">
-							<Td align="left" border-left="0.2pt" border-right="0.2pt">
-								<Paragraph><Value select="simpara"/></Paragraph>
-							</Td>
-						</ForAll>
-					</Tr>
-				</ForAll>
-				<Tablerule/>
-			</Table>
-		</PlaceObject>
-	</Record>
+    <PlaceObject>
+      <Table stretch="max" padding="1pt">
+        <Tablehead>
+          <Tablerule/>
+          <ForAll select="tgroup/thead/row">
+            <Tr>
+              <ForAll select="entry">
+                <Td align="@align" border-left="0.2pt" border-right="0.2pt">
+                  <Paragraph><B><Value select="."/></B></Paragraph>
+                </Td>
+              </ForAll>
+            </Tr>
+            <Tablerule/>
+          </ForAll>
+        </Tablehead>
+        <ForAll select="tgroup/tbody/row">
+          <Tablerule/>
+          <Tr>
+            <ForAll select="entry">
+              <Td align="left" border-left="0.2pt" border-right="0.2pt">
+                <Paragraph><Value select="simpara"/></Paragraph>
+              </Td>
+            </ForAll>
+          </Tr>
+        </ForAll>
+        <Tablerule/>
+      </Table>
+    </PlaceObject>
+  </Record>
+
+  <Record element="itemizedlist">
+    <PlaceObject>
+      <Textblock fontface="Title">
+        <Paragraph>
+          <B><Value select="title"/></B>
+        </Paragraph>
+      </Textblock>
+    </PlaceObject>
+
+    <PlaceObject>
+      <Textblock fontface="text">
+        <Ul>
+          <ForAll select="listitem">
+            <Li>
+              <Value select="simpara" />
+            </Li>
+          </ForAll>
+        </Ul>
+      </Textblock>
+    </PlaceObject>
+  </Record>
+
+  <Record element="orderedList">
+    <PlaceObject>
+      <Textblock fontface="Title">
+        <Paragraph>
+          <B><Value select="title"/></B>
+        </Paragraph>
+      </Textblock>
+    </PlaceObject>
+
+    <PlaceObject>
+      <Textblock fontface="text">
+        <Ol>
+          <ForAll select="listitem">
+            <Li>
+              <Value select="simpara" />
+            </Li>
+          </ForAll>
+        </Ol>
+      </Textblock>
+    </PlaceObject>
+  </Record>
 
 </Layout>
