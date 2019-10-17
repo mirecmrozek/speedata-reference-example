@@ -9,43 +9,32 @@
   <!-- pagination in pagination.xml -->
 
   <!-- root element -->
-  <Record element="book">
+  <Record element="article">
 
-    <SetVariable variable="chapterNumber" select="0" />
+    <SetVariable variable="sectionNumber" select="0" />
     <SetVariable variable="useNumbering" select="true()" />
 
-    <!-- gather all reference names for chapters, sections and paragraphs -->
+    <!-- gather all reference names for sections and paragraphs -->
     <SetVariable variable="referenceTable"/>
-    <ForAll select="chapter">
-      <SetVariable variable="chapterNumber" select="$chapterNumber+1" />
-      <SetVariable variable="sectionNumber" select="0" />
+    <ForAll select="section">
+      <SetVariable variable="sectionNumber" select="$sectionNumber+1" />
+      <SetVariable variable="paragraphNumber" select="0" />
       <SetVariable variable="referenceTable">
         <Copy-of select="$referenceTable" />
         <Element name="reference">
           <Attribute name="name" select="@xml:id" />
-          <Attribute name="refText" select="concat($chapterNumber, '.')" />
+          <Attribute name="refText" select="concat($sectionNumber, '.')" />
         </Element>
       </SetVariable>
-      <ForAll select="section">
-        <SetVariable variable="sectionNumber" select="$sectionNumber+1" />
-        <SetVariable variable="paragraphNumber" select="0" />
+      <ForAll select="simpara">
+        <SetVariable variable="paragraphNumber" select="$paragraphNumber+1" />
         <SetVariable variable="referenceTable">
           <Copy-of select="$referenceTable" />
           <Element name="reference">
             <Attribute name="name" select="@xml:id" />
-            <Attribute name="refText" select="concat($chapterNumber, '.', $sectionNumber, '.')" />
+            <Attribute name="refText" select="concat($sectionNumber, '.', $paragraphNumber, '.')" />
           </Element>
         </SetVariable>
-        <ForAll select="simpara">
-          <SetVariable variable="paragraphNumber" select="$paragraphNumber+1" />
-          <SetVariable variable="referenceTable">
-            <Copy-of select="$referenceTable" />
-            <Element name="reference">
-              <Attribute name="name" select="@xml:id" />
-              <Attribute name="refText" select="concat($chapterNumber, '.', $sectionNumber, '.', $paragraphNumber, '.')" />
-            </Element>
-          </SetVariable>
-        </ForAll>
       </ForAll>
     </ForAll>
 
@@ -54,23 +43,15 @@
 
 
     <SetVariable variable="useNumbering" select="not true()" />
-    <ProcessNode select="info" />
-    <ProcessNode select="preface" />
 
-    <SetVariable variable="useNumbering" select="true()" />
-    <SetVariable variable="chapterNumber" select="0" />
-    <ProcessNode select="chapter" />
-  </Record>
-
-  <Record element="chapter">
-    <SetVariable variable="chapterNumber" select="$chapterNumber+1" />
     <SetVariable variable="sectionNumber" select="0" />
     <SetVariable variable="paragraphNumber" select="0" />
-
     <ProcessNode select="*" />
   </Record>
 
   <Record element="section">
+    <SetVariable variable="useNumbering" select="true()" />
+
     <SetVariable variable="sectionNumber" select="$sectionNumber+1" />
     <SetVariable variable="paragraphNumber" select="0" />
 
@@ -89,8 +70,6 @@
         <Paragraph>
           <Switch>
             <Case test="$useNumbering = true()">
-              <Value select="$chapterNumber" />
-              <Value>.</Value>
               <Value select="$sectionNumber" />
               <Value>.</Value>
               <Value select="$paragraphNumber" />
@@ -123,14 +102,12 @@
         <Paragraph>
           <Switch>
             <Case test="$useNumbering = true()">
-              <Value select="$chapterNumber" />
               <Switch>
                 <Case test="$sectionNumber != 0">
-                  <Value>.</Value>
                   <Value select="$sectionNumber" />
+                  <Value>.  </Value>
                 </Case>
               </Switch>
-              <Value>.  </Value>
             </Case>
           </Switch>
           <B>
@@ -272,13 +249,13 @@
 
     <PlaceObject>
       <Textblock fontface="text">
-        <Ol>
+        <Ul>
           <ForAll select="listitem">
             <Li>
               <Value select="simpara" />
             </Li>
           </ForAll>
-        </Ol>
+        </Ul>
       </Textblock>
     </PlaceObject>
   </Record>

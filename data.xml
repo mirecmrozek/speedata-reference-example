@@ -1,37 +1,14 @@
-<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
-<title>Asciidoctor Cheatsheet</title>
+<title>Rámcová zmluva o dielo a rámcová licenčná zmluva</title>
 <date>2019-10-16</date>
-<author>
-<personname>
-<firstname>VacuumLabs</firstname>
-<surname>Folks</surname>
-</personname>
-<email>hello@vacuumlabs.com</email>
-</author>
-<authorinitials>VF</authorinitials>
 </info>
-<preface>
-<title></title>
-<simpara>This cheatsheet was created to help you write or edit your own <literal>.adoc</literal> files.
-Before you start, download some
-<link xl:href="https://we.vacuumlabs.com/vacuum-book/#atom">reasonable text editor</link> and clone
-<link xl:href="https://github.com/vacuumlabs/asciidoctor-cheatsheet">this repository</link>,
-so you can see how things render.</simpara>
-</preface>
-<chapter xml:id="_basic_formatting">
-<title>Basic Formatting</title>
-<simpara>Writing a basic text with Asciidoctor is similar to what you&#8217;d do in Slack. You
-can emphasize &lt;i&gt;important messages with italic&lt;/i&gt;, &lt;b&gt;even more important ones
-with bold&lt;/b&gt;, &lt;b&gt;&lt;i&gt;combining them is not recommended&lt;/i&gt;&lt;/b&gt; though. <literal>Monospace is the
-right choice if you want to sound like a machine.</literal></simpara>
-<simpara>Linebreaks
-(enters)
-are
-ignored in output. So are      too    many   spaces. If you want to start a new
-paragraph, leave an empty line.</simpara>
-<section xml:id="_punctuation_marks">
-<title>Punctuation marks</title>
+<simpara>&lt;b&gt;Táto rámcová zmluva o dielo&lt;/b&gt; uzavretá podľa § 631 a nasl. zákona č. 40/1964
+Zb. Občiansky zákonník v znení neskorších predpisov (ďalej len &lt;b&gt;„Občiansky zákonník“&lt;/b&gt;)
+&lt;b&gt;a rámcová licenčná zmluva&lt;/b&gt; uzavretá podľa § 65 a nasl. zákona
+č. 185/2015 Z. z. Autorského zákona v znení neskorších predpisov
+(ďalej len &lt;b&gt;„Autorský zákon“&lt;/b&gt;) (ďalej ako &lt;b&gt;„Zmluva”&lt;/b&gt;) bola uzatvorená dňa {signing-date}</simpara>
+<simpara>medzi</simpara>
 <informaltable tabstyle="horizontal" frame="none" colsep="0" rowsep="0">
 <tgroup cols="2">
 <colspec colwidth="15*"/>
@@ -39,495 +16,691 @@ paragraph, leave an empty line.</simpara>
 <tbody valign="top">
 <row>
 <entry>
-<simpara>single quotes</simpara>
+<simpara>(1)</simpara>
 </entry>
 <entry>
-<simpara><quote>irrevocably</quote></simpara>
-</entry>
-</row>
-<row>
-<entry>
-<simpara>double quotes</simpara>
-</entry>
-<entry>
-<simpara><quote>Very nice quote here</quote></simpara>
+<simpara>&lt;b&gt;vacuumlabs, s.r.o.&lt;/b&gt;, so sídlom na Radlinského 10, 811 07 Bratislava, IČO: 48 207 497,
+IČ DPH: SK2120112962, zastúpená pánom Samuelom Hapákom, konateľom spoločnosti,
+email: <link xl:href="mailto:samuel.hapak@vacuumlabs.com">samuel.hapak@vacuumlabs.com</link> (ďalej ako &lt;b&gt;„Objednávateľ“&lt;/b&gt;); a</simpara>
 </entry>
 </row>
 <row>
 <entry>
-<simpara>apostrophes</simpara>
+<simpara>(2)</simpara>
 </entry>
 <entry>
-<simpara>Don&#8217;t worry, they&#8217;ll work mostly.</simpara>
-</entry>
-</row>
-<row>
-<entry>
-<simpara>irregular appostrophes</simpara>
-</entry>
-<entry>
-<simpara>&#8217;60s, Vacuumlabs&#8217; property</simpara>
-</entry>
-</row>
-<row>
-<entry>
-<simpara>m-dash</simpara>
-</entry>
-<entry>
-<simpara>Used in sentences&#8212;&#8203;such as this one.</simpara>
-</entry>
-</row>
-<row>
-<entry>
-<simpara>n-dash</simpara>
-</entry>
-<entry>
-<simpara>Not supported, you need to enter it yourself 30–50.</simpara>
+<simpara>&lt;b&gt;{author-name}&lt;/b&gt; so sídlom na {author-address}, IČO: {author-ico}, živnostník zapísaný
+v Živnostenskom registri Okresného úradu {author-register-city} č. {author-register-number},
+email: {author-email} (ďalej ako &lt;b&gt;„Autor“&lt;/b&gt;).</simpara>
+<simpara>(Objednávateľ a Autor ďalej spolu ako &lt;b&gt;„Zmluvné strany“&lt;/b&gt; a osobitne ako &lt;b&gt;„Zmluvná strana“&lt;/b&gt;)</simpara>
 </entry>
 </row>
 </tbody>
 </tgroup>
 </informaltable>
-</section>
-<section xml:id="_links">
-<title>Links</title>
-<simpara>Links are easy: <link xl:href="https://vacuumlabs.com">https://vacuumlabs.com</link>, emails too: <link xl:href="mailto:hello@vacuumlabs.com">hello@vacuumlabs.com</link>. Let&#8217;s
-put some custom text around them: <link xl:href="https://vacuumlabs.com">We are the center of excelence</link>,
-<link xl:href="mailto:hello@vacuumlabs.com">email us now!</link></simpara>
-</section>
-</chapter>
-<chapter xml:id="sections">
-<title>Sections</title>
-<simpara>Documents structured into sections are easier to read. Asciidoctor supports
-sections, subsections, subsubsections, and so on. The number of <literal>=</literal> indicates
-the depth.</simpara>
-<section xml:id="references">
-<title>References</title>
-<simpara>Sometimes its useful to be able to reference other sections, such as
-__references__, or __sections__, or <link linkend="references">let&#8217;s make the references great again!</link> Even
-paragprahs <link linkend="paragraph">can be referenced</link>.</simpara>
-<simpara xml:id="paragraph">All you need to do so is put the name of the reference at its
-start.</simpara>
-</section>
-</chapter>
-<chapter xml:id="_lists">
-<title>Lists</title>
-<simpara>Asciidoctor supports several types of lists. Let&#8217;s see some examples:</simpara>
-<orderedlist numeration="arabic">
-<title>Steps to enter the office</title>
-<listitem>
-<simpara>Find your entry card.</simpara>
-<orderedlist numeration="loweralpha">
-<listitem>
-<simpara>Open your wallet.</simpara>
-</listitem>
-<listitem>
-<simpara>Look inside.</simpara>
-</listitem>
-<listitem>
-<simpara>Take the card out.</simpara>
-</listitem>
-<listitem>
-<simpara>Close the wallet.</simpara>
-</listitem>
-</orderedlist>
-</listitem>
-<listitem>
-<simpara>Use it to enter the office.</simpara>
-</listitem>
-</orderedlist>
-<itemizedlist>
-<title>Shopping list</title>
-<listitem>
-<simpara>nutella</simpara>
-</listitem>
-<listitem>
-<simpara>banana</simpara>
-</listitem>
-<listitem>
-<simpara>apple</simpara>
-<itemizedlist>
-<listitem>
-<simpara>Red Delicious</simpara>
-</listitem>
-<listitem>
-<simpara>Granny Smith</simpara>
-</listitem>
-<listitem>
-<simpara>Honeycrisp</simpara>
-</listitem>
-</itemizedlist>
-</listitem>
-<listitem>
-<simpara>Lindt Excellence: A touch of vanilla</simpara>
-</listitem>
-</itemizedlist>
-<table tabstyle="horizontal" frame="none" colsep="0" rowsep="0">
-<title>Operating systems</title>
+<section xml:id="_preambula">
+<title>Preambula</title>
+<informaltable tabstyle="horizontal" frame="none" colsep="0" rowsep="0">
 <tgroup cols="2">
 <colspec colwidth="15*"/>
 <colspec colwidth="85*"/>
 <tbody valign="top">
 <row>
 <entry>
-<simpara>Windows</simpara>
+<simpara>KEĎŽE</simpara>
 </entry>
 <entry>
-<simpara>Cheap but broken.</simpara>
-</entry>
-</row>
-<row>
-<entry>
-<simpara>Mac</simpara>
-</entry>
-<entry>
-<simpara>Expensive, but works.</simpara>
+<simpara>Objednávateľ prevádzkuje sieť inovačných „hubov“ v strednej Európe so
+zameraním na inovácie v oblasti informačných technológií, a Objednávateľ, okrem
+iného, sprostredkúva a manažuje developerské projekty medzi klientov z celého
+sveta a vývojárskymi štúdiami a freelancermi;</simpara>
 </entry>
 </row>
 <row>
 <entry>
-<simpara>Linux</simpara>
+<simpara>KEĎŽE</simpara>
 </entry>
 <entry>
-<simpara>It doesn&#8217;t work, but exactly the way you like it.</simpara>
+<simpara>Autor má skúsenosti, vedomosti a záujem byť súčasťou vývojárskeho teamu
+pracujúceho na klientských alebo interných softwarových projektoch
+sprostredkovaných Objednávateľom; a</simpara>
+</entry>
+</row>
+<row>
+<entry>
+<simpara>KEĎŽE</simpara>
+</entry>
+<entry>
+<simpara>Zmluvné strany prejavili záujem dlhodobo spolupracovať;</simpara>
 </entry>
 </row>
 </tbody>
 </tgroup>
-</table>
-<section xml:id="_complex_lists">
-<title>Complex Lists</title>
-<simpara>Sometimes, you may want complex structures as content of your list.</simpara>
-<itemizedlist>
-<title>Most important things in life</title>
-<listitem>
-<simpara>The food.</simpara>
-</listitem>
-<listitem>
-<simpara>The water.</simpara>
-</listitem>
-<listitem>
-<simpara>The feeling of appreciation.</simpara>
-<simpara>That feeling you can get only when you&#8217;re really appreciated.</simpara>
-<simpara>That feeling you can get only when you&#8217;re really valued.</simpara>
-</listitem>
-<listitem>
-<simpara>The air.</simpara>
-</listitem>
-</itemizedlist>
-<variablelist>
-<title>Extremely complex list</title>
-<varlistentry>
-<term>Sometimes, plus is not enough</term>
-<listitem>
-<simpara>Especially when you want to introduce list items that can contain another list
-items. It&#8217;s safer to just wrap them arround:</simpara>
-<simpara>Now, anything written here, will be kept together:</simpara>
-<variablelist>
-<title>Some other list</title>
-<varlistentry>
-<term>The game</term>
-<listitem>
-<simpara>Like this one.</simpara>
-</listitem>
-</varlistentry>
-<varlistentry>
-<term>The outcome</term>
-<listitem>
-<simpara>Like that one.</simpara>
-</listitem>
-</varlistentry>
-</variablelist>
-<simpara>Even</simpara>
-<itemizedlist>
-<title>Some random shopping list</title>
-<listitem>
-<simpara>apple</simpara>
-</listitem>
-<listitem>
-<simpara>banana</simpara>
-</listitem>
-<listitem>
-<simpara>apple-banana pie</simpara>
-</listitem>
-</itemizedlist>
-<simpara>You see? It just works.</simpara>
-</listitem>
-</varlistentry>
-<varlistentry>
-<term>And then you continue</term>
-<listitem>
-<simpara>As you&#8217;d anyway.</simpara>
-</listitem>
-</varlistentry>
-</variablelist>
+</informaltable>
+<simpara>S ohľadom na hore uvedené skutočnosti sa zmluvné strany dohodli na nasledujúcom znení tejto zmluvy:</simpara>
 </section>
-</chapter>
-<chapter xml:id="_breaking_the_natural_flow">
-<title>Breaking the natural flow</title>
-<section xml:id="_admonitions">
-<title>Admonitions</title>
-<note>
-<simpara>Admonitions are these nice blocks of content prepended by icon telling you
-to beware.</simpara>
-</note>
-<important>
-<simpara>Using admonitions may help people realize there&#8217;s something of
-importance going on.</simpara>
-</important>
-<tip>
-<simpara>You can even include complex multiparagraph content in your admonitions.</simpara>
-<simpara>Things such as:</simpara>
-<itemizedlist>
+<section xml:id="_predmet_a_účel_zmluvy">
+<title>Predmet a účel Zmluvy</title>
+<orderedlist numeration="arabic">
 <listitem>
-<simpara>lists</simpara>
+<simpara>Autor sa zaväzuje pre Objednávateľa opakovane vytvárať a vykonávať
+(i) primárne dielo na objednávku pozostávajúce zo softwaru, ktorý nie je
+počítačovým programom v zmysle Autorského zákona, t.j. dokumentácie, elektronických
+dát, výskumu, DevOps (v angličtine „development &amp; IT operations“), prípravy
+(v angličtine „setup“) vývojárskych, testovacích a produkčných prostredí,
+prípravu a vykonávanie tzv. „pull requestov“ a / alebo tzv. „mergov“, vytváranie
+tzv. „version history“, automatizáciu softwaru a procesov a testovanie softwaru
+(ďalej ako &lt;b&gt;„Software“&lt;/b&gt;); a (ii) sekundárne počítačový program v zmysle Autorského
+zákona a súvisiacimi podkladovými materiálmi, inštrukciami, konzultáciami, projektovým
+manažmentom, a grafickými dizajnmi (napr. tzv. „wireframes“ alebo CSS)
+(ďalej ako &lt;b&gt;„Počítačový program“&lt;/b&gt;) a tým prispievať k prípadnému vytvoreniu databázy,
+spoločného či spojeného diela pre Objednávateľa, resp. jeho klienta (Software a
+Počítačový program ďalej spolu ako &lt;b&gt;„Dielo“&lt;/b&gt;), ktorého vytváranie iniciuje a
+usmerňuje Objednávateľ a / alebo Klient v súčinnosti s Autorom za účelom poskytovania
+softwarových riešení klientom Objednávateľa a / alebo vytváraním vlastných softwarových
+riešení Objednávateľa.</simpara>
 </listitem>
 <listitem>
-<simpara>images</simpara>
+<simpara>Dielo, spoločne s ostatnými prvkami spolupráce, bude špecifikované v objednávke,
+ktorá tvorí neoddeliteľnú súčasť Zmluvy (ďalej ako &lt;b&gt;„Objednávka“&lt;/b&gt;). Ustanovenia Zmluvy
+sa budú vzťahovať na každé Dielo vytvorené Autorom na základe Objednávky.</simpara>
 </listitem>
 <listitem>
-<simpara>tables</simpara>
+<simpara>Objednávateľ sa Autorovi zaväzuje za riadne a včasné splnenie Zmluvných povinností
+zo strany Autora zaplatiť Odmenu podľa Zmluvy.</simpara>
 </listitem>
 <listitem>
-<simpara>or even other admonitions</simpara>
+<simpara>Autor si pre účel napĺňania účelu Zmluvy prenajíma pracovný stôl (fixdesk alebo flexidesk)
+v priestoroch Objednávateľa (Vacuumlabs cowork) a určité technické vybavenie v zmysle odseku <xref linkend="fix-desk-rental"/> Zmluvy.</simpara>
 </listitem>
-</itemizedlist>
-<caution>
-<simpara>It might be confusing for your readers if you overdo it.</simpara>
-</caution>
-</tip>
-<warning>
-<simpara>Don&#8217;t overuse them.</simpara>
-</warning>
+</orderedlist>
 </section>
-<section xml:id="_quotes">
-<title>Quotes</title>
-<blockquote>
-<attribution>
-John F. Kennedy
-<citetitle>a long time ago</citetitle>
-</attribution>
-<simpara>Those who dare to fail miserably can achieve greatly.</simpara>
-</blockquote>
+<section xml:id="_režim_vytvárania_diela">
+<title>Režim vytvárania Diela</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Objednávateľ pošle Autorovi Objednávku písomne alebo ústne, a to najmä prostredníctvom emailu,
+služby Slack, Skype, alebo spoločného úložiska. Momentom prijatia Objednávky Autorom,
+bez ohľadu na to, či bude Objednávka prijatá písomne, ústne, konkludentne alebo
+akokoľvek inak, uzavrú Zmluvné strany čiastkovú zmluvu v zmysle predmetnej Objednávky.</simpara>
+</listitem>
+<listitem>
+<simpara><anchor xml:id="ordered-software" xreflabel="[ordered-software]"/> Zmluvné strany považujú za nesporné, že Software vytvorený
+v zmysle Zmluvy je vytváraný na objednávku Objednávateľa v zmysle §91 ods. 1
+Autorského zákona, a preto platí, že Autor udelil Objednávateľovi súhlas na použitie
+Softwaru na účel vyplývajúci zo zmluvy, na základe ktorého Objednávateľ vo vzťahu k
+Softwaru vykonáva akékoľvek a všetky majetkové práva autora k Softwaru a zároveň
+Autor udeľuje Objednávateľovi súhlas na výkon osobnostných práv autora v rozsahu
+definovanom v §90 ods. 6 Autorského zákona. Objednávateľ je oprávnený vyššie
+uvedené práva v právom dovolenom rozsahu postúpiť na tretiu osobu.</simpara>
+</listitem>
+<listitem>
+<simpara><anchor xml:id="ordered-program" xreflabel="[ordered-program]"/> Zmluvné strany považujú za nesporné, že Počítačový program
+vytvorený v zmysle Zmluvy je vytváraný na objednávku Objednávateľa, a preto sa
+na neho vzťahuje režim zamestnaneckého diela v zmysle §91 ods. 4 Autorského zákona,
+na základe ktorého Objednávateľ vo vzťahu k Počítačovému programu vykonáva
+akékoľvek a všetky majetkové práva autora k dielu a zároveň Autor udeľuje
+Objednávateľovi súhlas na výkon osobnostných práv autora v rozsahu definovanom
+v §90 ods. 6 Autorského zákona. Objednávateľ je oprávnený vyššie uvedené práva
+v právom dovolenom rozsahu postúpiť na tretiu osobu.</simpara>
+</listitem>
+<listitem>
+<simpara>Autor nie je oprávnený Dielo, ani jeho časť, sám použiť, ako ani udeliť súhlas
+na jeho použitie tretej osobe.</simpara>
+</listitem>
+<listitem>
+<simpara>Objednávateľ vytvorením Diela, alebo jeho časti, nadobúda právo používať Dielo
+v rozsahu a za podmienok stanovených v Zmluve.</simpara>
+</listitem>
+<listitem>
+<simpara>Vzhľadom na povahu, komplexnosť a náročnosť softwarových projektov klientov
+Objednávateľa sa Zmluvné strany dohodli, že Autor bude v priemere 80% času pri
+zhotovovaní Diela venovať zhotovovaniu Software-u a 20% času venovaného zhotovovaniu
+Diela bude venovať zhotovovaniu Počítačového programu.</simpara>
+</listitem>
+<listitem>
+<simpara>Zmluvné strany sa dohodli, že Autor neposkytuje záruku na kvalitu a funkčnosť
+Diela, ak v odseku <xref linkend="zodpovednost-za-skodu"/> Zmluvy nie je uvedené inak.</simpara>
+</listitem>
+</orderedlist>
 </section>
-<section xml:id="_sidebars">
-<title>Sidebars</title>
-<sidebar>
-<title>The story of great sidebar</title>
-<simpara>Once upon a time, there was a man wondering how to tell a story.  This man was
-writing a tech manual and story didn&#8217;t feel like a thing you&#8217;d
-naturally include.</simpara>
-<simpara>So he created sidebar, and he put the story in.</simpara>
-</sidebar>
+<section xml:id="_odmena_a_platobné_podmienky">
+<title>Odmena a platobné podmienky</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Za každý kalendárny mesiac, počas ktorého mali Zmluvné strany medzi sebou
+uzatvorenú čiastkovú zmluvu, sa Zmluvné strany dohodli na kombinovanej odmene pre
+Autora, a to vo výške súčtu:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>odmeny za vytvorenie Software-u vo výške {author-rate} EUR na hodinu, pričom táto časť
+predstavuje 20% celkovej odmeny za Software;</simpara>
+</listitem>
+<listitem>
+<simpara>odmeny za udelenie súhlasu na vykonávanie majetkových a v Zmluve
+špecifikovaných osobnostných práv autora k Software-u, pričom táto časť
+predstavuje 80% celkovej odmeny za Software;</simpara>
+<simpara>(odmena v zmysle odsekov 3.1.1 a 3.1.2 ďalej spolu ako &lt;b&gt;„Odmena za
+Software“&lt;/b&gt;)</simpara>
+</listitem>
+<listitem>
+<simpara>odmeny za vytvorenie Počítačového programu vo výške {author-rate} EUR na hodinu, pričom
+táto časť predstavuje 20% celkovej odmeny za Počítačový program; a</simpara>
+</listitem>
+<listitem>
+<simpara>odmeny za udelenie súhlasu na vykonávanie majetkových a v Zmluve
+špecifikovaných osobnostných práv autora k Počítačovému programu, pričom
+táto časť predstavuje 80% celkovej odmeny za Počítačový program;</simpara>
+<simpara>(odmena v zmysle odsekov 3.1.3 a 3.1.4 ďalej spolu ako &lt;b&gt;„Odmena za
+Počítačový program“&lt;/b&gt;)</simpara>
+</listitem>
+</orderedlist>
+<simpara>(Odmena za Software a Odmena za Počítačový program ďalej spolu ako &lt;b&gt;„Odmena“&lt;/b&gt;).</simpara>
+</listitem>
+<listitem>
+<simpara><anchor xml:id="invoice-process" xreflabel="[invoice-process]"/> Zmluvné strany sa dohodli na vyhotovovaní faktúr Objednávateľom v mene a na účet
+Autora za dodanie služieb v zmysle Zmluvy. Overovacia prevádzka samofakturácie
+bude prebiehať v sídle Objednávateľa. Objednávateľ bude vyhotovovať faktúry za
+každý kalendárny mesiac trvania Objednávky na základe záznamov v monitorovacom
+systéme JIRA, pričom splatnosť faktúr bude 15. kalendárny deň nasledujúceho
+mesiaca. Faktúra musí spĺňať všetky požiadavky právnych predpisov na jej
+vyhotovenie. Objednávateľ zašle vyhotovenú faktúru bezodkladne po jej vyhotovení
+Autorovi.</simpara>
+</listitem>
+<listitem>
+<simpara>Zmluvné strany sa dohodli, že Odmena zahŕňa celkovú odmenu Autora za zhotovenie
+a vykonanie Diela, udelenie súhlasu na použitie Diela podľa Zmluvy, udelenie
+licencie na použitie Diela a akékoľvek iné použitie Diela v zmysle Zmluvy,
+vrátane akýchkoľvek a všetkých nákladov, ktoré Autorovi vzniknú pri výkone jeho
+povinností s výnimkou vopred odsúhlasených nákladov s Objednávateľom.</simpara>
+</listitem>
+<listitem>
+<simpara>Zmluvné strany berú na vedomie, že v súlade s § 5 v spojení s § 7 ods. 1 písm.
+b) zákona č. 13/1993 Z. z. o umeleckých fondoch v znení neskorších predpisov je
+príjemca Odmeny, t.j. Autor, povinný odviesť Literárnemu fondu príspevok vo
+výške 2% z Odmeny za vytvorenie Počítačového programu. Podľa § 6 ods. 1 zákona č.
+13/1993 Z. z. o umeleckých fondoch v znení neskorších predpisov je povinná takúto
+sumu z Odmeny zraziť právnická osoba, ktorá Odmenu vypláca, t.j. Objednávateľ, a
+to až do času úhrady predmetnej faktúry podľa odseku <xref linkend="invoice-process"/> Zmluvy.
+Autor berie na vedomie, že Odmena za vytvorenie Počítačového programu mu bude
+Objednávateľom uhradená vo výške po zrazení príspevku Literárnemu fondu.</simpara>
+</listitem>
+</orderedlist>
 </section>
-<section xml:id="_examples">
-<title>Examples</title>
-<example>
-<title>The example of the example</title>
-<simpara>I am the example.</simpara>
-</example>
+<section xml:id="_práva_povinnosti_a_vyhlásenia_zmluvných_strán">
+<title>Práva, povinnosti a vyhlásenia Zmluvných strán</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Objednávateľ v súvislosti so Zmluvou:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>poskytne Autorovi potrebnú súčinnosť tak, aby Autor mohol riadne plniť svoje
+záväzky, najmä mu poskytne potrebné podklady, informácie a dokumenty, ktoré sú
+potrebné na riadne plnenie povinností Autorom;</simpara>
+</listitem>
+<listitem>
+<simpara>je oprávnený Zmluvu spolu s akýmikoľvek Objednávkami postúpiť na tretiu osobu
+bez súhlasu Autora. O postúpení je Objednávateľ povinný Autora bezodkladne informovať;</simpara>
+</listitem>
+<listitem>
+<simpara>je povinný Autorovi, v prípade jeho záujmu, sprostredkovať vhodný projekt
+spočívajúci vo vývoji softwarového riešenia;</simpara>
+</listitem>
+<listitem>
+<simpara><anchor xml:id="fix-desk-rental" xreflabel="[fix-desk-rental]"/> Autorovi prenajme tzv. „Vacuumlabs Package“, ktorý pozostáva z pracovného
+stola v ktoromkoľvek z Vacuumlabs coworkov a podľa potreby aj určité technické
+vybavenie potrebné na vykonanie Diela (napr. stolný alebo osobný počítač,
+stolný monitor, počítačové príslušenstvo alebo dátovú SIM kartu) za nájomné
+vo výške 100 EUR (slovom: sto euro) s DPH za mesiac. Objednávateľ je oprávnený
+toto nájomné započítavať voči Odmene. Autor je povinný správať sa v priestoroch
+(„coworkoch“) Objednávateľa v súlade s nájomnou zmluvou uzatvorenou medzi
+prenajímateľom priestoru a Objednávateľom a počínať si tak, aby nedošlo ku škode
+na prenajatom technickom vybavení. V prípade porušenia tejto povinnosti zodpovedá
+Autor za vzniknutú škodu.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Autor, v súvislosti s plnením povinností podľa Zmluvy:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>je povinný plniť si svoje povinnosti v určených lehotách a s odbornou
+starostlivosťou a Dielo dodať vždy v dohodnutej kvalite, v opačnom prípade je
+Objednávateľ oprávnený od Objednávky odstúpiť;</simpara>
+</listitem>
+<listitem>
+<simpara>potvrdzuje, že bol riadne oboznámený so záujmami Objednávateľa, pričom je
+povinný plniť si svoje povinnosti podľa Zmluvy v súlade so záujmami Objednávateľa,
+alebo s akýmikoľvek ďalšími záujmami Objednávateľa, s ktorými bude oboznámený,
+alebo ktoré by mal a mohol poznať;</simpara>
+</listitem>
+<listitem>
+<simpara>potvrdzuje, že je oprávnený poskytovať plnenie podľa Zmluvy a v prípade, že
+v súvislosti s poskytovaním plnenia budú právne predpisy vyžadovať, aby mal
+oprávnenie, súhlas, povolenie, certifikát alebo iné potvrdenie príslušných
+orgánov verejnej správy (ďalej ako „Úradné povolenie“), Autor vyhlasuje, že
+takéto Úradné povolenie má alebo bezodkladne zabezpečí, aby počas celej doby
+trvania Zmluvy takéto Úradné povolenie mal;</simpara>
+</listitem>
+<listitem>
+<simpara>je povinný dodržiavať právne predpisy platné a účinné na území Slovenskej
+republiky, ktoré súvisia s plnením povinností podľa Zmluvy;</simpara>
+</listitem>
+<listitem>
+<simpara>je oprávnený od Zmluvy odstúpiť, ak mu Objednávateľ neuhradí Odmenu riadne
+a včas a to ani po uplynutí primeranej dodatočnej lehoty;</simpara>
+</listitem>
+<listitem>
+<simpara>je povinný poskytnúť Objednávateľovi všetky informácie, podklady, dokumenty
+a veci, ktoré získal alebo o ktorých sa dozvedel v súvislosti s plnením povinností
+podľa Zmluvy;</simpara>
+</listitem>
+<listitem>
+<simpara>je povinný bezodkladne informovať Objednávateľa o nemožnosti vytvoriť Dielo
+alebo jeho časť riadne a včas;</simpara>
+</listitem>
+<listitem>
+<simpara>je povinný chrániť servery, dokumenty a siete Objednávateľa a jeho klientov
+pred šírením počítačových vírusov alebo iného škodlivého software, a tiež
+bezodkladne informovať Objednávateľa ak je ohrozená bezpečnosť týchto systémov;</simpara>
+</listitem>
+<listitem>
+<simpara>je povinný si na vlastné náklady zabezpečiť technické, administratívne a iné
+pomôcky a prostriedky týkajúce sa plnenia povinností podľa tejto Zmluvy, ak
+Objednávateľ neurčí, že Autor bude povinný si plniť povinnosti prostredníctvom
+pomôcok, ktoré určí a poskytne Objednávateľ;</simpara>
+</listitem>
+<listitem>
+<simpara>nie je oprávnený postúpiť svoje práva vyplývajúce zo Zmluvy na tretiu osobu
+ani zriadiť záložné právo na pohľadávky vyplývajúce zo Zmluvy, v celku alebo
+jednotlivo, bez predchádzajúceho písomného súhlasu Objednávateľa.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Zmluvná strana, v súvislosti so Zmluvou nie je oprávnená jednostranne započítať
+svoje pohľadávky voči druhej Zmluvnej strane z akejkoľvek inej zmluvy alebo dohody
+medzi Zmluvnými stranami voči pohľadávke na zaplatenie akéhokoľvek peňažného záväzku.</simpara>
+</listitem>
+</orderedlist>
 </section>
-<section xml:id="_typewritter">
-<title>Typewritter</title>
-<simpara>When every character counts, use the monospace block:</simpara>
-<formalpara>
-<title>Email Transcript</title>
-<para>
-<screen>To: invoices@vacuumlabs.com
-    Subject: URGENT
-Attachments: print_invoice.pdf
-###########################################################################
-This invoice needs to be paid immediately! 2,500 € belongs to ReactiveConf,
-1,000 € to Marketing.</screen>
-</para>
-</formalpara>
+<section xml:id="_spolupráca_s_klientmi_objednávateľa">
+<title>Spolupráca s klientmi Objednávateľa</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Bez predchádzajúceho písomného súhlasu Objednávateľa s overeným podpisom
+jeho štatutárneho zástupcu, Autor (ako fyzická osoba autor; ako živnostník; ako
+spoločník; štatutárny zástupca; prokurista alebo odberateľ a/alebo dodávateľ
+služieb obchodnej spoločnosti) nemôže uzatvoriť zmluvu, na základe ktorej bude
+poskytovať služby v súvislosti s vytváraním softwaru a/alebo počítačového
+programu, vytvárania zdrojového kódu, revidovania zdrojového kódu a/alebo
+softwaru, testovania softwaru, úpravu elektronických dát, použitie vývojárskych,
+testovacích alebo produkčných prostredí alebo poskytovania akýchkoľvek
+poradenských alebo manažérskych služieb, a/alebo s týmito činnosťami súvisiace
+prevody duševného vlastníctva, s odberateľom služieb Objednávateľa a/alebo so
+závislou osobou vo vzťahu k Odberateľovi v zmysle zákona č. 595/2003 Z. z. o
+dani z príjmov v znení neskorších predpisov (ďalej ako &lt;b&gt;„Odberateľ"&lt;/b&gt;) a/alebo
+nemôže prostredníctvom tretej osoby alebo tretích osôb poskytovať služby priamo
+alebo sprostredkovane Odberateľovi (ďalej ako &lt;b&gt;„Spolupráca s Odberateľom"&lt;/b&gt;), ak
+Autor s Odberateľom prostredníctvom Objednávateľa alebo s ním korporátne,
+personálne, finančne alebo inak prepojenou entitou (ďalej ako &lt;b&gt;„Skupina Vacuumlabs"&lt;/b&gt;)
+spolupracoval (t.j. bol uvedený v tabuľke poskytovaného personálu tvoriacej
+súčasť Objednávky uzavretej medzi subjektom zo Skupiny Vacuumlabs a Odberateľom)
+alebo sa zúčastnil prijímacieho pohovoru Odberateľa, a ak Spolupráca s Odberateľom
+začne kedykoľvek počas buď (i) troch (3) rokov od predmetného prijímacieho
+pohovoru Odberateľa alebo ukončenia spolupráce medzi Autorom a Odberateľom
+sprostredkovanej subjektom zo Skupiny Vacuumlabs, alebo (ii) dvanástich (12)
+mesiacov od riadneho ukončenia tejto Zmluvy, ktorákoľvek z vyššie uvedených
+lehôt uplynie skôr. V prípade porušenia tohto ustanovenia je Objednávateľ povinný
+Autorovi bezodkladne oznámiť porušenie tohto ustanovenia a Autor je povinný toto
+porušenie odstrániť v jednomesačnej lehote odo dňa doručenia oznámenia. Ak v
+uvedenej lehote nedôjde k odstráneniu predmetného porušenia, je Autor povinný
+Objednávateľovi bezodkladne uhradiť zmluvnú pokutu vo výške 500.000 EUR
+(slovom: päťstotisíc eur).</simpara>
+</listitem>
+<listitem>
+<simpara>Autor je oprávnený žiadať od Objednávateľa záväzné stanovisko či prípadný právny
+vzťah s konkrétnou treťou stranou bude napĺňať skutkovú podstatu Spolupráce s
+Odberateľom a či mu za jeho uzatvorenie hrozí zmluvná pokuta špecifikovaná v Zmluve.
+Objednávateľ je povinný na takýto dotaz Autorovi poskytnúť záväzné stanovisko
+bezodkladne, najviac do jedného (1) mesiaca.</simpara>
+</listitem>
+</orderedlist>
 </section>
-</chapter>
-<chapter xml:id="_media">
-<title>Media</title>
-<section xml:id="_images">
-<title>Images</title>
-<figure>
-<title>Cute puppy</title>
-<mediaobject>
-<imageobject>
-<imagedata fileref="assets/cute-puppy.jpg" contentwidth="400" align="center"/>
-</imageobject>
-<textobject><phrase>cute puppy</phrase></textobject>
-</mediaobject>
-</figure>
-<figure>
-<title>Cute kitty</title>
-<mediaobject>
-<imageobject>
-<imagedata fileref="assets/cute-kitty.jpg" contentwidth="400" align="left"/>
-</imageobject>
-<textobject><phrase>cute kitty</phrase></textobject>
-</mediaobject>
-</figure>
-<figure>
-<title>Cute giraffe</title>
-<mediaobject>
-<imageobject>
-<imagedata fileref="assets/cute-giraffe.jpg" contentwidth="400" align="right"/>
-</imageobject>
-<textobject><phrase>cute giraffe</phrase></textobject>
-</mediaobject>
-</figure>
+<section xml:id="zodpovednost-za-skodu">
+<title>Zodpovednosť za škodu</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara><anchor xml:id="liability-limit" xreflabel="[liability-limit]"/> Zmluvná strana zodpovedá iba za škodu spôsobenú úmyselne
+alebo v dôsledku vedomej nedbanlivosti pri výkone práv a povinností vyplývajúcich
+zo Zmluvy alebo z každej Čiastkovej zmluvy a to do výšky 20.000 EUR
+(slovom: dvadsaťtisíc euro).</simpara>
+</listitem>
+<listitem>
+<simpara>Bez toho, aby bol dotknutý odsek <xref linkend="liability-limit"/> Zmluvy, Zmluvná strana,
+ktorá porušila svoju povinnosť z tejto Zmluvy, nie je zodpovedná za škodu,
+ak preukáže, že porušenie jej povinnosti bolo spôsobené okolnosťami vylučujúcimi
+zodpovednosť v zmysle § 374 ods. 1 zákona č. 513/1991 Zb. Obchodný zákonník v
+znení neskorších predpisov (ďalej ako &lt;b&gt;„Obchodný zákonník“&lt;/b&gt;).</simpara>
+</listitem>
+<listitem>
+<simpara>Zmluvná strana, ktorá porušila povinnosti zo Zmluvy je povinná:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>bezodkladne oznámiť druhej Zmluvnej strane povahu, rozsah, účinok a
+pravdepodobnú dobu trvania porušenia týchto povinností;</simpara>
+</listitem>
+<listitem>
+<simpara>vyvinúť všetko primerané úsilie, aby došlo k minimalizovaniu škody
+spôsobenej porušením týchto povinností; a</simpara>
+</listitem>
+<listitem>
+<simpara>bezodkladne po zániku okolnosti vylučujúcich zodpovednosť oznámiť túto
+skutočnosť druhej Zmluvnej strane.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
 </section>
-<section xml:id="_custom_embedded_content">
-<title>Custom Embedded Content</title>
-<simpara>You can embed various contents such as Google Maps, YouTube videos, and tons of
-others. All you need is <literal>iframe</literal> code, which is usually provided by those sites.</simpara>
-<formalpara>
-<title>Radlinského Office</title>
-<para><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.911750609278!2d17.113067951389265!3d48.150506558137096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89436623fb9d%3A0xe3ced6f838a58aab!2sVacuumlabs!5e0!3m2!1sen!2ssk!4v1552581493528" width="600" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></para>
-</formalpara>
-<simpara>Asciidoctor has a built-in support for YouTube videos, embedding them is even
-easier:</simpara>
+<section xml:id="_licenčná_zmluva">
+<title>Licenčná zmluva</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara><anchor xml:id="license" xreflabel="[license]"/> Na každé Dielo vytvorené Autorom podľa tejto Zmluvy, na ktoré sa
+nebudú vzťahovať ustanovenia v odsekoch <xref linkend="ordered-software"/> a <xref linkend="ordered-program"/>,
+a v súvislosti s ktorým vykonáva Autor majetkové práva pod svojím menom a na svoj
+účet, udeľujeAutor Objednávateľovi ku dňu vytvorenia Diela teritoriálne a časovo
+neobmedzenú(po dobu právnej ochrany majetkových práv trvajúcu), výhradnú a odplatnú
+(Odmenou plne splatenú) licenciu na akékoľvek použitie Diela i jeho jednotlivých
+častí t.j. Softwaru a Počítačového programu v neobmedzenom rozsahu, ktorý zahŕňa
+najmä (ale nie výlučne) právo jeho používania, dokončenia, úpravy Diela podľa
+uváženia Objednávateľa, úpravy Diela zmenou, úpravou elektronických dát a/alebo
+zdrojového kódu, použitie vývojárskych, testovacích a produkčných prostredí a/alebo
+zdrojového kódu prípadne jeho časti na vytvorenie iného diela, spätný preklad
+zdrojového kódu, úpravy programátorskej, vývojovej dokumentácie, akákoľvek dispozícia
+s tzv. „version history“ ako aj všetkých ostatných materiálov súvisiacich s Dielom,
+právo kopírovania, prekladania, prispôsobovania, dekompilácie, modifikovania,
+upravovania, distribuovania, publikovania, vykonávania alebo ponúkania služieb
+spojených s Dielom a začleňovania do iných Diel a to aj do databázy, spoločného
+diela a spojeného diela, resp. právo na použitie diela v databáze, spoločnom diele
+a spojenom diele, a to ako Objednávateľom osobne, tak aj osobami ním poverenými, a
+to maximálne v rozsahu v akom Objednávateľ licenciu prijal.</simpara>
+</listitem>
+<listitem>
+<simpara>Autor vyhlasuje, že disponuje právami k jednotlivým plneniam (vrátane ich
+súčastí), ktoré dodal Objednávateľovi na základe licencií udelených Autorovi
+treťou osobou, ktorá k nim má alebo vykonáva autorské práva alebo práva
+priemyselného alebo iného duševného vlastníctva a bezodplatne udeľuje
+Objednávateľovi právo na ich používanie v rovnakom rozsahu podľa odseku
+<xref linkend="license"/> Zmluvy. Autor vyhlasuje, že rozsah licencie udelenej Objednávateľovi
+podľa Zmluvy je v súlade s právami, ktoré Autorovi udelila tretia osoba, pričom
+túto skutočnosť je Autor na požiadanie Objednávateľa povinný preukázať najmä
+uzatvorenou zmluvou s touto treťou osobou.</simpara>
+</listitem>
+<listitem>
+<simpara>Ak si tretia osoba, vrátane Pracovníkov, uplatní nárok proti Objednávateľovi
+z titulu porušenia jej autorských práv alebo práv priemyselného alebo iného
+duševného vlastníctva spôsobeného Autorom, tento sa zaväzuje:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>na svoje náklady bezodkladne obstarať od tejto tretej osoby súhlas na
+používanie Diela vykonaného Autorom pre Objednávateľa; alebo upraviť Dielo tak,
+aby už ďalej jeho užívanie Objednávateľom neporušovalo autorské práva alebo
+práva priemyselného alebo iného duševného vlastníctva tretej osoby; alebo
+nahradiť Dielo vykonané Autorom pre Objednávateľa rovnakým alebo takým Dielom,
+ktoré má podstatne podobné kvalitatívne a technické parametre;</simpara>
+</listitem>
+<listitem>
+<simpara>poskytnúť Objednávateľovi akúkoľvek a všetku účinnú pomoc v súvislosti s
+uplatnením vyššie uvedeného nároku tretej osoby.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_záväzok_mlčanlivosti_a_dôverné_informácie">
+<title>Záväzok mlčanlivosti a dôverné informácie</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara><anchor xml:id="secrecy" xreflabel="[secrecy]"/> Zmluvné strany sú povinné zachovávať záväzok mlčanlivosti o
+dôverných informáciách v zmysle odseku <xref linkend="secret-information"/> Zmluvy (ďalej ako
+„Dôverné informácie“), pričom tieto smú používať výlučne na účel plnenia záväzkov
+podľa Zmluvy a nesmú ich rozširovať, poskytovať a sprístupňovať tretím osobám
+alebo ich použiť pre seba alebo pre iné osoby v rozpore s účelom, na ktorý im
+boli poskytnuté. Záväzok mlčanlivosti trvá aj po skončení Zmluvy, a to po dobu
+troch (3) rokov odo dňa jej skončenia.</simpara>
+</listitem>
+<listitem>
+<simpara><anchor xml:id="secret-information" xreflabel="[secret-information]"/> Zmluvné strany sa dohodli, že Dôvernými informáciami
+sú informácie, ktoré:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>sa týkajú obsahu Zmluvy, popisu a charakteristiky Diela;</simpara>
+</listitem>
+<listitem>
+<simpara>Zmluvná strana označí ako dôverné;</simpara>
+</listitem>
+<listitem>
+<simpara>sa týkajú podnikania druhej Zmluvnej strany;</simpara>
+</listitem>
+<listitem>
+<simpara>sa Zmluvná strana dozvie pri výkone práv a povinností podľa Zmluvy, o ktorých
+sa dá rozumne predpokladať, že majú ostať dôverné.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Zmluvné strany sú povinné vykonať primerané opatrenia, aby sa zabránilo
+úniku, poskytnutiu alebo sprístupneniu Dôverných informácií tretím osobám.</simpara>
+</listitem>
+<listitem>
+<simpara>8.4	Zmluvná strana je po skončení Zmluvy povinná bezodkladne vrátiť druhej
+Zmluvnej strane všetky podklady, materiály a ich obsah, ktoré obdržala v súvislosti
+s plnením povinností podľa Zmluvy, prípadne ich zničiť, ak ich nie je možné vrátiť.</simpara>
+</listitem>
+<listitem>
+<simpara>Ustanovenie odseku <xref linkend="secrecy"/> Zmluvy sa nepoužije,</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>ak Zmluvná strana preukáže, že Dôverné informácie boli verejne prístupné bez
+toho, aby sa stali verejne prístupné konaním alebo opomenutím Zmluvnej strany;</simpara>
+</listitem>
+<listitem>
+<simpara>ak Zmluvná strana Dôverné informácie legálne získala, mala k dispozícii alebo
+ich vlastnila ešte pred podpísaním Zmluvy;</simpara>
+</listitem>
+<listitem>
+<simpara>ak sú Dôverne informácie výsledkom nezávislého postupu Zmluvnej strany alebo
+jej boli poskytnuté podľa práva treťou osobou, čo Zmluvná strana vie dôveryhodným
+spôsobom preukázať;</simpara>
+</listitem>
+<listitem>
+<simpara>ak sprístupnenie Dôverných informácii bude požadované v zmysle legislatívy;
+Zmluvná strana je v takom prípade povinná využiť všetky primerané prostriedky v
+súlade s legislatívou na odmietnutie alebo obmedzenie ich sprístupnenia, pokiaľ
+neohrozia Zmluvnú stranu v jej právnom postavení, prevádzkovaní jej činnosti,
+nespôsobia výpadok prevádzky a nevystavia Zmluvnú stranu riziku trestného,
+priestupkového alebo správneho postihu. Zmluvná strana je povinná informovať
+druhú Zmluvnú stranu o predmetných okolnostiach; alebo</simpara>
+</listitem>
+<listitem>
+<simpara>ak Dôverné informácie budú poskytnuté odborným poradcom Zmluvnej strany pod
+záväzkom mlčanlivosti v rozsahu Zmluvy.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Zmluvné strany sa zaväzujú, že povinnosť mlčanlivosti budú v rovnakom rozsahu
+dodržiavať aj ich zamestnanci a dodávatelia služieb podieľajúci sa na plnení
+tejto Zmluvy; za porušenie povinnosti mlčanlivosti týmito osobami zodpovedá
+Zmluvná strana tak, ako by povinnosť mlčanlivosti porušila sama.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_súhlas_so_spracovaním_osobných_údajov">
+<title>Súhlas so spracovaním osobných údajov</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>V zmysle Zákona č. 18/2018 Z. z. o ochrane osobných údajov a o zmene a doplnení
+niektorých zákonov. Autor týmto udeľuje súhlas so spracúvaním svojich osobných
+údajov Objednávateľom. Údaje budú spracované v informačnom systéme Objednávateľa
+a sú poskytnuté pre účely ich interného využitia za účelom napĺňania účelu Zmluvy.</simpara>
+</listitem>
+<listitem>
+<simpara>Rozsah osobných údajov: meno, priezvisko, trvalé bydlisko, tel. číslo, email,
+dátum narodenia, bankové spojenie.</simpara>
+</listitem>
+<listitem>
+<simpara>Tento súhlas je udelený na dobu nevyhnutnú pre dosiahnutie účelu
+spracovania a je ho možné kedykoľvek písomne alebo emailom odvolať.</simpara>
+</listitem>
+<listitem>
+<simpara>Všetky práva dotknutej osoby sú zadefinované v druhej hlave Zákona č.
+18/2018 Z. z. o ochrane osobných údajov a o zmene a doplnení niektorých zákonov.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_doba_trvania_zmluvy_a_skončenie_zmluvy">
+<title>Doba trvania Zmluvy a skončenie Zmluvy</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Táto Zmluva sa uzatvára na dobu neurčitú.</simpara>
+</listitem>
+<listitem>
+<simpara>Táto Zmluva môže skončiť len z nasledovných dôvodov:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>vzájomnou písomnou dohodou Zmluvných strán;</simpara>
+</listitem>
+<listitem>
+<simpara>okamžitým odstúpením Zmluvnou stranou v prípadoch uvedených v Zmluve alebo
+v legislatíve, účinným od doručenia druhej Zmluvnej strane; alebo</simpara>
+</listitem>
+<listitem>
+<simpara>vypovedaním Zmluvy bez udania dôvodu Zmluvnou stranou v dvojmesačnej výpovednej
+lehote, ktorá začína plynúť v nasledujúci deň po doručení výpovede druhej Zmluvnej
+strane.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Bezodkladne po skončení Zmluvy Autor odovzdá Objednávateľovi Dielo resp. jeho
+časti (vrátane zdrojových kódov a súvisiacej dokumentácie) vykonané do dňa skončenia
+Zmluvy.</simpara>
+</listitem>
+<listitem>
+<simpara>Skončením Zmluvy nezanikajú povinnosti a nároky Zmluvných strán, ktoré podľa
+Zmluvy a legislatívy majú trvať aj po skončení Zmluvy. Pre vylúčenie pochybností,
+takýmito sú najmä, nie však výlučne, práva spojené s udelenou licenciou k Dielu,
+záväzok mlčanlivosti, peňažné nároky, nároky na náhradu škody a iné povinnosti a
+nároky, ktoré svojou povahou nezanikajú ukončením Zmluvy.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_doručovanie">
+<title>Doručovanie</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Akýkoľvek úkon, ktorý má byť podľa Zmluvy urobený v písomnej podobe, musí byť
+doručený na adresu Zmluvnej strany uvedenej v záhlaví Zmluvy buď (i) osobne;
+(ii) doporučenou zásielkou; alebo (iii) e-mailom.</simpara>
+</listitem>
+<listitem>
+<simpara>Zásielka sa považuje za doručenú dňom:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>jej prevzatia druhou Zmluvnou stranou do rúk;</simpara>
+</listitem>
+<listitem>
+<simpara>riadneho odoslania e-mailu druhej Zmluvnej strane;</simpara>
+</listitem>
+<listitem>
+<simpara>uplynutím desiatich dní odo dňa uloženia zásielky na pošte; alebo</simpara>
+</listitem>
+<listitem>
+<simpara>zmarenia alebo odmietnutia doručenia.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Pokiaľ je za deň doručenia podľa vyššie uvedených pravidiel preukázateľne možno
+považovať viac ako jeden deň, je dňom doručenia skorší deň.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_dohoda_o_ukončení_predchádzajúcich_právnych_vzťahov">
+<title>Dohoda o ukončení predchádzajúcich právnych vzťahov</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Zmluva predstavuje celú dohodu medzi Zmluvnými stranami týkajúcu sa predmetu Zmluvy
+a nahrádza akúkoľvek dohodu, zmluvu a predzmluvné vyhlásenie týkajúce sa rovnakého
+a/alebo obdobného predmetu Zmluvy (ďalej ako &lt;b&gt;„Predchádzajúce dohody“&lt;/b&gt;), ktoré dňom
+uzavretia Zmluvy zanikajú.</simpara>
+</listitem>
+<listitem>
+<simpara>Povinnosti a nároky Zmluvných strán, ktoré podľa Predchádzajúcich dohôd alebo
+legislatívy majú trvať aj po skončení Predchádzajúcich dohôd, budú trvať naďalej
+v rozsahu podľa Predchádzajúcich dohôd alebo legislatívy.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_záverečné_ustanovenia">
+<title>Záverečné ustanovenia</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Táto Zmluva nadobúda platnosť a účinnosť dňom jej podpisu oboma Zmluvnými stranami.</simpara>
+</listitem>
+<listitem>
+<simpara>Ktorékoľvek ustanovenie Zmluvy, ktoré je alebo sa stane neplatným alebo
+nevymáhateľným, sa bude považovať za oddeliteľné od Zmluvy a bude sa považovať
+ako zo Zmluvy vymazané, pričom vo zvyšnej časti zostane Zmluva nedotknutá, platná
+a účinná. Zmluvné strany sa zaväzujú nahradiť neplatné alebo nevymáhateľné
+ustanovenie ustanovením, ktoré najbližšie zodpovedá ich zmyslu a účelu podľa Zmluvy.</simpara>
+</listitem>
+<listitem>
+<simpara>Táto Zmluva je vyhotovená v dvoch (2) origináloch, pričom každá Zmluvná strana
+obdrží jeden. Zmluvu je možné meniť a dopĺňať len po dohode Zmluvných strán vo
+forme očíslovaných písomných dodatkov k nej.</simpara>
+</listitem>
+<listitem>
+<simpara>Pre vylúčenie akejkoľvek pochybností, Zmluvné strany vyhlasujú že touto Zmluvou
+za žiadnych okolností nevstupujú do pracovnoprávneho vzťahu, ale do obchodného
+vzťahu medzi dvoma rovnoprávnymi subjektmi v zmysle Obchodného zákonníka. Autor
+bude vyššie uvedené Dielo pre Objednávateľa vykonávať na vlastnú zodpovednosť a
+riziko ako samostatne zárobkovo činná osoba, nebude v podriadenom postavení voči
+Objednávateľovi, a preto Autor nebude vykonávať závislú prácu.</simpara>
+</listitem>
+<listitem>
+<simpara>Zmluvné strany sa v súlade s § 262 ods. 1 Obchodného zákonníka dohodli, že ich
+záväzkový vzťah sa spravuje Obchodným zákonníkom, pokiaľ sa na vzťah neaplikujú
+kogentné ustanovenia Občianskeho zákonníka alebo Autorského zákona. Zmluvné strany
+sa zaväzujú prípadné spory riešiť vzájomnou dohodou. Ak tá nebude možná, na
+rozhodovanie sporov budú príslušné súdy Slovenskej republiky.</simpara>
+</listitem>
+<listitem>
+<simpara>Zmluvné strany vyhlasujú, že túto Zmluvu uzatvárajú slobodne a vážne, že táto
+nebola uzavretá za nevýhodných podmienok alebo v tiesni a na znak súhlasu ju podpisujú.</simpara>
+</listitem>
+</orderedlist>
+<informaltable frame="none" rowsep="0" colsep="0">
+<tgroup cols="2">
+<colspec colname="col_1" colwidth="50*"/>
+<colspec colname="col_2" colwidth="50*"/>
+<tbody>
+<row>
+<entry align="left" valign="top"><literallayout> V Bratislave, dňa {signing-date}
+ &lt;i&gt;Za Objednávateľa&lt;/i&gt;
 
+ &#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;.
+ Samuel Hapák, konateľ</literallayout></entry>
+<entry align="left" valign="top"><literallayout> V Bratislave, dňa {signing-date}
+ &lt;i&gt;Za Poskytovateľa&lt;/i&gt;
+
+ &#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;.
+ {author-name}</literallayout></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 </section>
-</chapter>
-<chapter xml:id="_tables">
-<title>Tables</title>
-<simpara>Asciidoctor can easily make simple tables, with variable column size:</simpara>
-<table frame="all" rowsep="1" colsep="1">
-<title>Cost centers</title>
-<tgroup cols="4">
-<colspec colname="col_1" colwidth="12.5*"/>
-<colspec colname="col_2" colwidth="25*"/>
-<colspec colname="col_3" colwidth="50*"/>
-<colspec colname="col_4" colwidth="12.5*"/>
-<thead>
-<row>
-<entry align="left" valign="top">Code</entry>
-<entry align="left" valign="top">Name</entry>
-<entry align="left" valign="top">What belongs here</entry>
-<entry align="left" valign="top">Owner</entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry align="left" valign="top"><simpara>FIN</simpara></entry>
-<entry align="left" valign="top"><simpara>Finance</simpara></entry>
-<entry align="left" valign="top"><simpara>accountants and banking fees</simpara></entry>
-<entry align="left" valign="top"><simpara>Maťa</simpara></entry>
-</row>
-<row>
-<entry align="left" valign="top"><simpara>BEN</simpara></entry>
-<entry align="left" valign="top"><simpara>Benefits</simpara></entry>
-<entry align="left" valign="top"><simpara>team buildings</simpara></entry>
-<entry align="left" valign="top"><simpara>Lívia</simpara></entry>
-</row>
-<row>
-<entry align="left" valign="top"><simpara>HUN</simpara></entry>
-<entry align="left" valign="top"><simpara>Hungary</simpara></entry>
-<entry align="left" valign="top"><simpara>everything in Budapest and beyond</simpara></entry>
-<entry align="left" valign="top"><simpara>Csongor</simpara></entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-<simpara>It&#8217;s also easy to control horizontal align and total width of the table:</simpara>
-<table frame="all" rowsep="1" colsep="1">
-<title>Inventory</title>
-<tgroup cols="3">
-<colspec colname="col_1" colwidth="61*"/>
-<colspec colname="col_2" colwidth="122*"/>
-<colspec colname="col_3" colwidth="30*"/>
-<thead>
-<row>
-<entry align="left" valign="top">Name</entry>
-<entry align="center" valign="top">Description</entry>
-<entry align="right" valign="top">Value</entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry align="left" valign="top"><simpara>baloon</simpara></entry>
-<entry align="center" valign="top"><simpara>little red ballon</simpara></entry>
-<entry align="right" valign="top"><simpara>$1,400.32</simpara></entry>
-</row>
-<row>
-<entry align="left" valign="top"><simpara>wine bottle</simpara></entry>
-<entry align="center" valign="top"><simpara>empty green bottle</simpara></entry>
-<entry align="right" valign="top"><simpara>$40.50</simpara></entry>
-</row>
-<row>
-<entry align="left" valign="top"><simpara>toast</simpara></entry>
-<entry align="center" valign="top"><simpara>very old piece of toast</simpara></entry>
-<entry align="right" valign="top"><simpara>$1.40</simpara></entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-<simpara>Or even controll styling on a per-column basis:</simpara>
-<table frame="all" rowsep="1" colsep="1">
-<title>Poetry</title>
-<tgroup cols="3">
-<colspec colname="col_1" colwidth="20*"/>
-<colspec colname="col_2" colwidth="40*"/>
-<colspec colname="col_3" colwidth="40*"/>
-<thead>
-<row>
-<entry align="left" valign="top">Name</entry>
-<entry align="left" valign="top">Review</entry>
-<entry align="left" valign="top">Sample</entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry align="left" valign="top"><simpara>&lt;b&gt;Flowers&lt;/b&gt;</simpara></entry>
-<entry align="left" valign="top"><simpara>&lt;i&gt;Remarkable piece of art never seen before&lt;/i&gt;</simpara></entry>
-<entry align="left" valign="top"><literallayout>O flowers, dear flowers,
-you are like lovers,
-o my dear flowers.</literallayout></entry>
-</row>
-<row>
-<entry align="left" valign="top"><simpara>&lt;b&gt;Grass&lt;/b&gt;</simpara></entry>
-<entry align="left" valign="top"><simpara>&lt;i&gt;Best piece of poetry since flowers&lt;/i&gt;</simpara></entry>
-<entry align="left" valign="top"><literallayout>O grass, dear grass,
-you are like grass,
-o my dear grass.</literallayout></entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-<section xml:id="_complex_tables">
-<title>Complex Tables</title>
-<table frame="all" rowsep="1" colsep="1">
-<title>Cell spanning columns and rows</title>
-<tgroup cols="4">
-<colspec colname="col_1" colwidth="25*"/>
-<colspec colname="col_2" colwidth="25*"/>
-<colspec colname="col_3" colwidth="25*"/>
-<colspec colname="col_4" colwidth="25*"/>
-<tbody>
-<row>
-<entry align="left" valign="top" namest="col_1" nameend="col_3"><simpara>Content in a single cell that spans columns 1, 2, and 3</simpara></entry>
-<entry align="left" valign="top"><simpara>Column 4, row 1</simpara></entry>
-</row>
-<row>
-<entry align="left" valign="top"><simpara>Column 1, row 2</simpara></entry>
-<entry align="left" valign="top" namest="col_2" nameend="col_3" morerows="2"><simpara>Content in a single cell that spans over rows and columns</simpara></entry>
-<entry align="left" valign="top"><simpara>Column 4, row 2</simpara></entry>
-</row>
-<row>
-<entry align="left" valign="top" morerows="1"><simpara>Content in a single cell that spans rows 2 and 3</simpara></entry>
-<entry align="left" valign="top"><simpara>Column 4, row 3</simpara></entry>
-</row>
-<row>
-<entry align="left" valign="top"><simpara>Column 1, row 4</simpara></entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-</section>
-</chapter>
-<chapter xml:id="_variables">
-<title>Variables</title>
-<simpara>Asciidoctor makes it easy to define variables for later reuse.</simpara>
-<simpara>If you want to win 1,000 €, email us on <link xl:href="mailto:hello@vacuumlabs.com">hello@vacuumlabs.com</link> or send us a snail mail
-to vacuumlabs s.r.o., Radlinského 10, 811 07 Bratislava. <link xl:href="https://vacuumlabs.slack.com/team/tomaskulich">Tomáš</link> will pick the winners.</simpara>
-</chapter>
-</book>
+</article>
