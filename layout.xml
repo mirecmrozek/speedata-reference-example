@@ -96,7 +96,7 @@
               <Value>.  </Value>
             </Case>
           </Switch>
-          <Value select="$parText" />
+          <Value select="sd:decode-html($parText)" />
         </Paragraph>
       </Textblock>
     </PlaceObject>

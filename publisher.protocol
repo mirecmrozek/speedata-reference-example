@@ -1,13 +1,15 @@
 Protocol file for speedata Publisher (3.6.1)
-Time: Wed Oct 16 14:19:34 2019
+Time: Thu Oct 17 11:25:01 2019
 ---------------------------------------------
 Start processing
 Running LuaTeX version 107 on linux
 Loading hyphenation patterns "hyph-en-gb.pat.txt".
 Language id: 0
 Loading layout instructions "/home/mirec/Documents/work/sp-example/layout.xml"
-Load Fontfile "CrimsonText-Bold.ttf"
-Load Fontfile "CrimsonText-Regular.ttf"
+Load Fontfile "Crimson-Roman.otf"
+Load Fontfile "Crimson-Bold.otf"
+Load Fontfile "Crimson-Italic.otf"
+Load Fontfile "Crimson-BoldItalic.otf"
 DefineFontfamily, family=2, name="Title"
 DefineFontfamily, family=3, name="DocumentTitle"
 DefineFontfamily, family=4, name="text"
@@ -231,6 +233,6 @@ Warning: Object protrudes below the last line of the page
 Warning: Conflict in grid
 Stop processing data
 0 errors occurred
-Duration: 0.201017 seconds
+Duration: 0.221416 seconds
 ---------------------------------------------
-Duration: 0.201020 seconds
+Duration: 0.221418 seconds

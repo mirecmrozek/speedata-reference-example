@@ -25,8 +25,8 @@ so you can see how things render.</simpara>
 <chapter xml:id="_basic_formatting">
 <title>Basic Formatting</title>
 <simpara>Writing a basic text with Asciidoctor is similar to what you&#8217;d do in Slack. You
-can emphasize <emphasis>important messages with italic</emphasis>, <emphasis role="strong">even more important ones
-with bold</emphasis>, <emphasis role="strong"><emphasis>combining them is not recommended</emphasis></emphasis> though. <literal>Monospace is the
+can emphasize &lt;i&gt;important messages with italic&lt;/i&gt;, &lt;b&gt;even more important ones
+with bold&lt;/b&gt;, &lt;b&gt;&lt;i&gt;combining them is not recommended&lt;/i&gt;&lt;/b&gt; though. <literal>Monospace is the
 right choice if you want to sound like a machine.</literal></simpara>
 <simpara>Linebreaks
 (enters)
@@ -483,15 +483,15 @@ easier:</simpara>
 </thead>
 <tbody>
 <row>
-<entry align="left" valign="top"><simpara><emphasis role="strong">Flowers</emphasis></simpara></entry>
-<entry align="left" valign="top"><simpara><emphasis>Remarkable piece of art never seen before</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>&lt;b&gt;Flowers&lt;/b&gt;</simpara></entry>
+<entry align="left" valign="top"><simpara>&lt;i&gt;Remarkable piece of art never seen before&lt;/i&gt;</simpara></entry>
 <entry align="left" valign="top"><literallayout>O flowers, dear flowers,
 you are like lovers,
 o my dear flowers.</literallayout></entry>
 </row>
 <row>
-<entry align="left" valign="top"><simpara><emphasis role="strong">Grass</emphasis></simpara></entry>
-<entry align="left" valign="top"><simpara><emphasis>Best piece of poetry since flowers</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>&lt;b&gt;Grass&lt;/b&gt;</simpara></entry>
+<entry align="left" valign="top"><simpara>&lt;i&gt;Best piece of poetry since flowers&lt;/i&gt;</simpara></entry>
 <entry align="left" valign="top"><literallayout>O grass, dear grass,
 you are like grass,
 o my dear grass.</literallayout></entry>
