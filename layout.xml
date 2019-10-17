@@ -190,7 +190,7 @@
           <Tr>
             <ForAll select="entry">
               <Td align="left" border-left="0.2pt" border-right="0.2pt">
-                <Paragraph><Value select="simpara"/></Paragraph>
+                <Paragraph><Value select="sd:decode-html(simpara)"/></Paragraph>
               </Td>
             </ForAll>
           </Tr>
@@ -217,7 +217,7 @@
             <Tr>
               <ForAll select="entry">
                 <Td align="@align" border-left="0.2pt" border-right="0.2pt">
-                  <Paragraph><B><Value select="."/></B></Paragraph>
+                  <Paragraph><B><Value select="sd:decode-html(.)"/></B></Paragraph>
                 </Td>
               </ForAll>
             </Tr>
@@ -229,7 +229,7 @@
           <Tr>
             <ForAll select="entry">
               <Td align="left" border-left="0.2pt" border-right="0.2pt">
-                <Paragraph><Value select="simpara"/></Paragraph>
+                <Paragraph><Value select="sd:decode-html(simpara)"/></Paragraph>
               </Td>
             </ForAll>
           </Tr>

@@ -1,5 +1,5 @@
 Protocol file for speedata Publisher (3.6.1)
-Time: Thu Oct 17 11:25:57 2019
+Time: Thu Oct 17 11:28:31 2019
 ---------------------------------------------
 Start processing
 Running LuaTeX version 107 on linux
@@ -233,6 +233,6 @@ Warning: Object protrudes below the last line of the page
 Warning: Conflict in grid
 Stop processing data
 0 errors occurred
-Duration: 0.222562 seconds
+Duration: 0.220130 seconds
 ---------------------------------------------
-Duration: 0.222563 seconds
+Duration: 0.220132 seconds
