@@ -1,32 +1,32 @@
 <referenceTable>
- <reference refText="1." name="_preambula">
+ <reference refText="1. Preambula" name="_preambula">
  </reference>
  <reference refText="1.1." name="">
  </reference>
- <reference refText="2." name="_predmet_a_účel_zmluvy">
+ <reference refText="2. Predmet a účel Zmluvy" name="_predmet_a_účel_zmluvy">
  </reference>
- <reference refText="3." name="_režim_vytvárania_diela">
+ <reference refText="3. Režim vytvárania Diela" name="_režim_vytvárania_diela">
  </reference>
- <reference refText="4." name="_odmena_a_platobné_podmienky">
+ <reference refText="4. Odmena a platobné podmienky" name="_odmena_a_platobné_podmienky">
  </reference>
- <reference refText="5." name="_práva_povinnosti_a_vyhlásenia_zmluvných_strán">
+ <reference refText="5. Práva, povinnosti a vyhlásenia Zmluvných strán" name="_práva_povinnosti_a_vyhlásenia_zmluvných_strán">
  </reference>
- <reference refText="6." name="_spolupráca_s_klientmi_objednávateľa">
+ <reference refText="6. Spolupráca s klientmi Objednávateľa" name="_spolupráca_s_klientmi_objednávateľa">
  </reference>
- <reference refText="7." name="zodpovednost-za-skodu">
+ <reference refText="7. Zodpovednosť za škodu" name="zodpovednost-za-skodu">
  </reference>
- <reference refText="8." name="_licenčná_zmluva">
+ <reference refText="8. Licenčná zmluva" name="_licenčná_zmluva">
  </reference>
- <reference refText="9." name="_záväzok_mlčanlivosti_a_dôverné_informácie">
+ <reference refText="9. Záväzok mlčanlivosti a dôverné informácie" name="_záväzok_mlčanlivosti_a_dôverné_informácie">
  </reference>
- <reference refText="10." name="_súhlas_so_spracovaním_osobných_údajov">
+ <reference refText="10. Súhlas so spracovaním osobných údajov" name="_súhlas_so_spracovaním_osobných_údajov">
  </reference>
- <reference refText="11." name="_doba_trvania_zmluvy_a_skončenie_zmluvy">
+ <reference refText="11. Doba trvania Zmluvy a skončenie Zmluvy" name="_doba_trvania_zmluvy_a_skončenie_zmluvy">
  </reference>
- <reference refText="12." name="_doručovanie">
+ <reference refText="12. Doručovanie" name="_doručovanie">
  </reference>
- <reference refText="13." name="_dohoda_o_ukončení_predchádzajúcich_právnych_vzťahov">
+ <reference refText="13. Dohoda o ukončení predchádzajúcich právnych vzťahov" name="_dohoda_o_ukončení_predchádzajúcich_právnych_vzťahov">
  </reference>
- <reference refText="14." name="_záverečné_ustanovenia">
+ <reference refText="14. Záverečné ustanovenia" name="_záverečné_ustanovenia">
  </reference>
 </referenceTable>

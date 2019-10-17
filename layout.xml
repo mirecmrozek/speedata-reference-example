@@ -23,7 +23,7 @@
         <Copy-of select="$referenceTable" />
         <Element name="reference">
           <Attribute name="name" select="@xml:id" />
-          <Attribute name="refText" select="concat($sectionNumber, '.')" />
+          <Attribute name="refText" select="concat($sectionNumber, '. ', string(title))" />
         </Element>
       </SetVariable>
       <ForAll select="simpara">
