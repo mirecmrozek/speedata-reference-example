@@ -3,6 +3,7 @@
   xmlns="urn:speedata.de:2009/publisher/en"
   xmlns:sd="urn:speedata:2009/publisher/functions/en"
   version="2.9.7">
+  <Options ignoreeol="yes" crop="3mm"/>
 
   <!-- fonts in fonts.xml -->
   <!-- pagination in pagination.xml -->
