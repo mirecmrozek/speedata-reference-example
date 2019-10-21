@@ -42,7 +42,7 @@ S ohľadom na hore uvedené skutočnosti sa zmluvné strany dohodli na nasleduj�
 
 == Predmet a účel Zmluvy
 
-Autor sa zaväzuje pre Objednávateľa opakovane vytvárať a vykonávať
+.	Autor sa zaväzuje pre Objednávateľa opakovane vytvárať a vykonávať
 (i) primárne dielo na objednávku pozostávajúce zo softwaru, ktorý nie je
 počítačovým programom v zmysle Autorského zákona, t.j. dokumentácie, elektronických
 dát, výskumu, DevOps (v angličtine „development & IT operations“), prípravy
@@ -59,24 +59,24 @@ usmerňuje Objednávateľ a / alebo Klient v súčinnosti s Autorom za účelom 
 softwarových riešení klientom Objednávateľa a / alebo vytváraním vlastných softwarových
 riešení Objednávateľa.
 
-Dielo, spoločne s ostatnými prvkami spolupráce, bude špecifikované v objednávke,
+. Dielo, spoločne s ostatnými prvkami spolupráce, bude špecifikované v objednávke,
 ktorá tvorí neoddeliteľnú súčasť Zmluvy (ďalej ako *„Objednávka“*). Ustanovenia Zmluvy
 sa budú vzťahovať na každé Dielo vytvorené Autorom na základe Objednávky.
 
-Objednávateľ sa Autorovi zaväzuje za riadne a včasné splnenie Zmluvných povinností
+. Objednávateľ sa Autorovi zaväzuje za riadne a včasné splnenie Zmluvných povinností
 zo strany Autora zaplatiť Odmenu podľa Zmluvy.
 
-Autor si pre účel napĺňania účelu Zmluvy prenajíma pracovný stôl (fixdesk alebo flexidesk)
+. Autor si pre účel napĺňania účelu Zmluvy prenajíma pracovný stôl (fixdesk alebo flexidesk)
 v priestoroch Objednávateľa (Vacuumlabs cowork) a určité technické vybavenie v zmysle odseku <<fix-desk-rental>> Zmluvy.
 
 == Režim vytvárania Diela
 
-Objednávateľ pošle Autorovi Objednávku písomne alebo ústne, a to najmä prostredníctvom emailu,
+. Objednávateľ pošle Autorovi Objednávku písomne alebo ústne, a to najmä prostredníctvom emailu,
 služby Slack, Skype, alebo spoločného úložiska. Momentom prijatia Objednávky Autorom,
 bez ohľadu na to, či bude Objednávka prijatá písomne, ústne, konkludentne alebo
 akokoľvek inak, uzavrú Zmluvné strany čiastkovú zmluvu v zmysle predmetnej Objednávky.
 
-[[ordered-software]] Zmluvné strany považujú za nesporné, že Software vytvorený
+. [[ordered-software]] Zmluvné strany považujú za nesporné, že Software vytvorený
 v zmysle Zmluvy je vytváraný na objednávku Objednávateľa v zmysle §91 ods. 1
 Autorského zákona, a preto platí, že Autor udelil Objednávateľovi súhlas na použitie
 Softwaru na účel vyplývajúci zo zmluvy, na základe ktorého Objednávateľ vo vzťahu k
@@ -85,7 +85,7 @@ Autor udeľuje Objednávateľovi súhlas na výkon osobnostných práv autora v 
 definovanom v §90 ods. 6 Autorského zákona. Objednávateľ je oprávnený vyššie
 uvedené práva v právom dovolenom rozsahu postúpiť na tretiu osobu.
 
-[[ordered-program]] Zmluvné strany považujú za nesporné, že Počítačový program
+. [[ordered-program]] Zmluvné strany považujú za nesporné, že Počítačový program
 vytvorený v zmysle Zmluvy je vytváraný na objednávku Objednávateľa, a preto sa
 na neho vzťahuje režim zamestnaneckého diela v zmysle §91 ods. 4 Autorského zákona,
 na základe ktorého Objednávateľ vo vzťahu k Počítačovému programu vykonáva
@@ -94,49 +94,53 @@ Objednávateľovi súhlas na výkon osobnostných práv autora v rozsahu definov
 v §90 ods. 6 Autorského zákona. Objednávateľ je oprávnený vyššie uvedené práva
 v právom dovolenom rozsahu postúpiť na tretiu osobu.
 
-Autor nie je oprávnený Dielo, ani jeho časť, sám použiť, ako ani udeliť súhlas
+. Autor nie je oprávnený Dielo, ani jeho časť, sám použiť, ako ani udeliť súhlas
 na jeho použitie tretej osobe.
 
-Objednávateľ vytvorením Diela, alebo jeho časti, nadobúda právo používať Dielo
+. Objednávateľ vytvorením Diela, alebo jeho časti, nadobúda právo používať Dielo
 v rozsahu a za podmienok stanovených v Zmluve.
 
-Vzhľadom na povahu, komplexnosť a náročnosť softwarových projektov klientov
+. Vzhľadom na povahu, komplexnosť a náročnosť softwarových projektov klientov
 Objednávateľa sa Zmluvné strany dohodli, že Autor bude v priemere 80% času pri
 zhotovovaní Diela venovať zhotovovaniu Software-u a 20% času venovaného zhotovovaniu
 Diela bude venovať zhotovovaniu Počítačového programu.
 
-Zmluvné strany sa dohodli, že Autor neposkytuje záruku na kvalitu a funkčnosť
+. Zmluvné strany sa dohodli, že Autor neposkytuje záruku na kvalitu a funkčnosť
 Diela, ak v odseku <<zodpovednost-za-skodu>> Zmluvy nie je uvedené inak.
 
 == Odmena a platobné podmienky
 
-Za každý kalendárny mesiac, počas ktorého mali Zmluvné strany medzi sebou
+. Za každý kalendárny mesiac, počas ktorého mali Zmluvné strany medzi sebou
 uzatvorenú čiastkovú zmluvu, sa Zmluvné strany dohodli na kombinovanej odmene pre
 Autora, a to vo výške súčtu:
++
 --
 
-. odmeny za vytvorenie Software-u vo výške {author-rate} EUR na hodinu, pričom táto časť
+.. odmeny za vytvorenie Software-u vo výške {author-rate} EUR na hodinu, pričom táto časť
 predstavuje 20% celkovej odmeny za Software;
 
-. odmeny za udelenie súhlasu na vykonávanie majetkových a v Zmluve
+.. odmeny za udelenie súhlasu na vykonávanie majetkových a v Zmluve
 špecifikovaných osobnostných práv autora k Software-u, pričom táto časť
 predstavuje 80% celkovej odmeny za Software;
++
 (odmena v zmysle odsekov 3.1.1 a 3.1.2 ďalej spolu ako *„Odmena za
 Software“*)
 
-. odmeny za vytvorenie Počítačového programu vo výške {author-rate} EUR na hodinu, pričom
+.. odmeny za vytvorenie Počítačového programu vo výške {author-rate} EUR na hodinu, pričom
 táto časť predstavuje 20% celkovej odmeny za Počítačový program; a
 
-. odmeny za udelenie súhlasu na vykonávanie majetkových a v Zmluve
+.. odmeny za udelenie súhlasu na vykonávanie majetkových a v Zmluve
 špecifikovaných osobnostných práv autora k Počítačovému programu, pričom
 táto časť predstavuje 80% celkovej odmeny za Počítačový program;
++
 (odmena v zmysle odsekov 3.1.3 a 3.1.4 ďalej spolu ako *„Odmena za
 Počítačový program“*)
-(Odmena za Software a Odmena za Počítačový program ďalej spolu ako *„Odmena“*).
 --
++
+(Odmena za Software a Odmena za Počítačový program ďalej spolu ako *„Odmena“*).
 
 
-[[invoice-process]] Zmluvné strany sa dohodli na vyhotovovaní faktúr Objednávateľom v mene a na účet
+. [[invoice-process]] Zmluvné strany sa dohodli na vyhotovovaní faktúr Objednávateľom v mene a na účet
 Autora za dodanie služieb v zmysle Zmluvy. Overovacia prevádzka samofakturácie
 bude prebiehať v sídle Objednávateľa. Objednávateľ bude vyhotovovať faktúry za
 každý kalendárny mesiac trvania Objednávky na základe záznamov v monitorovacom
@@ -145,13 +149,13 @@ mesiaca. Faktúra musí spĺňať všetky požiadavky právnych predpisov na jej
 vyhotovenie. Objednávateľ zašle vyhotovenú faktúru bezodkladne po jej vyhotovení
 Autorovi.
 
-Zmluvné strany sa dohodli, že Odmena zahŕňa celkovú odmenu Autora za zhotovenie
+. Zmluvné strany sa dohodli, že Odmena zahŕňa celkovú odmenu Autora za zhotovenie
 a vykonanie Diela, udelenie súhlasu na použitie Diela podľa Zmluvy, udelenie
 licencie na použitie Diela a akékoľvek iné použitie Diela v zmysle Zmluvy,
 vrátane akýchkoľvek a všetkých nákladov, ktoré Autorovi vzniknú pri výkone jeho
 povinností s výnimkou vopred odsúhlasených nákladov s Objednávateľom.
 
-Zmluvné strany berú na vedomie, že v súlade s § 5 v spojení s § 7 ods. 1 písm.
+. Zmluvné strany berú na vedomie, že v súlade s § 5 v spojení s § 7 ods. 1 písm.
 b) zákona č. 13/1993 Z. z. o umeleckých fondoch v znení neskorších predpisov je
 príjemca Odmeny, t.j. Autor, povinný odviesť Literárnemu fondu príspevok vo
 výške 2% z Odmeny za vytvorenie Počítačového programu. Podľa § 6 ods. 1 zákona č.
@@ -164,7 +168,7 @@ Objednávateľom uhradená vo výške po zrazení príspevku Literárnemu fondu.
 
 == Práva, povinnosti a vyhlásenia Zmluvných strán
 
-Objednávateľ v súvislosti so Zmluvou:
+. Objednávateľ v súvislosti so Zmluvou:
 
 .. poskytne Autorovi potrebnú súčinnosť tak, aby Autor mohol riadne plniť svoje
 záväzky, najmä mu poskytne potrebné podklady, informácie a dokumenty, ktoré sú
@@ -187,7 +191,7 @@ prenajímateľom priestoru a Objednávateľom a počínať si tak, aby nedošlo 
 na prenajatom technickom vybavení. V prípade porušenia tejto povinnosti zodpovedá
 Autor za vzniknutú škodu.
 
-Autor, v súvislosti s plnením povinností podľa Zmluvy:
+. Autor, v súvislosti s plnením povinností podľa Zmluvy:
 
 .. je povinný plniť si svoje povinnosti v určených lehotách a s odbornou
 starostlivosťou a Dielo dodať vždy v dohodnutej kvalite, v opačnom prípade je
@@ -231,13 +235,13 @@ pomôcok, ktoré určí a poskytne Objednávateľ;
 ani zriadiť záložné právo na pohľadávky vyplývajúce zo Zmluvy, v celku alebo
 jednotlivo, bez predchádzajúceho písomného súhlasu Objednávateľa.
 
-Zmluvná strana, v súvislosti so Zmluvou nie je oprávnená jednostranne započítať
+. Zmluvná strana, v súvislosti so Zmluvou nie je oprávnená jednostranne započítať
 svoje pohľadávky voči druhej Zmluvnej strane z akejkoľvek inej zmluvy alebo dohody
 medzi Zmluvnými stranami voči pohľadávke na zaplatenie akéhokoľvek peňažného záväzku.
 
 == Spolupráca s klientmi Objednávateľa
 
-Bez predchádzajúceho písomného súhlasu Objednávateľa s overeným podpisom
+. Bez predchádzajúceho písomného súhlasu Objednávateľa s overeným podpisom
 jeho štatutárneho zástupcu, Autor (ako fyzická osoba autor; ako živnostník; ako
 spoločník; štatutárny zástupca; prokurista alebo odberateľ a/alebo dodávateľ
 služieb obchodnej spoločnosti) nemôže uzatvoriť zmluvu, na základe ktorej bude
@@ -267,7 +271,7 @@ uvedenej lehote nedôjde k odstráneniu predmetného porušenia, je Autor povinn
 Objednávateľovi bezodkladne uhradiť zmluvnú pokutu vo výške 500.000 EUR
 (slovom: päťstotisíc eur).
 
-Autor je oprávnený žiadať od Objednávateľa záväzné stanovisko či prípadný právny
+. Autor je oprávnený žiadať od Objednávateľa záväzné stanovisko či prípadný právny
 vzťah s konkrétnou treťou stranou bude napĺňať skutkovú podstatu Spolupráce s
 Odberateľom a či mu za jeho uzatvorenie hrozí zmluvná pokuta špecifikovaná v Zmluve.
 Objednávateľ je povinný na takýto dotaz Autorovi poskytnúť záväzné stanovisko
@@ -278,18 +282,18 @@ bezodkladne, najviac do jedného (1) mesiaca.
 [[zodpovednost-za-skodu]]
 == Zodpovednosť za škodu
 
-[[liability-limit]] Zmluvná strana zodpovedá iba za škodu spôsobenú úmyselne
+. [[liability-limit]] Zmluvná strana zodpovedá iba za škodu spôsobenú úmyselne
 alebo v dôsledku vedomej nedbanlivosti pri výkone práv a povinností vyplývajúcich
 zo Zmluvy alebo z každej Čiastkovej zmluvy a to do výšky 20.000 EUR
 (slovom: dvadsaťtisíc euro).
 
-Bez toho, aby bol dotknutý odsek <<liability-limit>> Zmluvy, Zmluvná strana,
+. Bez toho, aby bol dotknutý odsek <<liability-limit>> Zmluvy, Zmluvná strana,
 ktorá porušila svoju povinnosť z tejto Zmluvy, nie je zodpovedná za škodu,
 ak preukáže, že porušenie jej povinnosti bolo spôsobené okolnosťami vylučujúcimi
 zodpovednosť v zmysle § 374 ods. 1 zákona č. 513/1991 Zb. Obchodný zákonník v
 znení neskorších predpisov (ďalej ako *„Obchodný zákonník“*).
 
-Zmluvná strana, ktorá porušila povinnosti zo Zmluvy je povinná:
+. Zmluvná strana, ktorá porušila povinnosti zo Zmluvy je povinná:
 
 .. bezodkladne oznámiť druhej Zmluvnej strane povahu, rozsah, účinok a
 pravdepodobnú dobu trvania porušenia týchto povinností;
@@ -302,7 +306,7 @@ skutočnosť druhej Zmluvnej strane.
 
 == Licenčná zmluva
 
-[[license]] Na každé Dielo vytvorené Autorom podľa tejto Zmluvy, na ktoré sa
+. [[license]] Na každé Dielo vytvorené Autorom podľa tejto Zmluvy, na ktoré sa
 nebudú vzťahovať ustanovenia v odsekoch <<ordered-software>> a <<ordered-program>>,
 a v súvislosti s ktorým vykonáva Autor majetkové práva pod svojím menom a na svoj
 účet, udeľujeAutor Objednávateľovi ku dňu vytvorenia Diela teritoriálne a časovo
@@ -322,7 +326,7 @@ diela a spojeného diela, resp. právo na použitie diela v databáze, spoločno
 a spojenom diele, a to ako Objednávateľom osobne, tak aj osobami ním poverenými, a
 to maximálne v rozsahu v akom Objednávateľ licenciu prijal.
 
-Autor vyhlasuje, že disponuje právami k jednotlivým plneniam (vrátane ich
+. Autor vyhlasuje, že disponuje právami k jednotlivým plneniam (vrátane ich
 súčastí), ktoré dodal Objednávateľovi na základe licencií udelených Autorovi
 treťou osobou, ktorá k nim má alebo vykonáva autorské práva alebo práva
 priemyselného alebo iného duševného vlastníctva a bezodplatne udeľuje
@@ -332,7 +336,7 @@ podľa Zmluvy je v súlade s právami, ktoré Autorovi udelila tretia osoba, pri
 túto skutočnosť je Autor na požiadanie Objednávateľa povinný preukázať najmä
 uzatvorenou zmluvou s touto treťou osobou.
 
-Ak si tretia osoba, vrátane Pracovníkov, uplatní nárok proti Objednávateľovi
+. Ak si tretia osoba, vrátane Pracovníkov, uplatní nárok proti Objednávateľovi
 z titulu porušenia jej autorských práv alebo práv priemyselného alebo iného
 duševného vlastníctva spôsobeného Autorom, tento sa zaväzuje:
 
@@ -349,7 +353,7 @@ uplatnením vyššie uvedeného nároku tretej osoby.
 
 == Záväzok mlčanlivosti a dôverné informácie
 
-[[secrecy]] Zmluvné strany sú povinné zachovávať záväzok mlčanlivosti o
+. [[secrecy]] Zmluvné strany sú povinné zachovávať záväzok mlčanlivosti o
 dôverných informáciách v zmysle odseku <<secret-information>> Zmluvy (ďalej ako
 „Dôverné informácie“), pričom tieto smú používať výlučne na účel plnenia záväzkov
 podľa Zmluvy a nesmú ich rozširovať, poskytovať a sprístupňovať tretím osobám
@@ -357,7 +361,7 @@ alebo ich použiť pre seba alebo pre iné osoby v rozpore s účelom, na ktorý
 boli poskytnuté. Záväzok mlčanlivosti trvá aj po skončení Zmluvy, a to po dobu
 troch (3) rokov odo dňa jej skončenia.
 
-[[secret-information]] Zmluvné strany sa dohodli, že Dôvernými informáciami
+. [[secret-information]] Zmluvné strany sa dohodli, že Dôvernými informáciami
 sú informácie, ktoré:
 
 .. sa týkajú obsahu Zmluvy, popisu a charakteristiky Diela;
@@ -369,14 +373,14 @@ sú informácie, ktoré:
 .. sa Zmluvná strana dozvie pri výkone práv a povinností podľa Zmluvy, o ktorých
 sa dá rozumne predpokladať, že majú ostať dôverné.
 
-Zmluvné strany sú povinné vykonať primerané opatrenia, aby sa zabránilo
+. Zmluvné strany sú povinné vykonať primerané opatrenia, aby sa zabránilo
 úniku, poskytnutiu alebo sprístupneniu Dôverných informácií tretím osobám.
 
-8.4	Zmluvná strana je po skončení Zmluvy povinná bezodkladne vrátiť druhej
+. 8.4	Zmluvná strana je po skončení Zmluvy povinná bezodkladne vrátiť druhej
 Zmluvnej strane všetky podklady, materiály a ich obsah, ktoré obdržala v súvislosti
 s plnením povinností podľa Zmluvy, prípadne ich zničiť, ak ich nie je možné vrátiť.
 
-Ustanovenie odseku <<secrecy>> Zmluvy sa nepoužije,
+. Ustanovenie odseku <<secrecy>> Zmluvy sa nepoužije,
 
 .. ak Zmluvná strana preukáže, že Dôverné informácie boli verejne prístupné bez
 toho, aby sa stali verejne prístupné konaním alebo opomenutím Zmluvnej strany;
@@ -399,7 +403,7 @@ druhú Zmluvnú stranu o predmetných okolnostiach; alebo
 .. ak Dôverné informácie budú poskytnuté odborným poradcom Zmluvnej strany pod
 záväzkom mlčanlivosti v rozsahu Zmluvy.
 
-Zmluvné strany sa zaväzujú, že povinnosť mlčanlivosti budú v rovnakom rozsahu
+. Zmluvné strany sa zaväzujú, že povinnosť mlčanlivosti budú v rovnakom rozsahu
 dodržiavať aj ich zamestnanci a dodávatelia služieb podieľajúci sa na plnení
 tejto Zmluvy; za porušenie povinnosti mlčanlivosti týmito osobami zodpovedá
 Zmluvná strana tak, ako by povinnosť mlčanlivosti porušila sama.
@@ -411,20 +415,20 @@ niektorých zákonov. Autor týmto udeľuje súhlas so spracúvaním svojich oso
 údajov Objednávateľom. Údaje budú spracované v informačnom systéme Objednávateľa
 a sú poskytnuté pre účely ich interného využitia za účelom napĺňania účelu Zmluvy.
 
-Rozsah osobných údajov: meno, priezvisko, trvalé bydlisko, tel. číslo, email,
+. Rozsah osobných údajov: meno, priezvisko, trvalé bydlisko, tel. číslo, email,
 dátum narodenia, bankové spojenie.
 
-Tento súhlas je udelený na dobu nevyhnutnú pre dosiahnutie účelu
+. Tento súhlas je udelený na dobu nevyhnutnú pre dosiahnutie účelu
 spracovania a je ho možné kedykoľvek písomne alebo emailom odvolať.
 
-Všetky práva dotknutej osoby sú zadefinované v druhej hlave Zákona č.
+. Všetky práva dotknutej osoby sú zadefinované v druhej hlave Zákona č.
 18/2018 Z. z. o ochrane osobných údajov a o zmene a doplnení niektorých zákonov.
 
 == Doba trvania Zmluvy a skončenie Zmluvy
 
-Táto Zmluva sa uzatvára na dobu neurčitú.
+. Táto Zmluva sa uzatvára na dobu neurčitú.
 
-Táto Zmluva môže skončiť len z nasledovných dôvodov:
+. Táto Zmluva môže skončiť len z nasledovných dôvodov:
 
 .. vzájomnou písomnou dohodou Zmluvných strán;
 
@@ -435,11 +439,11 @@ v legislatíve, účinným od doručenia druhej Zmluvnej strane; alebo
 lehote, ktorá začína plynúť v nasledujúci deň po doručení výpovede druhej Zmluvnej
 strane.
 
-Bezodkladne po skončení Zmluvy Autor odovzdá Objednávateľovi Dielo resp. jeho
+. Bezodkladne po skončení Zmluvy Autor odovzdá Objednávateľovi Dielo resp. jeho
 časti (vrátane zdrojových kódov a súvisiacej dokumentácie) vykonané do dňa skončenia
 Zmluvy.
 
-Skončením Zmluvy nezanikajú povinnosti a nároky Zmluvných strán, ktoré podľa
+. Skončením Zmluvy nezanikajú povinnosti a nároky Zmluvných strán, ktoré podľa
 Zmluvy a legislatívy majú trvať aj po skončení Zmluvy. Pre vylúčenie pochybností,
 takýmito sú najmä, nie však výlučne, práva spojené s udelenou licenciou k Dielu,
 záväzok mlčanlivosti, peňažné nároky, nároky na náhradu škody a iné povinnosti a
@@ -447,11 +451,11 @@ nároky, ktoré svojou povahou nezanikajú ukončením Zmluvy.
 
 == Doručovanie
 
-Akýkoľvek úkon, ktorý má byť podľa Zmluvy urobený v písomnej podobe, musí byť
+. Akýkoľvek úkon, ktorý má byť podľa Zmluvy urobený v písomnej podobe, musí byť
 doručený na adresu Zmluvnej strany uvedenej v záhlaví Zmluvy buď (i) osobne;
 (ii) doporučenou zásielkou; alebo (iii) e-mailom.
 
-Zásielka sa považuje za doručenú dňom:
+. Zásielka sa považuje za doručenú dňom:
 
 .. jej prevzatia druhou Zmluvnou stranou do rúk;
 
@@ -461,63 +465,64 @@ Zásielka sa považuje za doručenú dňom:
 
 .. zmarenia alebo odmietnutia doručenia.
 
-Pokiaľ je za deň doručenia podľa vyššie uvedených pravidiel preukázateľne možno
+. Pokiaľ je za deň doručenia podľa vyššie uvedených pravidiel preukázateľne možno
 považovať viac ako jeden deň, je dňom doručenia skorší deň.
 
 == Dohoda o ukončení predchádzajúcich právnych vzťahov
 
-Zmluva predstavuje celú dohodu medzi Zmluvnými stranami týkajúcu sa predmetu Zmluvy
+. Zmluva predstavuje celú dohodu medzi Zmluvnými stranami týkajúcu sa predmetu Zmluvy
 a nahrádza akúkoľvek dohodu, zmluvu a predzmluvné vyhlásenie týkajúce sa rovnakého
 a/alebo obdobného predmetu Zmluvy (ďalej ako *„Predchádzajúce dohody“*), ktoré dňom
 uzavretia Zmluvy zanikajú.
 
-Povinnosti a nároky Zmluvných strán, ktoré podľa Predchádzajúcich dohôd alebo
+. Povinnosti a nároky Zmluvných strán, ktoré podľa Predchádzajúcich dohôd alebo
 legislatívy majú trvať aj po skončení Predchádzajúcich dohôd, budú trvať naďalej
 v rozsahu podľa Predchádzajúcich dohôd alebo legislatívy.
 
 
 == Záverečné ustanovenia
 
-Táto Zmluva nadobúda platnosť a účinnosť dňom jej podpisu oboma Zmluvnými stranami.
+. Táto Zmluva nadobúda platnosť a účinnosť dňom jej podpisu oboma Zmluvnými stranami.
 
-Ktorékoľvek ustanovenie Zmluvy, ktoré je alebo sa stane neplatným alebo
+. Ktorékoľvek ustanovenie Zmluvy, ktoré je alebo sa stane neplatným alebo
 nevymáhateľným, sa bude považovať za oddeliteľné od Zmluvy a bude sa považovať
 ako zo Zmluvy vymazané, pričom vo zvyšnej časti zostane Zmluva nedotknutá, platná
 a účinná. Zmluvné strany sa zaväzujú nahradiť neplatné alebo nevymáhateľné
 ustanovenie ustanovením, ktoré najbližšie zodpovedá ich zmyslu a účelu podľa Zmluvy.
 
-Táto Zmluva je vyhotovená v dvoch (2) origináloch, pričom každá Zmluvná strana
+. Táto Zmluva je vyhotovená v dvoch (2) origináloch, pričom každá Zmluvná strana
 obdrží jeden. Zmluvu je možné meniť a dopĺňať len po dohode Zmluvných strán vo
 forme očíslovaných písomných dodatkov k nej.
 
-Pre vylúčenie akejkoľvek pochybností, Zmluvné strany vyhlasujú že touto Zmluvou
+. Pre vylúčenie akejkoľvek pochybností, Zmluvné strany vyhlasujú že touto Zmluvou
 za žiadnych okolností nevstupujú do pracovnoprávneho vzťahu, ale do obchodného
 vzťahu medzi dvoma rovnoprávnymi subjektmi v zmysle Obchodného zákonníka. Autor
 bude vyššie uvedené Dielo pre Objednávateľa vykonávať na vlastnú zodpovednosť a
 riziko ako samostatne zárobkovo činná osoba, nebude v podriadenom postavení voči
 Objednávateľovi, a preto Autor nebude vykonávať závislú prácu.
 
-Zmluvné strany sa v súlade s § 262 ods. 1 Obchodného zákonníka dohodli, že ich
+. Zmluvné strany sa v súlade s § 262 ods. 1 Obchodného zákonníka dohodli, že ich
 záväzkový vzťah sa spravuje Obchodným zákonníkom, pokiaľ sa na vzťah neaplikujú
 kogentné ustanovenia Občianskeho zákonníka alebo Autorského zákona. Zmluvné strany
 sa zaväzujú prípadné spory riešiť vzájomnou dohodou. Ak tá nebude možná, na
 rozhodovanie sporov budú príslušné súdy Slovenskej republiky.
 
-Zmluvné strany vyhlasujú, že túto Zmluvu uzatvárajú slobodne a vážne, že táto
+. Zmluvné strany vyhlasujú, že túto Zmluvu uzatvárajú slobodne a vážne, že táto
 nebola uzavretá za nevýhodných podmienok alebo v tiesni a na znak súhlasu ju podpisujú.
 
 
 
 [cols=2, frame="none", grid="none", options="unbreakable"]
 |===
-| V Bratislave, dňa {signing-date}
-| V Bratislave, dňa {signing-date}
-| _Za Objednávateľa_
-| _Za Poskytovateľa_
-|
-|
-| ........................................
-| ........................................
-| Samuel Hapák, konateľ
-| {author-name}
+v| V Bratislave, dňa {signing-date}
+ _Za Objednávateľa_
+
+ ........................................
+ Samuel Hapák, konateľ
+
+v| V Bratislave, dňa {signing-date}
+ _Za Poskytovateľa_
+
+ ........................................
+ {author-name}
 |===

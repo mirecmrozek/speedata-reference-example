@@ -1,7 +1,7 @@
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Rámcová zmluva o dielo a rámcová licenčná zmluva</title>
-<date>2019-10-16</date>
+<date>2019-10-21</date>
 </info>
 <simpara>&lt;b&gt;Táto rámcová zmluva o dielo&lt;/b&gt; uzavretá podľa § 631 a nasl. zákona č. 40/1964
 Zb. Občiansky zákonník v znení neskorších predpisov (ďalej len &lt;b&gt;„Občiansky zákonník“&lt;/b&gt;)
@@ -81,8 +81,6 @@ sprostredkovaných Objednávateľom; a</simpara>
 </section>
 <section xml:id="_predmet_a_účel_zmluvy">
 <title>Predmet a účel Zmluvy</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara>Autor sa zaväzuje pre Objednávateľa opakovane vytvárať a vykonávať
 (i) primárne dielo na objednávku pozostávajúce zo softwaru, ktorý nie je
 počítačovým programom v zmysle Autorského zákona, t.j. dokumentácie, elektronických
@@ -99,32 +97,20 @@ Počítačový program ďalej spolu ako &lt;b&gt;„Dielo“&lt;/b&gt;), ktoréh
 usmerňuje Objednávateľ a / alebo Klient v súčinnosti s Autorom za účelom poskytovania
 softwarových riešení klientom Objednávateľa a / alebo vytváraním vlastných softwarových
 riešení Objednávateľa.</simpara>
-</listitem>
-<listitem>
 <simpara>Dielo, spoločne s ostatnými prvkami spolupráce, bude špecifikované v objednávke,
 ktorá tvorí neoddeliteľnú súčasť Zmluvy (ďalej ako &lt;b&gt;„Objednávka“&lt;/b&gt;). Ustanovenia Zmluvy
 sa budú vzťahovať na každé Dielo vytvorené Autorom na základe Objednávky.</simpara>
-</listitem>
-<listitem>
 <simpara>Objednávateľ sa Autorovi zaväzuje za riadne a včasné splnenie Zmluvných povinností
 zo strany Autora zaplatiť Odmenu podľa Zmluvy.</simpara>
-</listitem>
-<listitem>
 <simpara>Autor si pre účel napĺňania účelu Zmluvy prenajíma pracovný stôl (fixdesk alebo flexidesk)
 v priestoroch Objednávateľa (Vacuumlabs cowork) a určité technické vybavenie v zmysle odseku <xref linkend="fix-desk-rental"/> Zmluvy.</simpara>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_režim_vytvárania_diela">
 <title>Režim vytvárania Diela</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara>Objednávateľ pošle Autorovi Objednávku písomne alebo ústne, a to najmä prostredníctvom emailu,
 služby Slack, Skype, alebo spoločného úložiska. Momentom prijatia Objednávky Autorom,
 bez ohľadu na to, či bude Objednávka prijatá písomne, ústne, konkludentne alebo
 akokoľvek inak, uzavrú Zmluvné strany čiastkovú zmluvu v zmysle predmetnej Objednávky.</simpara>
-</listitem>
-<listitem>
 <simpara><anchor xml:id="ordered-software" xreflabel="[ordered-software]"/> Zmluvné strany považujú za nesporné, že Software vytvorený
 v zmysle Zmluvy je vytváraný na objednávku Objednávateľa v zmysle §91 ods. 1
 Autorského zákona, a preto platí, že Autor udelil Objednávateľovi súhlas na použitie
@@ -133,8 +119,6 @@ Softwaru vykonáva akékoľvek a všetky majetkové práva autora k Softwaru a z
 Autor udeľuje Objednávateľovi súhlas na výkon osobnostných práv autora v rozsahu
 definovanom v §90 ods. 6 Autorského zákona. Objednávateľ je oprávnený vyššie
 uvedené práva v právom dovolenom rozsahu postúpiť na tretiu osobu.</simpara>
-</listitem>
-<listitem>
 <simpara><anchor xml:id="ordered-program" xreflabel="[ordered-program]"/> Zmluvné strany považujú za nesporné, že Počítačový program
 vytvorený v zmysle Zmluvy je vytváraný na objednávku Objednávateľa, a preto sa
 na neho vzťahuje režim zamestnaneckého diela v zmysle §91 ods. 4 Autorského zákona,
@@ -143,35 +127,23 @@ akékoľvek a všetky majetkové práva autora k dielu a zároveň Autor udeľuj
 Objednávateľovi súhlas na výkon osobnostných práv autora v rozsahu definovanom
 v §90 ods. 6 Autorského zákona. Objednávateľ je oprávnený vyššie uvedené práva
 v právom dovolenom rozsahu postúpiť na tretiu osobu.</simpara>
-</listitem>
-<listitem>
 <simpara>Autor nie je oprávnený Dielo, ani jeho časť, sám použiť, ako ani udeliť súhlas
 na jeho použitie tretej osobe.</simpara>
-</listitem>
-<listitem>
 <simpara>Objednávateľ vytvorením Diela, alebo jeho časti, nadobúda právo používať Dielo
 v rozsahu a za podmienok stanovených v Zmluve.</simpara>
-</listitem>
-<listitem>
 <simpara>Vzhľadom na povahu, komplexnosť a náročnosť softwarových projektov klientov
 Objednávateľa sa Zmluvné strany dohodli, že Autor bude v priemere 80% času pri
 zhotovovaní Diela venovať zhotovovaniu Software-u a 20% času venovaného zhotovovaniu
 Diela bude venovať zhotovovaniu Počítačového programu.</simpara>
-</listitem>
-<listitem>
 <simpara>Zmluvné strany sa dohodli, že Autor neposkytuje záruku na kvalitu a funkčnosť
 Diela, ak v odseku <xref linkend="zodpovednost-za-skodu"/> Zmluvy nie je uvedené inak.</simpara>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_odmena_a_platobné_podmienky">
 <title>Odmena a platobné podmienky</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara>Za každý kalendárny mesiac, počas ktorého mali Zmluvné strany medzi sebou
 uzatvorenú čiastkovú zmluvu, sa Zmluvné strany dohodli na kombinovanej odmene pre
 Autora, a to vo výške súčtu:</simpara>
-<orderedlist numeration="loweralpha">
+<orderedlist numeration="arabic">
 <listitem>
 <simpara>odmeny za vytvorenie Software-u vo výške {author-rate} EUR na hodinu, pričom táto časť
 predstavuje 20% celkovej odmeny za Software;</simpara>
@@ -179,8 +151,8 @@ predstavuje 20% celkovej odmeny za Software;</simpara>
 <listitem>
 <simpara>odmeny za udelenie súhlasu na vykonávanie majetkových a v Zmluve
 špecifikovaných osobnostných práv autora k Software-u, pričom táto časť
-predstavuje 80% celkovej odmeny za Software;</simpara>
-<simpara>(odmena v zmysle odsekov 3.1.1 a 3.1.2 ďalej spolu ako &lt;b&gt;„Odmena za
+predstavuje 80% celkovej odmeny za Software;
+(odmena v zmysle odsekov 3.1.1 a 3.1.2 ďalej spolu ako &lt;b&gt;„Odmena za
 Software“&lt;/b&gt;)</simpara>
 </listitem>
 <listitem>
@@ -190,14 +162,12 @@ táto časť predstavuje 20% celkovej odmeny za Počítačový program; a</simpa
 <listitem>
 <simpara>odmeny za udelenie súhlasu na vykonávanie majetkových a v Zmluve
 špecifikovaných osobnostných práv autora k Počítačovému programu, pričom
-táto časť predstavuje 80% celkovej odmeny za Počítačový program;</simpara>
-<simpara>(odmena v zmysle odsekov 3.1.3 a 3.1.4 ďalej spolu ako &lt;b&gt;„Odmena za
-Počítačový program“&lt;/b&gt;)</simpara>
+táto časť predstavuje 80% celkovej odmeny za Počítačový program;
+(odmena v zmysle odsekov 3.1.3 a 3.1.4 ďalej spolu ako &lt;b&gt;„Odmena za
+Počítačový program“&lt;/b&gt;)
+(Odmena za Software a Odmena za Počítačový program ďalej spolu ako &lt;b&gt;„Odmena“&lt;/b&gt;).</simpara>
 </listitem>
 </orderedlist>
-<simpara>(Odmena za Software a Odmena za Počítačový program ďalej spolu ako &lt;b&gt;„Odmena“&lt;/b&gt;).</simpara>
-</listitem>
-<listitem>
 <simpara><anchor xml:id="invoice-process" xreflabel="[invoice-process]"/> Zmluvné strany sa dohodli na vyhotovovaní faktúr Objednávateľom v mene a na účet
 Autora za dodanie služieb v zmysle Zmluvy. Overovacia prevádzka samofakturácie
 bude prebiehať v sídle Objednávateľa. Objednávateľ bude vyhotovovať faktúry za
@@ -206,15 +176,11 @@ systéme JIRA, pričom splatnosť faktúr bude 15. kalendárny deň nasledujúce
 mesiaca. Faktúra musí spĺňať všetky požiadavky právnych predpisov na jej
 vyhotovenie. Objednávateľ zašle vyhotovenú faktúru bezodkladne po jej vyhotovení
 Autorovi.</simpara>
-</listitem>
-<listitem>
 <simpara>Zmluvné strany sa dohodli, že Odmena zahŕňa celkovú odmenu Autora za zhotovenie
 a vykonanie Diela, udelenie súhlasu na použitie Diela podľa Zmluvy, udelenie
 licencie na použitie Diela a akékoľvek iné použitie Diela v zmysle Zmluvy,
 vrátane akýchkoľvek a všetkých nákladov, ktoré Autorovi vzniknú pri výkone jeho
 povinností s výnimkou vopred odsúhlasených nákladov s Objednávateľom.</simpara>
-</listitem>
-<listitem>
 <simpara>Zmluvné strany berú na vedomie, že v súlade s § 5 v spojení s § 7 ods. 1 písm.
 b) zákona č. 13/1993 Z. z. o umeleckých fondoch v znení neskorších predpisov je
 príjemca Odmeny, t.j. Autor, povinný odviesť Literárnemu fondu príspevok vo
@@ -224,13 +190,9 @@ sumu z Odmeny zraziť právnická osoba, ktorá Odmenu vypláca, t.j. Objednáva
 to až do času úhrady predmetnej faktúry podľa odseku <xref linkend="invoice-process"/> Zmluvy.
 Autor berie na vedomie, že Odmena za vytvorenie Počítačového programu mu bude
 Objednávateľom uhradená vo výške po zrazení príspevku Literárnemu fondu.</simpara>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_práva_povinnosti_a_vyhlásenia_zmluvných_strán">
 <title>Práva, povinnosti a vyhlásenia Zmluvných strán</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara>Objednávateľ v súvislosti so Zmluvou:</simpara>
 <orderedlist numeration="loweralpha">
 <listitem>
@@ -259,8 +221,6 @@ na prenajatom technickom vybavení. V prípade porušenia tejto povinnosti zodpo
 Autor za vzniknutú škodu.</simpara>
 </listitem>
 </orderedlist>
-</listitem>
-<listitem>
 <simpara>Autor, v súvislosti s plnením povinností podľa Zmluvy:</simpara>
 <orderedlist numeration="loweralpha">
 <listitem>
@@ -316,18 +276,12 @@ ani zriadiť záložné právo na pohľadávky vyplývajúce zo Zmluvy, v celku 
 jednotlivo, bez predchádzajúceho písomného súhlasu Objednávateľa.</simpara>
 </listitem>
 </orderedlist>
-</listitem>
-<listitem>
 <simpara>Zmluvná strana, v súvislosti so Zmluvou nie je oprávnená jednostranne započítať
 svoje pohľadávky voči druhej Zmluvnej strane z akejkoľvek inej zmluvy alebo dohody
 medzi Zmluvnými stranami voči pohľadávke na zaplatenie akéhokoľvek peňažného záväzku.</simpara>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_spolupráca_s_klientmi_objednávateľa">
 <title>Spolupráca s klientmi Objednávateľa</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara>Bez predchádzajúceho písomného súhlasu Objednávateľa s overeným podpisom
 jeho štatutárneho zástupcu, Autor (ako fyzická osoba autor; ako živnostník; ako
 spoločník; štatutárny zástupca; prokurista alebo odberateľ a/alebo dodávateľ
@@ -357,33 +311,23 @@ porušenie odstrániť v jednomesačnej lehote odo dňa doručenia oznámenia. A
 uvedenej lehote nedôjde k odstráneniu predmetného porušenia, je Autor povinný
 Objednávateľovi bezodkladne uhradiť zmluvnú pokutu vo výške 500.000 EUR
 (slovom: päťstotisíc eur).</simpara>
-</listitem>
-<listitem>
 <simpara>Autor je oprávnený žiadať od Objednávateľa záväzné stanovisko či prípadný právny
 vzťah s konkrétnou treťou stranou bude napĺňať skutkovú podstatu Spolupráce s
 Odberateľom a či mu za jeho uzatvorenie hrozí zmluvná pokuta špecifikovaná v Zmluve.
 Objednávateľ je povinný na takýto dotaz Autorovi poskytnúť záväzné stanovisko
 bezodkladne, najviac do jedného (1) mesiaca.</simpara>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="zodpovednost-za-skodu">
 <title>Zodpovednosť za škodu</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara><anchor xml:id="liability-limit" xreflabel="[liability-limit]"/> Zmluvná strana zodpovedá iba za škodu spôsobenú úmyselne
 alebo v dôsledku vedomej nedbanlivosti pri výkone práv a povinností vyplývajúcich
 zo Zmluvy alebo z každej Čiastkovej zmluvy a to do výšky 20.000 EUR
 (slovom: dvadsaťtisíc euro).</simpara>
-</listitem>
-<listitem>
 <simpara>Bez toho, aby bol dotknutý odsek <xref linkend="liability-limit"/> Zmluvy, Zmluvná strana,
 ktorá porušila svoju povinnosť z tejto Zmluvy, nie je zodpovedná za škodu,
 ak preukáže, že porušenie jej povinnosti bolo spôsobené okolnosťami vylučujúcimi
 zodpovednosť v zmysle § 374 ods. 1 zákona č. 513/1991 Zb. Obchodný zákonník v
 znení neskorších predpisov (ďalej ako &lt;b&gt;„Obchodný zákonník“&lt;/b&gt;).</simpara>
-</listitem>
-<listitem>
 <simpara>Zmluvná strana, ktorá porušila povinnosti zo Zmluvy je povinná:</simpara>
 <orderedlist numeration="loweralpha">
 <listitem>
@@ -399,13 +343,9 @@ spôsobenej porušením týchto povinností; a</simpara>
 skutočnosť druhej Zmluvnej strane.</simpara>
 </listitem>
 </orderedlist>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_licenčná_zmluva">
 <title>Licenčná zmluva</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara><anchor xml:id="license" xreflabel="[license]"/> Na každé Dielo vytvorené Autorom podľa tejto Zmluvy, na ktoré sa
 nebudú vzťahovať ustanovenia v odsekoch <xref linkend="ordered-software"/> a <xref linkend="ordered-program"/>,
 a v súvislosti s ktorým vykonáva Autor majetkové práva pod svojím menom a na svoj
@@ -425,8 +365,6 @@ spojených s Dielom a začleňovania do iných Diel a to aj do databázy, spolo�
 diela a spojeného diela, resp. právo na použitie diela v databáze, spoločnom diele
 a spojenom diele, a to ako Objednávateľom osobne, tak aj osobami ním poverenými, a
 to maximálne v rozsahu v akom Objednávateľ licenciu prijal.</simpara>
-</listitem>
-<listitem>
 <simpara>Autor vyhlasuje, že disponuje právami k jednotlivým plneniam (vrátane ich
 súčastí), ktoré dodal Objednávateľovi na základe licencií udelených Autorovi
 treťou osobou, ktorá k nim má alebo vykonáva autorské práva alebo práva
@@ -436,8 +374,6 @@ Objednávateľovi právo na ich používanie v rovnakom rozsahu podľa odseku
 podľa Zmluvy je v súlade s právami, ktoré Autorovi udelila tretia osoba, pričom
 túto skutočnosť je Autor na požiadanie Objednávateľa povinný preukázať najmä
 uzatvorenou zmluvou s touto treťou osobou.</simpara>
-</listitem>
-<listitem>
 <simpara>Ak si tretia osoba, vrátane Pracovníkov, uplatní nárok proti Objednávateľovi
 z titulu porušenia jej autorských práv alebo práv priemyselného alebo iného
 duševného vlastníctva spôsobeného Autorom, tento sa zaväzuje:</simpara>
@@ -455,13 +391,9 @@ ktoré má podstatne podobné kvalitatívne a technické parametre;</simpara>
 uplatnením vyššie uvedeného nároku tretej osoby.</simpara>
 </listitem>
 </orderedlist>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_záväzok_mlčanlivosti_a_dôverné_informácie">
 <title>Záväzok mlčanlivosti a dôverné informácie</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara><anchor xml:id="secrecy" xreflabel="[secrecy]"/> Zmluvné strany sú povinné zachovávať záväzok mlčanlivosti o
 dôverných informáciách v zmysle odseku <xref linkend="secret-information"/> Zmluvy (ďalej ako
 „Dôverné informácie“), pričom tieto smú používať výlučne na účel plnenia záväzkov
@@ -469,8 +401,6 @@ podľa Zmluvy a nesmú ich rozširovať, poskytovať a sprístupňovať tretím 
 alebo ich použiť pre seba alebo pre iné osoby v rozpore s účelom, na ktorý im
 boli poskytnuté. Záväzok mlčanlivosti trvá aj po skončení Zmluvy, a to po dobu
 troch (3) rokov odo dňa jej skončenia.</simpara>
-</listitem>
-<listitem>
 <simpara><anchor xml:id="secret-information" xreflabel="[secret-information]"/> Zmluvné strany sa dohodli, že Dôvernými informáciami
 sú informácie, ktoré:</simpara>
 <orderedlist numeration="loweralpha">
@@ -488,17 +418,11 @@ sú informácie, ktoré:</simpara>
 sa dá rozumne predpokladať, že majú ostať dôverné.</simpara>
 </listitem>
 </orderedlist>
-</listitem>
-<listitem>
 <simpara>Zmluvné strany sú povinné vykonať primerané opatrenia, aby sa zabránilo
 úniku, poskytnutiu alebo sprístupneniu Dôverných informácií tretím osobám.</simpara>
-</listitem>
-<listitem>
 <simpara>8.4	Zmluvná strana je po skončení Zmluvy povinná bezodkladne vrátiť druhej
 Zmluvnej strane všetky podklady, materiály a ich obsah, ktoré obdržala v súvislosti
 s plnením povinností podľa Zmluvy, prípadne ich zničiť, ak ich nie je možné vrátiť.</simpara>
-</listitem>
-<listitem>
 <simpara>Ustanovenie odseku <xref linkend="secrecy"/> Zmluvy sa nepoužije,</simpara>
 <orderedlist numeration="loweralpha">
 <listitem>
@@ -528,14 +452,10 @@ druhú Zmluvnú stranu o predmetných okolnostiach; alebo</simpara>
 záväzkom mlčanlivosti v rozsahu Zmluvy.</simpara>
 </listitem>
 </orderedlist>
-</listitem>
-<listitem>
 <simpara>Zmluvné strany sa zaväzujú, že povinnosť mlčanlivosti budú v rovnakom rozsahu
 dodržiavať aj ich zamestnanci a dodávatelia služieb podieľajúci sa na plnení
 tejto Zmluvy; za porušenie povinnosti mlčanlivosti týmito osobami zodpovedá
 Zmluvná strana tak, ako by povinnosť mlčanlivosti porušila sama.</simpara>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_súhlas_so_spracovaním_osobných_údajov">
 <title>Súhlas so spracovaním osobných údajov</title>
@@ -546,27 +466,17 @@ niektorých zákonov. Autor týmto udeľuje súhlas so spracúvaním svojich oso
 údajov Objednávateľom. Údaje budú spracované v informačnom systéme Objednávateľa
 a sú poskytnuté pre účely ich interného využitia za účelom napĺňania účelu Zmluvy.</simpara>
 </listitem>
-<listitem>
+</orderedlist>
 <simpara>Rozsah osobných údajov: meno, priezvisko, trvalé bydlisko, tel. číslo, email,
 dátum narodenia, bankové spojenie.</simpara>
-</listitem>
-<listitem>
 <simpara>Tento súhlas je udelený na dobu nevyhnutnú pre dosiahnutie účelu
 spracovania a je ho možné kedykoľvek písomne alebo emailom odvolať.</simpara>
-</listitem>
-<listitem>
 <simpara>Všetky práva dotknutej osoby sú zadefinované v druhej hlave Zákona č.
 18/2018 Z. z. o ochrane osobných údajov a o zmene a doplnení niektorých zákonov.</simpara>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_doba_trvania_zmluvy_a_skončenie_zmluvy">
 <title>Doba trvania Zmluvy a skončenie Zmluvy</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara>Táto Zmluva sa uzatvára na dobu neurčitú.</simpara>
-</listitem>
-<listitem>
 <simpara>Táto Zmluva môže skončiť len z nasledovných dôvodov:</simpara>
 <orderedlist numeration="loweralpha">
 <listitem>
@@ -582,30 +492,20 @@ lehote, ktorá začína plynúť v nasledujúci deň po doručení výpovede dru
 strane.</simpara>
 </listitem>
 </orderedlist>
-</listitem>
-<listitem>
 <simpara>Bezodkladne po skončení Zmluvy Autor odovzdá Objednávateľovi Dielo resp. jeho
 časti (vrátane zdrojových kódov a súvisiacej dokumentácie) vykonané do dňa skončenia
 Zmluvy.</simpara>
-</listitem>
-<listitem>
 <simpara>Skončením Zmluvy nezanikajú povinnosti a nároky Zmluvných strán, ktoré podľa
 Zmluvy a legislatívy majú trvať aj po skončení Zmluvy. Pre vylúčenie pochybností,
 takýmito sú najmä, nie však výlučne, práva spojené s udelenou licenciou k Dielu,
 záväzok mlčanlivosti, peňažné nároky, nároky na náhradu škody a iné povinnosti a
 nároky, ktoré svojou povahou nezanikajú ukončením Zmluvy.</simpara>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_doručovanie">
 <title>Doručovanie</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara>Akýkoľvek úkon, ktorý má byť podľa Zmluvy urobený v písomnej podobe, musí byť
 doručený na adresu Zmluvnej strany uvedenej v záhlaví Zmluvy buď (i) osobne;
 (ii) doporučenou zásielkou; alebo (iii) e-mailom.</simpara>
-</listitem>
-<listitem>
 <simpara>Zásielka sa považuje za doručenú dňom:</simpara>
 <orderedlist numeration="loweralpha">
 <listitem>
@@ -621,83 +521,67 @@ doručený na adresu Zmluvnej strany uvedenej v záhlaví Zmluvy buď (i) osobne
 <simpara>zmarenia alebo odmietnutia doručenia.</simpara>
 </listitem>
 </orderedlist>
-</listitem>
-<listitem>
 <simpara>Pokiaľ je za deň doručenia podľa vyššie uvedených pravidiel preukázateľne možno
 považovať viac ako jeden deň, je dňom doručenia skorší deň.</simpara>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_dohoda_o_ukončení_predchádzajúcich_právnych_vzťahov">
 <title>Dohoda o ukončení predchádzajúcich právnych vzťahov</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara>Zmluva predstavuje celú dohodu medzi Zmluvnými stranami týkajúcu sa predmetu Zmluvy
 a nahrádza akúkoľvek dohodu, zmluvu a predzmluvné vyhlásenie týkajúce sa rovnakého
 a/alebo obdobného predmetu Zmluvy (ďalej ako &lt;b&gt;„Predchádzajúce dohody“&lt;/b&gt;), ktoré dňom
 uzavretia Zmluvy zanikajú.</simpara>
-</listitem>
-<listitem>
 <simpara>Povinnosti a nároky Zmluvných strán, ktoré podľa Predchádzajúcich dohôd alebo
 legislatívy majú trvať aj po skončení Predchádzajúcich dohôd, budú trvať naďalej
 v rozsahu podľa Predchádzajúcich dohôd alebo legislatívy.</simpara>
-</listitem>
-</orderedlist>
 </section>
 <section xml:id="_záverečné_ustanovenia">
 <title>Záverečné ustanovenia</title>
-<orderedlist numeration="arabic">
-<listitem>
 <simpara>Táto Zmluva nadobúda platnosť a účinnosť dňom jej podpisu oboma Zmluvnými stranami.</simpara>
-</listitem>
-<listitem>
 <simpara>Ktorékoľvek ustanovenie Zmluvy, ktoré je alebo sa stane neplatným alebo
 nevymáhateľným, sa bude považovať za oddeliteľné od Zmluvy a bude sa považovať
 ako zo Zmluvy vymazané, pričom vo zvyšnej časti zostane Zmluva nedotknutá, platná
 a účinná. Zmluvné strany sa zaväzujú nahradiť neplatné alebo nevymáhateľné
 ustanovenie ustanovením, ktoré najbližšie zodpovedá ich zmyslu a účelu podľa Zmluvy.</simpara>
-</listitem>
-<listitem>
 <simpara>Táto Zmluva je vyhotovená v dvoch (2) origináloch, pričom každá Zmluvná strana
 obdrží jeden. Zmluvu je možné meniť a dopĺňať len po dohode Zmluvných strán vo
 forme očíslovaných písomných dodatkov k nej.</simpara>
-</listitem>
-<listitem>
 <simpara>Pre vylúčenie akejkoľvek pochybností, Zmluvné strany vyhlasujú že touto Zmluvou
 za žiadnych okolností nevstupujú do pracovnoprávneho vzťahu, ale do obchodného
 vzťahu medzi dvoma rovnoprávnymi subjektmi v zmysle Obchodného zákonníka. Autor
 bude vyššie uvedené Dielo pre Objednávateľa vykonávať na vlastnú zodpovednosť a
 riziko ako samostatne zárobkovo činná osoba, nebude v podriadenom postavení voči
 Objednávateľovi, a preto Autor nebude vykonávať závislú prácu.</simpara>
-</listitem>
-<listitem>
 <simpara>Zmluvné strany sa v súlade s § 262 ods. 1 Obchodného zákonníka dohodli, že ich
 záväzkový vzťah sa spravuje Obchodným zákonníkom, pokiaľ sa na vzťah neaplikujú
 kogentné ustanovenia Občianskeho zákonníka alebo Autorského zákona. Zmluvné strany
 sa zaväzujú prípadné spory riešiť vzájomnou dohodou. Ak tá nebude možná, na
 rozhodovanie sporov budú príslušné súdy Slovenskej republiky.</simpara>
-</listitem>
-<listitem>
 <simpara>Zmluvné strany vyhlasujú, že túto Zmluvu uzatvárajú slobodne a vážne, že táto
 nebola uzavretá za nevýhodných podmienok alebo v tiesni a na znak súhlasu ju podpisujú.</simpara>
-</listitem>
-</orderedlist>
 <informaltable frame="none" rowsep="0" colsep="0">
 <tgroup cols="2">
 <colspec colname="col_1" colwidth="50*"/>
 <colspec colname="col_2" colwidth="50*"/>
 <tbody>
 <row>
-<entry align="left" valign="top"><literallayout> V Bratislave, dňa {signing-date}
- &lt;i&gt;Za Objednávateľa&lt;/i&gt;
-
- &#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;.
- Samuel Hapák, konateľ</literallayout></entry>
-<entry align="left" valign="top"><literallayout> V Bratislave, dňa {signing-date}
- &lt;i&gt;Za Poskytovateľa&lt;/i&gt;
-
- &#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;.
- {author-name}</literallayout></entry>
+<entry align="left" valign="top"><simpara>V Bratislave, dňa {signing-date}</simpara></entry>
+<entry align="left" valign="top"><simpara>V Bratislave, dňa {signing-date}</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>&lt;i&gt;Za Objednávateľa&lt;/i&gt;</simpara></entry>
+<entry align="left" valign="top"><simpara>&lt;i&gt;Za Poskytovateľa&lt;/i&gt;</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;.</simpara></entry>
+<entry align="left" valign="top"><simpara>&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;&#8230;&#8203;.</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Samuel Hapák, konateľ</simpara></entry>
+<entry align="left" valign="top"><simpara>{author-name}</simpara></entry>
 </row>
 </tbody>
 </tgroup>
