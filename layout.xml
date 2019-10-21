@@ -3,7 +3,7 @@
   xmlns="urn:speedata.de:2009/publisher/en"
   xmlns:sd="urn:speedata:2009/publisher/functions/en"
   version="2.9.7">
-  <Options ignoreeol="yes" crop="3mm"/>
+  <Options ignoreeol="yes" />
 
   <!-- fonts in fonts.xml -->
   <!-- pagination in pagination.xml -->
@@ -159,63 +159,6 @@
     </PlaceObject>
   </Record>
 
-  <Record element="informaltable">
-    <PlaceObject>
-      <Table stretch="max" padding="1pt">
-        <ForAll select="tgroup/tbody/row">
-          <Tablerule/>
-          <Tr>
-            <ForAll select="entry">
-              <Td align="left" border-left="0.2pt" border-right="0.2pt">
-                <Paragraph><Value select="sd:decode-html(simpara)"/></Paragraph>
-              </Td>
-            </ForAll>
-          </Tr>
-        </ForAll>
-        <Tablerule/>
-      </Table>
-    </PlaceObject>
-  </Record>
-
-  <Record element="table">
-    <PlaceObject>
-      <Textblock fontface="text">
-        <Paragraph>
-          <B><Value select="title"/></B>
-        </Paragraph>
-      </Textblock>
-    </PlaceObject>
-
-    <PlaceObject>
-      <Table stretch="max" padding="1pt">
-        <Tablehead>
-          <Tablerule/>
-          <ForAll select="tgroup/thead/row">
-            <Tr>
-              <ForAll select="entry">
-                <Td align="@align" border-left="0.2pt" border-right="0.2pt">
-                  <Paragraph><B><Value select="sd:decode-html(.)"/></B></Paragraph>
-                </Td>
-              </ForAll>
-            </Tr>
-            <Tablerule/>
-          </ForAll>
-        </Tablehead>
-        <ForAll select="tgroup/tbody/row">
-          <Tablerule/>
-          <Tr>
-            <ForAll select="entry">
-              <Td align="left" border-left="0.2pt" border-right="0.2pt">
-                <Paragraph><Value select="sd:decode-html(simpara)"/></Paragraph>
-              </Td>
-            </ForAll>
-          </Tr>
-        </ForAll>
-        <Tablerule/>
-      </Table>
-    </PlaceObject>
-  </Record>
-
   <Record element="itemizedlist">
     <PlaceObject>
       <Textblock fontface="Title">
@@ -238,7 +181,7 @@
     </PlaceObject>
   </Record>
 
-  <Record element="orderedList">
+  <Record element="orderedlist">
     <PlaceObject>
       <Textblock fontface="Title">
         <Paragraph>
@@ -249,10 +192,12 @@
 
     <PlaceObject>
       <Textblock fontface="text">
-        <Ul>
+        <Ol>
           <ForAll select="listitem">
             <Li>
-              <Value select="simpara" />
+              <Paragraph>
+                <Value select="simpara" />
+              </Paragraph>
             </Li>
           </ForAll>
         </Ul>

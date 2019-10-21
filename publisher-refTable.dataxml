@@ -5,28 +5,128 @@
  </reference>
  <reference refText="2. Predmet a účel Zmluvy" name="_predmet_a_účel_zmluvy">
  </reference>
+ <reference refText="2.1." name="">
+ </reference>
+ <reference refText="2.2." name="">
+ </reference>
+ <reference refText="2.3." name="">
+ </reference>
+ <reference refText="2.4." name="">
+ </reference>
  <reference refText="3. Režim vytvárania Diela" name="_režim_vytvárania_diela">
+ </reference>
+ <reference refText="3.1." name="">
+ </reference>
+ <reference refText="3.2." name="">
+ </reference>
+ <reference refText="3.3." name="">
+ </reference>
+ <reference refText="3.4." name="">
+ </reference>
+ <reference refText="3.5." name="">
+ </reference>
+ <reference refText="3.6." name="">
+ </reference>
+ <reference refText="3.7." name="">
  </reference>
  <reference refText="4. Odmena a platobné podmienky" name="_odmena_a_platobné_podmienky">
  </reference>
+ <reference refText="4.1." name="">
+ </reference>
+ <reference refText="4.2." name="">
+ </reference>
+ <reference refText="4.3." name="">
+ </reference>
+ <reference refText="4.4." name="">
+ </reference>
  <reference refText="5. Práva, povinnosti a vyhlásenia Zmluvných strán" name="_práva_povinnosti_a_vyhlásenia_zmluvných_strán">
+ </reference>
+ <reference refText="5.1." name="">
+ </reference>
+ <reference refText="5.2." name="">
+ </reference>
+ <reference refText="5.3." name="">
  </reference>
  <reference refText="6. Spolupráca s klientmi Objednávateľa" name="_spolupráca_s_klientmi_objednávateľa">
  </reference>
+ <reference refText="6.1." name="">
+ </reference>
+ <reference refText="6.2." name="">
+ </reference>
  <reference refText="7. Zodpovednosť za škodu" name="zodpovednost-za-skodu">
+ </reference>
+ <reference refText="7.1." name="">
+ </reference>
+ <reference refText="7.2." name="">
+ </reference>
+ <reference refText="7.3." name="">
  </reference>
  <reference refText="8. Licenčná zmluva" name="_licenčná_zmluva">
  </reference>
+ <reference refText="8.1." name="">
+ </reference>
+ <reference refText="8.2." name="">
+ </reference>
+ <reference refText="8.3." name="">
+ </reference>
  <reference refText="9. Záväzok mlčanlivosti a dôverné informácie" name="_záväzok_mlčanlivosti_a_dôverné_informácie">
+ </reference>
+ <reference refText="9.1." name="">
+ </reference>
+ <reference refText="9.2." name="">
+ </reference>
+ <reference refText="9.3." name="">
+ </reference>
+ <reference refText="9.4." name="">
+ </reference>
+ <reference refText="9.5." name="">
+ </reference>
+ <reference refText="9.6." name="">
  </reference>
  <reference refText="10. Súhlas so spracovaním osobných údajov" name="_súhlas_so_spracovaním_osobných_údajov">
  </reference>
+ <reference refText="10.1." name="">
+ </reference>
+ <reference refText="10.2." name="">
+ </reference>
+ <reference refText="10.3." name="">
+ </reference>
  <reference refText="11. Doba trvania Zmluvy a skončenie Zmluvy" name="_doba_trvania_zmluvy_a_skončenie_zmluvy">
+ </reference>
+ <reference refText="11.1." name="">
+ </reference>
+ <reference refText="11.2." name="">
+ </reference>
+ <reference refText="11.3." name="">
+ </reference>
+ <reference refText="11.4." name="">
  </reference>
  <reference refText="12. Doručovanie" name="_doručovanie">
  </reference>
+ <reference refText="12.1." name="">
+ </reference>
+ <reference refText="12.2." name="">
+ </reference>
+ <reference refText="12.3." name="">
+ </reference>
  <reference refText="13. Dohoda o ukončení predchádzajúcich právnych vzťahov" name="_dohoda_o_ukončení_predchádzajúcich_právnych_vzťahov">
  </reference>
+ <reference refText="13.1." name="">
+ </reference>
+ <reference refText="13.2." name="">
+ </reference>
  <reference refText="14. Záverečné ustanovenia" name="_záverečné_ustanovenia">
+ </reference>
+ <reference refText="14.1." name="">
+ </reference>
+ <reference refText="14.2." name="">
+ </reference>
+ <reference refText="14.3." name="">
+ </reference>
+ <reference refText="14.4." name="">
+ </reference>
+ <reference refText="14.5." name="">
+ </reference>
+ <reference refText="14.6." name="">
  </reference>
 </referenceTable>

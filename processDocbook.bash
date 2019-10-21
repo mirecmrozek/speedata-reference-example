@@ -9,7 +9,7 @@ perl -0777 -i -pe "s/\<emphasis role=\"strong\"\>([^\<\>]*)\<\/emphasis\>/\&lt;b
 # delete <?> tags which confuse speedata
 sed '/^<?.*?>$/d' -i data.xml
 # replace reference tags with our own syntax
-sed data.xml -ri's/<xref linkend="([a-zA-Z0-9]*)"\/>/__\1__/g'
+sed data.xml -ri's/<xref linkend="([\-\_a-zA-Z0-9]*)"\/>/__\1__/g'
 
 # include files
-sp --prepend-xml=fonts.xml --prepend-xml=pagination.xml
+sp --prepend-xml=fonts.xml --prepend-xml=pagination.xml --extra-xml=table.xml

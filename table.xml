@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Include xmlns="urn:speedata.de:2009/publisher/en"
+	xmlns:sd="urn:speedata:2009/publisher/functions/en">
+
+  <Record element="informaltable">
+    <SetVariable variable="borderWidth"/>
+    <Switch>
+      <Case test="@frame = 'none'">
+        <SetVariable variable="borderWidth" select="0"/>
+      </Case>
+      <Otherwise>
+        <SetVariable variable="borderWidth" select="0.2pt"/>
+      </Otherwise>
+    </Switch>
+    <SetVariable variable="bodyValign" select="tgroup/tbody/@valign"/>
+    <PlaceObject>
+      <Table stretch="max" padding="1pt">
+        <Columns>
+          <ForAll select="tgroup/colspec">
+            <Column width="{@colwidth}"/>
+          </ForAll>
+        </Columns>
+        <ForAll select="tgroup/tbody/row">
+
+          <Switch>
+            <Case test="borderWidth = 0.2pt" >
+              <Tablerule/>
+            </Case>
+          </Switch>
+
+          <Tr>
+            <ForAll select="entry">
+              <SetVariable variable="valign" select="if (@valign != nil) then @valign else $bodyValign"/>
+              <Td align="{@align}" valign="{$valign}" border-left="{$borderWidth}" border-right="{$borderWidth}">
+                <Paragraph><Value select="sd:decode-html(simpara)"/></Paragraph>
+              </Td>
+            </ForAll>
+          </Tr>
+        </ForAll>
+
+        <Switch>
+          <Case test="borderWidth = 0.2pt" >
+            <Tablerule/>
+          </Case>
+        </Switch>
+
+      </Table>
+    </PlaceObject>
+  </Record>
+
+  <Record element="table">
+    <PlaceObject>
+      <Textblock fontface="text">
+        <Paragraph>
+          <B><Value select="title"/></B>
+        </Paragraph>
+      </Textblock>
+    </PlaceObject>
+
+    <PlaceObject>
+      <Table stretch="max" padding="1pt">
+        <Tablehead>
+          <Tablerule/>
+          <ForAll select="tgroup/thead/row">
+            <Tr>
+              <ForAll select="entry">
+                <Td align="@align" border-left="0.2pt" border-right="0.2pt">
+                  <Paragraph><B><Value select="sd:decode-html(.)"/></B></Paragraph>
+                </Td>
+              </ForAll>
+            </Tr>
+            <Tablerule/>
+          </ForAll>
+        </Tablehead>
+        <ForAll select="tgroup/tbody/row">
+          <Tablerule/>
+          <Tr>
+            <ForAll select="entry">
+              <Td align="left" border-left="0.2pt" border-right="0.2pt">
+                <Paragraph><Value select="sd:decode-html(simpara)"/></Paragraph>
+              </Td>
+            </ForAll>
+          </Tr>
+        </ForAll>
+        <Tablerule/>
+      </Table>
+    </PlaceObject>
+  </Record>
+
+</Include>
